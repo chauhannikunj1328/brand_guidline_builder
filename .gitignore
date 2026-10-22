@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# generated bundles — rebuild with `npm run assets`
+brand-assets/*/dist/
+*/public/downloads/brand-assets.zip
+brand-docs-template.zip
+
+# env / secrets
+.env*
+!.env.example
+*.pem
+
+# local tooling
+.DS_Store
+.vercel/
+.claude/settings.local.json
+npm-debug.log*

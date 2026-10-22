@@ -1,0 +1,20 @@
+/**
+ * Generated from brand-docs/tokens.json by `npm run tokens`. Do not edit.
+ */
+
+[data-theme="dark"] {
+  --bg-page: #111c44;
+  --bg-surface: #1a2657;
+  --bg-surface-tint: #26346b;
+  --bg-brand: #4338ca;
+  --bg-inverse: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #a9b3d6;
+  --text-on-brand: #ffffff;
+  --text-link: #8fa3ff;
+  --border-default: #33417a;
+  --action-primary: #4338ca;
+  --action-primary-hover: #4f46e5;
+  --action-accent: #ff6b4a;
+  --focus-ring: #ff6b4a;
+}

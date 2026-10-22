@@ -1,0 +1,26 @@
+{
+  "$comment": "Registry of every brand in Rectio. Scripts read paths from here, so moving folders only means editing this file.",
+  "template": "brand-docs-template",
+  "brands": {
+    "rectio": {
+      "name": "Rectio",
+      "status": "approved",
+      "docs": "brand-docs",
+      "assets": "brand-assets/rectio",
+      "site": "brand-center-rectio",
+      "contrastWaivers": {
+        "light: text.secondary on bg.page": "4.35:1 \u2014 pending design decision (darken Slate or restrict to white surfaces)",
+        "light: focus.ring on bg.page": "2.63:1 \u2014 pending design decision (coral ring needs a dark outline on light backgrounds)",
+        "light: focus.ring on bg.surface": "2.82:1 \u2014 pending design decision (see above)"
+      }
+    },
+    "base": {
+      "name": "Base (unbranded starter)",
+      "status": "template",
+      "docs": null,
+      "assets": null,
+      "site": "brand-center-base",
+      "contrastWaivers": {}
+    }
+  }
+}

@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   BRAND TOKENS — the only place colours are defined.
+   Values come from the Figma variables in "Rectio | Full Project Design".
+   Roles used across the template:
+     primary = Pampas 500 (cards, bands, buttons)   ink   = Grey 950 (text, dark UI)
+     tint    = Pampas 100 (light bands)             mid   = Pampas 300 (mid-tone cards)
+     accent  = Pampas 800 (marks on light)           surface = white
+   ------------------------------------------------------------------ */
+:root {
+  --pampas-50: #f8f6f4;
+  --pampas-100: #f1ede7;
+  --pampas-200: #dfd5c9;
+  --pampas-300: #cbbaa6;
+  --pampas-400: #b59a82;
+  --pampas-500: #a5846a;
+  --pampas-600: #98745e;
+  --pampas-700: #7f5e4f;
+  --pampas-800: #684e44;
+  --pampas-900: #554139;
+  --pampas-950: #2d211d;
+
+  --grey-50: #fafafa;
+  --grey-100: #f4f4f5;
+  --grey-200: #e5e5e5;
+  --grey-300: #d4d4d8;
+  --grey-400: #a1a1aa;
+  --grey-500: #71717a;
+  --grey-600: #52525b;
+  --grey-700: #3f3f46;
+  --grey-800: #27272a;
+  --grey-950: #09090b;
+
+  --green-400: #80ad6e;
+  --green-500: #619250;
+  --red-500: #ec4747;
+
+  --brand-primary: var(--pampas-500);
+  --brand-ink: var(--grey-950);
+  --brand-tint: var(--pampas-100);
+  --brand-mid: var(--pampas-300);
+  --brand-accent: var(--pampas-800);
+  --brand-surface: #ffffff;
+  --brand-muted: var(--grey-500);
+  --brand-line: var(--grey-200);
+
+  --rail-w: 276px;        /* sticky page-section rail (desktop) */
+  --radius-card: 16px;
+}
+
+@theme inline {
+  --color-primary: var(--brand-primary);
+  --color-ink: var(--brand-ink);
+  --color-tint: var(--brand-tint);
+  --color-mid: var(--brand-mid);
+  --color-accent: var(--brand-accent);
+  --color-surface: var(--brand-surface);
+  --color-muted: var(--brand-muted);
+  --color-line: var(--brand-line);
+
+  --color-pampas-50: var(--pampas-50);
+  --color-pampas-100: var(--pampas-100);
+  --color-pampas-200: var(--pampas-200);
+  --color-pampas-300: var(--pampas-300);
+  --color-pampas-400: var(--pampas-400);
+  --color-pampas-500: var(--pampas-500);
+  --color-pampas-600: var(--pampas-600);
+  --color-pampas-700: var(--pampas-700);
+  --color-pampas-800: var(--pampas-800);
+  --color-pampas-900: var(--pampas-900);
+  --color-pampas-950: var(--pampas-950);
+  --color-grey-50: var(--grey-50);
+  --color-grey-100: var(--grey-100);
+  --color-grey-200: var(--grey-200);
+  --color-grey-300: var(--grey-300);
+  --color-grey-400: var(--grey-400);
+  --color-grey-500: var(--grey-500);
+  --color-grey-600: var(--grey-600);
+  --color-grey-700: var(--grey-700);
+  --color-grey-800: var(--grey-800);
+  --color-grey-950: var(--grey-950);
+  --color-green-400: var(--green-400);
+  --color-green-500: var(--green-500);
+  --color-red-500: var(--red-500);
+
+  /* Geist = primary (headings, body). Space Grotesk = secondary (display titles, captions). */
+  --font-display: var(--font-primary), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-primary), ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--brand-surface);
+  color: var(--brand-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
+
+/* ---- Layout primitives. Inner pages: content sits beside the 276px rail. ---- */
+.content-col { padding-left: 20px; padding-right: 20px; }
+.band > .band-inner { padding-left: 20px; padding-right: 20px; }
+.card-wide { margin-left: 16px; margin-right: 16px; }
+.card-content { margin-left: 20px; margin-right: 20px; }
+.card-pad { padding: 40px 24px; }
+.edge-x { padding-left: 20px; padding-right: 20px; }
+.section-x { padding-left: 20px; padding-right: 20px; }
+
+@media (min-width: 1024px) {
+  .content-col { padding-left: 70px; padding-right: 70px; }
+  .band > .band-inner { padding-left: 70px; padding-right: 70px; }
+  .card-wide { margin-left: 30px; margin-right: 30px; }
+  .card-content { margin-left: 70px; margin-right: 70px; }
+  .card-pad { padding: 40px; }
+  .edge-x { padding-left: 40px; padding-right: 40px; }
+  .section-x { padding-left: 70px; padding-right: 70px; }
+}
+
+/* Type scale — Figma text styles at 1440px, fluid below. */
+.t-hero { font-family: var(--font-secondary); font-size: clamp(2.75rem, 5.6vw, 5rem); font-weight: 500; line-height: 1.1; }
+.t-display { font-family: var(--font-secondary); font-size: clamp(3rem, 7.4vw, 9.125rem); font-weight: 300; line-height: 1.2; }
+.t-h2 { font-size: clamp(2.25rem, 3.9vw, 3.5rem); font-weight: 500; line-height: 1.143; }
+.t-lead { font-size: clamp(1.5rem, 2.8vw, 2.5rem); font-weight: 400; line-height: 1.2; }
+.t-section { font-family: var(--font-secondary); font-size: clamp(2.25rem, 3.4vw, 3rem); font-weight: 400; line-height: 1.19; }
+.t-section-lg { font-family: var(--font-secondary); font-size: clamp(2.5rem, 4.2vw, 3.75rem); font-weight: 400; line-height: 1.13; }
+.t-h3 { font-size: 2rem; font-weight: 500; line-height: 1.25; }
+.t-h3-light { font-size: 2rem; font-weight: 400; line-height: 1.25; }
+.t-h4 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; }
+.t-body-lg { font-size: 1.25rem; line-height: 1.4; }
+.t-body { font-size: 1rem; line-height: 1.5; }
+.t-small { font-size: 0.875rem; line-height: 1.43; }
+.t-xs { font-size: 0.75rem; line-height: 1.33; }
+.t-caption { font-family: var(--font-secondary); font-size: 0.75rem; line-height: 1.33; }
+
+/* Hero forest mask (Figma "Mask group"): feathered blob; on small screens also fade the bottom edge. */
+.forest-mask {
+  mask-image: url(/brand/hero-mask.svg), linear-gradient(to bottom, #000 70%, transparent 92%);
+  mask-size: 1927px 1378px, 100% 100%;
+  mask-position: -100px 47px, 0 0;
+  mask-repeat: no-repeat;
+  mask-composite: intersect;
+}
+@media (min-width: 1024px) {
+  .forest-mask { mask-image: url(/brand/hero-mask.svg); mask-size: 1927px 1378px; mask-position: -100px 47px; }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

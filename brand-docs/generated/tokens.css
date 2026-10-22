@@ -1,0 +1,87 @@
+/**
+ * Generated from brand-docs/tokens.json by `npm run tokens`. Do not edit.
+ */
+
+:root {
+  --color-indigo: #4338ca; /** Rectio Indigo — primary */
+  --color-coral: #ff6b4a; /** Signal Coral — accent / mark */
+  --color-midnight: #111c44;
+  --color-cloud: #dfe4ff;
+  --color-sky: #8fa3ff;
+  --color-white: #ffffff;
+  --color-fog: #f6f7fb;
+  --color-slate: #6b7394;
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-danger: #dc2626;
+  --action-primary-hover: #3730a3;
+  --font-family-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-family-body: Inter, system-ui, sans-serif;
+  --font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-size-display-xl: 96px;
+  --font-size-display-lg: 64px;
+  --font-size-heading-1: 40px;
+  --font-size-heading-2: 32px;
+  --font-size-heading-3: 24px;
+  --font-size-heading-4: 20px;
+  --font-size-body-lg: 18px;
+  --font-size-body: 16px;
+  --font-size-body-sm: 14px;
+  --font-size-label: 14px;
+  --font-size-caption: 12px;
+  --font-size-overline: 12px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-lineHeight-tight: 1;
+  --font-lineHeight-heading: 1.15;
+  --font-lineHeight-body: 1.5;
+  --font-lineHeight-relaxed: 1.6;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --motion-duration-instant: 100ms;
+  --motion-duration-fast: 200ms;
+  --motion-duration-base: 300ms;
+  --motion-duration-slow: 500ms;
+  --motion-easing-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-easing-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --motion-easing-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --shadow-1: 0px 8px 24px 0px #111C441F;
+  --shadow-2: 0px 24px 64px 0px #111C4433;
+  --bg-page: var(--color-fog);
+  --bg-surface: var(--color-white);
+  --bg-surface-tint: var(--color-cloud);
+  --bg-brand: var(--color-indigo);
+  --bg-inverse: var(--color-midnight);
+  --text-primary: var(--color-midnight);
+  --text-secondary: var(--color-slate);
+  --text-on-brand: var(--color-white);
+  --text-link: var(--color-indigo);
+  --border-default: var(--color-cloud);
+  --action-primary: var(--color-indigo);
+  --action-accent: var(--color-coral);
+  --focus-ring: var(--color-coral);
+}

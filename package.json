@@ -1,0 +1,24 @@
+{
+  "name": "rectio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tokens": "node scripts/tokens.mjs",
+    "contrast": "node scripts/contrast.mjs",
+    "assets": "node scripts/assets.mjs",
+    "new-brand": "node scripts/new-brand.mjs",
+    "release": "node scripts/release.mjs",
+    "check": "node scripts/check.mjs",
+    "check:quick": "node scripts/check.mjs --quick",
+    "dev:rectio": "npm run dev --prefix brand-center-rectio",
+    "dev:base": "npm run dev --prefix brand-center-base",
+    "setup": "npm install && npm install --prefix brand-center-rectio && npm install --prefix brand-center-base",
+    "status": "node scripts/status.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.5.5"
+  }
+}

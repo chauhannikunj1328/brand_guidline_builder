@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   BRAND TOKENS — the only place colours are defined.
+   Roles mirror a five-colour brand system:
+     primary = hero + bands + buttons        ink   = header, footer, dark cards, text
+     tint    = light cards/bands             mid   = mid-tone cards, footer button
+     accent  = the mark                      surface = white
+   ------------------------------------------------------------------ */
+:root {
+  --brand-primary: #262626;
+  --brand-ink: #0f0f0f;
+  --brand-tint: #e9e9e9;
+  --brand-mid: #bfbfbf;
+  --brand-accent: #8c8c8c;
+  --brand-surface: #ffffff;
+  --brand-muted: #6b6b6b;
+  --brand-line: #d4d4d4;
+
+  --rail-w: 248px;        /* fixed side rail width (desktop) */
+  --content-x: 323px;     /* left edge of content column (rail + 75) */
+  --content-r: 75px;      /* right padding of content column */
+  --card-inset: 26px;     /* wide card distance from viewport right edge */
+  --card-x: 271px;        /* wide card left edge */
+  --radius-card: 32px;
+}
+
+@theme inline {
+  --color-primary: var(--brand-primary);
+  --color-ink: var(--brand-ink);
+  --color-tint: var(--brand-tint);
+  --color-mid: var(--brand-mid);
+  --color-accent: var(--brand-accent);
+  --color-surface: var(--brand-surface);
+  --color-muted: var(--brand-muted);
+  --color-line: var(--brand-line);
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--brand-surface);
+  color: var(--brand-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
+
+/* ---- Layout primitives (desktop ≥ 1024px) ---- */
+.content-col { padding-left: 20px; padding-right: 20px; }
+.band { margin-left: 0; }
+.band > .band-inner { padding-left: 20px; padding-right: 20px; }
+.card-wide { margin-left: 20px; margin-right: 20px; }
+.card-content { margin-left: 20px; margin-right: 20px; }
+.card-pad { padding: 40px 24px; }
+.edge-x { padding-left: 20px; padding-right: 20px; }
+
+@media (min-width: 1024px) {
+  .content-col { padding-left: var(--content-x); padding-right: var(--content-r); }
+  .band { margin-left: var(--rail-w); }
+  .band > .band-inner { padding-left: calc(var(--content-x) - var(--rail-w)); padding-right: var(--content-r); }
+  .card-wide { margin-left: var(--card-x); margin-right: var(--card-inset); }
+  .card-content { margin-left: var(--content-x); margin-right: var(--content-r); }
+  .card-pad { padding: 64px 52px; }
+  .edge-x { padding-left: 40px; padding-right: 40px; }
+}
+
+/* Type scale matching the reference (1440px) */
+.t-hero { font-size: clamp(3.5rem, 7vw, 6.25rem); font-weight: 300; line-height: 1.05; letter-spacing: -0.01em; }
+.t-display { font-size: clamp(3rem, 6.5vw, 5.75rem); font-weight: 300; line-height: 1.05; letter-spacing: -0.01em; }
+.t-h2 { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.12; letter-spacing: -0.01em; }
+.t-lead { font-size: clamp(1.5rem, 2.5vw, 2.25rem); font-weight: 300; line-height: 1.22; }
+.t-h3 { font-size: 2rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
+.t-h3-light { font-size: 2rem; font-weight: 400; line-height: 1.15; }
+.t-h4 { font-size: 1.25rem; font-weight: 700; line-height: 1.25; }
+.t-body { font-size: 1rem; line-height: 1.45; }
+.t-small { font-size: 0.875rem; line-height: 1.4; }
+.t-xs { font-size: 0.75rem; line-height: 1.35; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

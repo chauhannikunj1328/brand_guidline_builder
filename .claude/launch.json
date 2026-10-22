@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rectio",
+      "runtimeExecutable": "brand-center-rectio/node_modules/.bin/next",
+      "runtimeArgs": ["dev", "brand-center-rectio"],
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "base",
+      "runtimeExecutable": "brand-center-base/node_modules/.bin/next",
+      "runtimeArgs": ["dev", "brand-center-base"],
+      "port": 3001,
+      "autoPort": true
+    }
+  ]
+}

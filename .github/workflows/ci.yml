@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            brand-center-rectio/package-lock.json
+            brand-center-base/package-lock.json
+      - name: Install
+        run: |
+          npm ci
+          npm ci --prefix brand-center-rectio
+          npm ci --prefix brand-center-base
+      - name: Quality gate (docs, tokens, contrast, assets, lint, typecheck, build)
+        run: npm run check
+      - name: Generated tokens are committed
+        run: git diff --exit-code -- '*/generated/' || (echo "::error::Run 'npm run tokens' and commit the generated files" && exit 1)
