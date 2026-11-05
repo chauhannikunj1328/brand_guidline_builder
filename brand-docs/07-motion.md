@@ -29,6 +29,7 @@ Platform: CSS `transition` / Framer Motion; iOS `withAnimation(.timingCurve(0.16
 | Overlay menu | fade + slight scale from 0.98, `duration-base` |
 | Sheet / modal | slide up 24 px + fade, `duration-base` |
 | Toast | slide in from bottom, `duration-fast`; auto-dismiss 4 s |
+| Section reveal | fade + slide up 24 px when scrolled into view, `duration-base`, once per page view |
 | List stagger | 40 ms between items, max 8 items animated |
 | Skeleton loading | shimmer 1.5 s linear loop, Pampas 100 → Grey 50 |
 

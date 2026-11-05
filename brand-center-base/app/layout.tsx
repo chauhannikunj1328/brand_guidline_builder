@@ -5,6 +5,7 @@ import { brand } from "@/content/brand.config";
 import { MenuProvider } from "@/components/site/MenuContext";
 import Header from "@/components/site/Header";
 import MenuOverlay from "@/components/site/MenuOverlay";
+import ScrollReveal from "@/components/site/ScrollReveal";
 
 const display = Inter({ variable: "--font-display", subsets: ["latin"], weight: ["300", "400", "500", "700"] });
 const body = Inter({ variable: "--font-body", subsets: ["latin"] });
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MenuProvider>
           <Header />
           <MenuOverlay />
+          <ScrollReveal />
           {children}
         </MenuProvider>
       </body>
