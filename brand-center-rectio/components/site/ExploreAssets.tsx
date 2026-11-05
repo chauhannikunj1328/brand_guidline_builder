@@ -1,14 +1,31 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { brand } from "@/content/brand.config";
-import { Mark, Wordmark } from "@/components/Logo";
-import { AddIcon } from "@/components/ui/icons";
+import { FullLogo, Mark, Wordmark } from "@/components/Logo";
+import { AddIcon, ArrowRightIcon } from "@/components/ui/icons";
 
 /* Figma "Explore Our Assets" cards: 3-column grid, 510px tall, 16px radius, 32px medium label top-left. */
-type Key = "spark" | "wordmark" | "color" | "type" | "layout" | "brand-os" | "voice";
+type Key = "foundation" | "voice" | "spark" | "wordmark" | "color" | "type" | "layout" | "brand-os" | "lockups" | "internal";
 
 const light = "border-[1.5px] border-grey-300 bg-pampas-50 text-black";
 const cards: Record<Key, { label: string; href: string; tone: string; body: ReactNode }> = {
+  // Foundation, Lockups and Internal Resources have no Figma card: these three follow the same card style.
+  foundation: {
+    label: "Foundation", href: "/brand-foundation", tone: "bg-pampas-200 text-black",
+    body: <Mark className="absolute left-1/2 top-1/2 size-[151px] -translate-x-1/2 -translate-y-1/2 text-pampas-800" />,
+  },
+  lockups: {
+    label: "Lockups", href: "/lockups", tone: light,
+    body: <FullLogo size={72} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-pampas-600" />,
+  },
+  internal: {
+    label: "Internal Resources", href: "/internal-resources", tone: "bg-pampas-800 text-white",
+    body: (
+      <span className="absolute left-1/2 top-1/2 inline-flex -translate-x-1/2 -translate-y-1/2 items-center gap-3 whitespace-nowrap rounded-[14px] bg-white p-5 text-[1.625rem] font-medium leading-[34px] text-pampas-800">
+        Download <ArrowRightIcon className="size-10" />
+      </span>
+    ),
+  },
   spark: {
     label: brand.markShort, href: "/logo", tone: "bg-primary text-white",
     body: <Mark className="absolute left-1/2 top-1/2 size-[151px] -translate-x-1/2 -translate-y-1/2 text-white" />,
@@ -57,14 +74,14 @@ const cards: Record<Key, { label: string; href: string; tone: string; body: Reac
 };
 
 const ALL: Key[] = ["spark", "wordmark", "color", "type", "layout", "brand-os", "voice"];
-/* Inner pages end with the identity cards minus the page itself (Figma: 5 cards, no Voice, no heading).
-   Foundation, Voice, Brand OS, Lockups and Internal Resources end with NEXT_UP instead. */
-const INNER: Key[] = ["spark", "wordmark", "color", "type", "layout", "brand-os"];
-export const NEXT_UP: Key[] = ["layout", "spark"];
+/* Reading order, as in the menu. Each inner page ends with the next two pages; the end wraps round to the start. */
+const ORDER: Key[] = ["foundation", "voice", "spark", "wordmark", "color", "type", "layout", "brand-os", "lockups", "internal"];
 
-export default function ExploreAssets({ items, except, heading = "Explore our Assets" }: { items?: Key[]; except?: Key; heading?: string | null }) {
-  const keys = items ?? (except ? INNER.filter((k) => k !== except) : ALL);
-  const title = except ? null : heading;
+/** Home shows every card under a heading. With `current`, shows the next two pages. Trademarks is outside the order, so it starts from the first page. */
+export default function ExploreAssets({ current }: { current?: Key | "trademarks" }) {
+  const at = ORDER.indexOf(current as Key);
+  const keys = current ? [ORDER[(at + 1) % ORDER.length], ORDER[(at + 2) % ORDER.length]] : ALL;
+  const title = current ? null : "Explore our Assets";
   return (
     <section className="bg-grey-50 px-5 py-16 lg:px-[100px] lg:py-20">
       {title && <h2 className="t-h2 mb-12 text-grey-950">{title}</h2>}

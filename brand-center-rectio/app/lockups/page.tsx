@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { brand } from "@/content/brand.config";
 import PageShell from "@/components/site/PageShell";
 import PageHero from "@/components/site/PageHero";
-import ExploreAssets, { NEXT_UP } from "@/components/site/ExploreAssets";
+import ExploreAssets from "@/components/site/ExploreAssets";
 import { Button } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Lockups" };
@@ -10,7 +10,7 @@ const rail = [{ id: "brand-and-vendor-lockups", label: "Brand & Vendor lockups" 
 
 export default function Page() {
   return (
-    <PageShell hero={<PageHero title="Lockups" />} title="Lockups" rail={rail} after={<ExploreAssets items={NEXT_UP} heading={null} />}>
+    <PageShell hero={<PageHero title="Lockups" />} title="Lockups" rail={rail} after={<ExploreAssets current="lockups" />}>
       <section className="bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
         <div className="t-intro max-w-[836px] space-y-12">
           <p>Lockups are graphic assets that pair our {brand.name} logos with additional elements like taglines, campaign lines, or partner logos.</p>

@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { brand } from "@/content/brand.config";
 import PageShell from "@/components/site/PageShell";
 import { RowHero } from "@/components/site/PageHero";
-import ExploreAssets, { NEXT_UP } from "@/components/site/ExploreAssets";
+import ExploreAssets from "@/components/site/ExploreAssets";
 import PillTabs from "@/components/brand-os/PillTabs";
 import { Check } from "@/components/ui";
 import { AddIcon, ArrowRightIcon } from "@/components/ui/icons";
@@ -228,23 +228,28 @@ export default function Page() {
       title="Brand OS"
       rail={rail}
       hero={
-        <RowHero title="Brand OS" gap="gap-5 lg:gap-10">
-          {[
-            { label: "Add to Cart", icon: <AddIcon className="size-8 lg:size-12" />, cls: "bg-pampas-100" },
-            { label: `New at ${brand.name}`, cls: "border border-pampas-200 bg-white", search: true },
-            { label: "Now Trending", icon: <ArrowRightIcon className="size-8 lg:size-12" />, cls: "bg-pampas-100" },
-          ].map((p) => (
-            <span key={p.label} className={`flex shrink-0 items-center gap-4 whitespace-nowrap rounded-[80px] py-4 pl-6 pr-8 text-2xl text-pampas-700 lg:gap-6 lg:py-6 lg:pl-10 lg:pr-[60px] lg:text-[2.5rem] lg:leading-[48px] ${p.cls}`}>
-              {p.search && (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="size-8 lg:size-12" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-              )}
-              {p.label}
-              {p.icon}
-            </span>
-          ))}
+        <RowHero title="Brand OS">
+          {/* Endless strip: six copies of the set, so the track fills ultra-wide screens and -50% lands on an identical frame. */}
+          <div aria-hidden className="-mx-5 min-w-0 flex-1 overflow-hidden lg:-mx-[120px]">
+            <div className="marquee-track flex w-max">
+              {Array.from({ length: 6 }, (_, n) => [
+                { label: "Add to Cart", icon: <AddIcon className="size-8 lg:size-12" />, cls: "bg-pampas-100" },
+                { label: `New at ${brand.name}`, cls: "border border-pampas-200 bg-white", search: true },
+                { label: "Now Trending", icon: <ArrowRightIcon className="size-8 lg:size-12" />, cls: "bg-pampas-100" },
+              ].map((p) => (
+                <span key={`${n}-${p.label}`} className={`mr-5 flex shrink-0 lg:mr-10 items-center gap-4 whitespace-nowrap rounded-[80px] py-4 pl-6 pr-8 text-2xl text-pampas-700 lg:gap-6 lg:py-6 lg:pl-10 lg:pr-[60px] lg:text-[2.5rem] lg:leading-[48px] ${p.cls}`}>
+                  {p.search && (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="size-8 lg:size-12" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+                  )}
+                  {p.label}
+                  {p.icon}
+                </span>
+              )))}
+            </div>
+          </div>
         </RowHero>
       }
-      after={<ExploreAssets items={NEXT_UP} heading={null} />}
+      after={<ExploreAssets current="brand-os" />}
     >
       <section id="frames" className="scroll-mt-6 space-y-[60px] bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
         <h2 className="t-section text-black">Frames</h2>

@@ -57,7 +57,7 @@ const sections: { id: string; title: string; intro?: string; items: Item[] }[] =
 
 export default function Page() {
   return (
-    <PageShell hero={<PageHero title="Trademarks" />} title="Trademarks" rail={rail} after={<ExploreAssets except="layout" />}>
+    <PageShell hero={<PageHero title="Trademarks" />} title="Trademarks" rail={rail} after={<ExploreAssets current="trademarks" />}>
       <section className="bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
         <div className="t-intro max-w-[863px] space-y-12">
           <p>{N} trademarks are invaluable assets that represent customer trust and goodwill in the brand.</p>

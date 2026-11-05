@@ -72,7 +72,7 @@ export default function Page() {
           </div>
         </HeroFrame>
       }
-      after={<ExploreAssets except="wordmark" />}
+      after={<ExploreAssets current="wordmark" />}
     >
       {/* Introduction */}
       <section id="introduction" className="scroll-mt-6 bg-white px-5 py-16 lg:p-[70px]">

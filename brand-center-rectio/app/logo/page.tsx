@@ -65,7 +65,7 @@ export default function Page() {
           <div className="mt-8"><Button href={brand.downloads.all} download>Download the assets</Button></div>
         </IntroSection>
       }
-      after={<ExploreAssets except="spark" />}
+      after={<ExploreAssets current="spark" />}
     >
       {/* Spark Overview */}
       <section id="introduction" className="scroll-mt-6 flex flex-col gap-[60px] bg-white px-5 py-16 lg:flex-row lg:p-[70px]">

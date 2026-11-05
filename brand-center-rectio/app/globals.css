@@ -147,5 +147,11 @@ h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
   .forest-mask { mask-image: url(/brand/hero-mask.svg); mask-size: 1927px 1378px; mask-position: -100px 47px; }
 }
 
+/* Endless horizontal strip. Pauses on hover and stays still for people who ask for reduced motion. */
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee-track { animation: marquee var(--marquee-duration, 90s) linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

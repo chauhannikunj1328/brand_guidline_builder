@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { brand } from "@/content/brand.config";
 import PageShell from "@/components/site/PageShell";
 import PageHero from "@/components/site/PageHero";
-import ExploreAssets, { NEXT_UP } from "@/components/site/ExploreAssets";
+import ExploreAssets from "@/components/site/ExploreAssets";
 import { Button } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Internal Resources" };
@@ -15,7 +15,7 @@ const resources = [
 
 export default function Page() {
   return (
-    <PageShell hero={<PageHero title="Internal Resources" />} title="Internal Resources" rail={rail} after={<ExploreAssets items={NEXT_UP} heading={null} />}>
+    <PageShell hero={<PageHero title="Internal Resources" />} title="Internal Resources" rail={rail} after={<ExploreAssets current="internal" />}>
       <section className="bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
         <p className="t-intro max-w-[836px]">Links to templates and other resources for internal {brand.name} team members and vendors:</p>
       </section>

@@ -4,7 +4,7 @@ import type { CSSProperties, ReactNode } from "react";
 import { brand } from "@/content/brand.config";
 import PageShell from "@/components/site/PageShell";
 import { RowHero } from "@/components/site/PageHero";
-import ExploreAssets, { NEXT_UP } from "@/components/site/ExploreAssets";
+import ExploreAssets from "@/components/site/ExploreAssets";
 import { Examples, principle1Examples, principle2Examples, principle3Examples } from "@/components/voice/Examples";
 import { Check } from "@/components/ui";
 import { ArrowRightIcon } from "@/components/ui/icons";
@@ -56,8 +56,8 @@ function Num({ n, className = "border-pampas-600 text-grey-950" }: { n: number; 
 /** Principle text left, Do / Don't right (Figma: 426px + 180px gap + 238px). */
 function PrincipleIntro({ n, name, text, doText, dontText }: { n: number; name: string; text: string[]; doText: string; dontText: string }) {
   return (
-    <div className="flex flex-col gap-10 lg:flex-row lg:gap-[180px]">
-      <div className="space-y-4 lg:w-[426px] lg:shrink-0">
+    <div className="flex flex-col gap-10 xl:flex-row xl:gap-[180px]">
+      <div className="space-y-4 xl:w-[426px] xl:shrink-0">
         <h2 className="text-[2rem] leading-10 text-grey-950"><span className="block font-light">Principle {n}</span><span className="block font-medium">{name}</span></h2>
         <div className="space-y-6 text-base leading-6 text-grey-600">{text.map((t) => <p key={t}>{t}</p>)}</div>
       </div>
@@ -123,19 +123,24 @@ export default function Page() {
       rail={rail}
       hero={
         <RowHero title="Brand Voice">
-          {heroCards.map((c, i) => (
-            <div key={i} className={`relative flex h-[300px] w-[340px] shrink-0 overflow-hidden p-6 lg:h-[340px] lg:w-[507px] ${c.src ? "" : "bg-white"}`}>
-              {c.src && <div className="absolute inset-0 overflow-hidden"><Photo src={c.src} crop={c.crop} sizes="507px" /></div>}
-              {c.shade && <div className="absolute inset-0 bg-black/10" />}
-              <div className="relative flex flex-1 flex-col items-start justify-between">
-                <p className={`${c.className} ${c.text}`}>{c.title}</p>
-                <span className="inline-flex w-[122px] justify-center rounded-lg bg-primary px-2 py-3 text-base font-medium leading-6 text-white">Shop now</span>
-              </div>
+          {/* Endless strip: four copies of the set, so the track fills ultra-wide screens and -50% lands on an identical frame. */}
+          <div aria-hidden className="-mx-5 min-w-0 flex-1 overflow-hidden lg:-mx-[120px]">
+            <div className="marquee-track flex w-max [--marquee-duration:70s]">
+              {[0, 1, 2, 3].map((n) => heroCards.map((c, i) => (
+                <div key={`${n}-${i}`} className={`relative mr-4 flex h-[300px] w-[340px] shrink-0 overflow-hidden p-6 lg:h-[340px] lg:w-[507px] ${c.src ? "" : "bg-white"}`}>
+                  {c.src && <div className="absolute inset-0 overflow-hidden"><Photo src={c.src} crop={c.crop} sizes="507px" /></div>}
+                  {c.shade && <div className="absolute inset-0 bg-black/10" />}
+                  <div className="relative flex flex-1 flex-col items-start justify-between">
+                    <p className={`${c.className} ${c.text}`}>{c.title}</p>
+                    <span className="inline-flex w-[122px] justify-center rounded-lg bg-primary px-2 py-3 text-base font-medium leading-6 text-white">Shop now</span>
+                  </div>
+                </div>
+              )))}
             </div>
-          ))}
+          </div>
         </RowHero>
       }
-      after={<ExploreAssets items={NEXT_UP} heading={null} />}
+      after={<ExploreAssets current="voice" />}
     >
       <section id="voice-principles" className="scroll-mt-6 space-y-[60px] bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
         <h2 className="t-section text-black">Voice Principles</h2>

@@ -159,7 +159,7 @@ function Ruled({ lines, alt, base }: { lines: Line[]; alt: string; base: number 
 
 export function CapitalizationExamples() {
   return (
-    <div className="flex w-full flex-col gap-[60px] lg:w-[546px] lg:shrink-0">
+    <div className="flex w-full flex-col gap-[60px] min-[1400px]:w-[546px] min-[1400px]:shrink-0">
       <div className="flex flex-col gap-[18px]">
         <Ruled lines={sentence} base={546} alt="headlines are set in sentence case" />
         <CheckNote ok className="max-w-[271px] gap-2.5">Use sentence case capitalization when speaking externally to customers.</CheckNote>

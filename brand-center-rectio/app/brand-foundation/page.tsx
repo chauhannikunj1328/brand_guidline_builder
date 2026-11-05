@@ -3,7 +3,7 @@ import type { CSSProperties } from "react";
 import { brand } from "@/content/brand.config";
 import PageShell from "@/components/site/PageShell";
 import { RowHero } from "@/components/site/PageHero";
-import ExploreAssets, { NEXT_UP } from "@/components/site/ExploreAssets";
+import ExploreAssets from "@/components/site/ExploreAssets";
 import Photo from "@/components/ui/Photo";
 
 export const metadata: Metadata = { title: "Brand Foundation" };
@@ -37,14 +37,19 @@ export default function Page() {
       rail={rail}
       hero={
         <RowHero title="Brand Foundation">
-          {heroImages.map((h) => (
-            <div key={h.src} className="relative h-[220px] w-[330px] shrink-0 overflow-hidden lg:h-[340px] lg:w-[507px]">
-              <Photo src={`foundation/${h.src}`} crop={h.crop} sizes="507px" />
+          {/* Endless strip: four copies of the set, so the track fills ultra-wide screens and -50% lands on an identical frame. */}
+          <div aria-hidden className="-mx-5 min-w-0 flex-1 overflow-hidden lg:-mx-[120px]">
+            <div className="marquee-track flex w-max">
+              {[0, 1, 2, 3].map((n) => heroImages.map((h) => (
+                <div key={`${n}-${h.src}`} className="relative mr-4 h-[220px] w-[330px] shrink-0 overflow-hidden lg:h-[340px] lg:w-[507px]">
+                  <Photo src={`foundation/${h.src}`} crop={h.crop} sizes="507px" />
+                </div>
+              )))}
             </div>
-          ))}
+          </div>
         </RowHero>
       }
-      after={<ExploreAssets items={NEXT_UP} heading={null} />}
+      after={<ExploreAssets current="foundation" />}
     >
       <section id="brand-foundation" className="scroll-mt-6 space-y-[60px] bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
         <h2 className="t-section text-black">Brand Foundation</h2>
