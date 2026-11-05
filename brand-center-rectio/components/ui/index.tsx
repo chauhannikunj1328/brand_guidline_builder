@@ -89,7 +89,7 @@ export function Split({ left, right, align = "center", className = "" }: { left:
 /** Figma "Button": 8px radius, 12px padding, 16/24 medium. `arrow` adds the Arrow - Right icon. */
 export function Button({ href, children, variant = "primary", size = "md", download = false, arrow = false }: { href: string; children: ReactNode; variant?: "primary" | "outline" | "mid" | "white-outline"; size?: "sm" | "md"; download?: boolean; arrow?: boolean }) {
   const v = {
-    primary: "bg-primary text-white hover:bg-pampas-700",
+    primary: "bg-pampas-700 text-white hover:bg-pampas-800",
     mid: "bg-mid text-ink",
     outline: "border border-current text-ink",
     "white-outline": "border border-pampas-200 text-pampas-50",
