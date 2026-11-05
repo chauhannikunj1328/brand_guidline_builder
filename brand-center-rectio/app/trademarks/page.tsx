@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { brand } from "@/content/brand.config";
 import PageShell from "@/components/site/PageShell";
 import PageHero from "@/components/site/PageHero";
-import { Col, H3, Lead, P } from "@/components/ui";
+import ExploreAssets from "@/components/site/ExploreAssets";
 
 export const metadata: Metadata = { title: "Trademarks" };
 const N = brand.name;
@@ -28,7 +28,7 @@ const sections: { id: string; title: string; intro?: string; items: Item[] }[] =
     { text: `Only use ${N} Word Marks in text as adjectives accompanied by an appropriate generic noun that refers to the relevant product or service, except when it is appropriate to use a Word Mark as a noun to refer to the company itself.` },
     { dont: true, text: `Use any ${N} trademark as a verb, adverb, or in a manner that suggests they have a common, descriptive, or generic meaning.` },
   ] },
-  { id: "logos-designs", title: "Logos & Designs", intro: `Some ${N} trademarks feature stylisation (including a particular font, typeface, or color) or include a device, design, or other image (all collectively "Logos" and each a "Logo"). ${N} Logos may only be used with ${N}'s prior written consent.`, items: [
+  { id: "logos-designs", title: "Logos & Designs", intro: `Some ${N} trademarks feature stylization (including a particular font, typeface, or color) or include a device, design, or other image (all collectively “Logos” and each a “Logo”). ${N} may own both trademark rights and copyright rights in its Logos. These Logos may only be used subject to the following guidelines.`, items: [
     { dont: true, text: `Use ${N}'s Logos without ${N}'s prior written consent.` },
     { dont: true, text: "Use the Logos on a background color into which they blend, in whole or in part." },
     { dont: true, text: "Use the Logos within enclosing text or in the middle of a phrase or sentence." },
@@ -44,35 +44,44 @@ const sections: { id: string; title: string; intro?: string; items: Item[] }[] =
     { text: `Always include a footnote stating that any ${N} trademarks you use, listed in alphabetical order, are "trademarks of ${brand.legalName} and its affiliates" or include that information in another notice.` },
     { text: `Always include a footnote stating that any ${N} Logos are "© 2xxx ${brand.legalName}" (where the "2xxx" year is as may be indicated by ${N}) or include that information in another notice.` },
   ] },
-  { id: "vendor-advertising", title: "Vendor Advertising", intro: `${N} considers requests to use certain Logos as "vendor tags," which relate to the availability of products or services from ${N}, in third party advertisements through its Vendor Tagged Advertising programme.`, items: [
+  { id: "vendor-advertising", title: "Vendor Advertising", intro: `${N} considers requests to use certain Logos as “vendor tags,” which relate to the availability of products or services from ${N}, in third party advertisements through its Vendor Tagged Advertising process. The details of this process are explained in the “Vendor advertising” section of this guide.`, items: [
     { dont: true, text: `Use any ${N} Logos in advertisements without prior written approval.` },
   ] },
-  { id: "search-placement", title: "Search Placement & Content Targeting", intro: `Third parties may not purchase or bid on ${N} trademarks as keywords, ad groups, or targeting criteria in search engines, social media, or other advertising platforms without ${N}'s prior written consent.`, items: [
-    { dont: true, text: `Use ${N} trademarks in the visible text, display URL, or landing page of any advertisement without prior written approval.` },
+  { id: "search-placement", title: "Search Placement & Content Targeting", intro: `${N} considers requests to use its trademarks in connection with the Google AdWords advertising service, or in connection with any other search placement, content targeting, or other advertising placement services, through its Vendor Tagged Advertising process. The details of this process are explained in the “Vendor advertising” section of this guide.`, items: [
+    { dont: true, text: `Use any ${N} trademarks in any search placement, content targeting, or other advertising placement services without prior written approval.` },
   ] },
-  { id: "permission", title: "Requesting Permission To Use", intro: `To request permission to use ${N}'s trademarks, please contact ${brand.contactTeam} at ${brand.contactEmail} with a description of the intended use, the medium, the duration, and sample artwork.`, items: [] },
+  { id: "permission", title: "Requesting Permission To Use", intro: `${N} considers requests to use its trademarks in connection with the Google AdWords advertising service, or in connection with any other search placement, content targeting, or other advertising placement services, through its Vendor Tagged Advertising process. The details of this process are explained in the “Vendor advertising” section of this guide.`, items: [
+    { text: `Requests to use ${N} trademarks in a manner that is not addressed by this form should be directed to an appropriate ${N} business contact.` },
+  ] },
 ];
 
 export default function Page() {
   return (
-    <PageShell hero={<PageHero title="Trademarks" />} title="Trademarks" rail={rail}>
-      <Col className="pt-[130px] pb-[120px]">
-        <Lead className="space-y-4"><p>{N}&apos;s trademarks are invaluable assets that represent customer trust and goodwill in the brand.</p><p>{N} has the exclusive right to use — and authorise the use of — these names, logos, and other signifiers that distinguish its goods, services, and business activities.</p></Lead>
-      </Col>
+    <PageShell hero={<PageHero title="Trademarks" />} title="Trademarks" rail={rail} after={<ExploreAssets except="layout" />}>
+      <section className="bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
+        <div className="t-intro max-w-[863px] space-y-12">
+          <p>{N} trademarks are invaluable assets that represent customer trust and goodwill in the brand.</p>
+          <p>{N} has the exclusive right to use — and authorize the use of — these names, logos, and other signifiers that distinguish its goods, services, and business activities.</p>
+        </div>
+      </section>
       {sections.map((s) => (
-        <Col key={s.id} id={s.id} className="pb-20">
-          <H3>{s.title}</H3>
-          {s.intro && <P size="small" className="mt-6 max-w-[720px]">{s.intro}</P>}
-          <div className="mt-8 max-w-[720px] space-y-8">
-            {s.items.map((it, i) => (
-              <div key={i}>
-                {it.dont && <p className="t-xs font-bold">Don&apos;t</p>}
-                <P size="xs" className="mt-2">{it.text}</P>
-                {it.sub && <ol className="t-xs mt-3 space-y-2">{it.sub.map((x, k) => <li key={x}>({String.fromCharCode(97 + k)})&nbsp;&nbsp;&nbsp;{x}</li>)}</ol>}
-              </div>
-            ))}
+        <section key={s.id} id={s.id} className="scroll-mt-6 bg-white px-5 py-20 lg:px-[70px]">
+          <div className="space-y-8">
+            <div className="space-y-4 text-grey-950">
+              <h2 className="text-[2rem] font-medium leading-10">{s.title}</h2>
+              {s.intro && <p className="text-lg leading-6">{s.intro}</p>}
+            </div>
+            <div className="space-y-6 text-base leading-6">
+              {s.items.map((it, i) => (
+                <div key={i} className="space-y-3">
+                  {it.dont && <p className="font-[family-name:var(--font-secondary)] font-medium text-grey-950">Don&apos;t</p>}
+                  <p className="text-grey-700">{it.text}</p>
+                  {it.sub && <ol className="space-y-1 text-grey-700">{it.sub.map((x, k) => <li key={x}>({String.fromCharCode(97 + k)}) {x}</li>)}</ol>}
+                </div>
+              ))}
+            </div>
           </div>
-        </Col>
+        </section>
       ))}
     </PageShell>
   );

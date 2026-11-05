@@ -6,30 +6,19 @@ import { Mark } from "@/components/Logo";
 import { AddIcon, EqualIcon } from "@/components/ui/icons";
 
 /* Figma "Spark Notes" card: Pampas panel with Evolution / Construction / Clear Space tabs.
-   Only Evolution is designed in Figma; the other two reuse its layout with placeholder copy. */
-const TABS: { label: string; text: string; visual: ReactNode }[] = [
+   All three Figma frames share the same artwork and formula row; only the copy changes. */
+const TABS: { label: string; text: string }[] = [
   {
     label: "Evolution",
     text: "The original Spark has been refreshed and redrawn with organic curves that feel approachable and less rigid.",
-    visual: (
-      <div className="flex items-end gap-3 text-pampas-100">
-        <Part label="Circle Infinity"><Image src="/brand/spark-circle-infinity.svg" alt="" width={64} height={64} /></Part>
-        <AddIcon className="mb-8 size-8" />
-        <Part label="Diamond Precision"><span className="block size-12 rotate-45 rounded-lg bg-white" /></Part>
-        <EqualIcon className="mb-8" />
-        <Part label="Logo Mark"><Mark className="size-16 text-white" /></Part>
-      </div>
-    ),
   },
   {
     label: "Construction",
-    text: "PLACEHOLDER — describe the grid the Spark is built on and how each sparklet relates to the others.",
-    visual: null,
+    text: "The Spark is built from two simple forms. A circle of sparklets brings a sense of infinity, and a diamond at its center brings precision. Together they make our Logo Mark.",
   },
   {
     label: "Clear Space",
-    text: "PLACEHOLDER — keep a minimum clear space around the Spark so nothing crowds it.",
-    visual: null,
+    text: "Keep a minimum clear space equal to half the height of the Spark on all sides. Nothing else should enter this zone, so the Spark always stands out clearly.",
   },
 ];
 
@@ -70,7 +59,13 @@ export default function SparkNotes() {
         </div>
         <div className="flex flex-col items-center gap-[30px]">
           <span className="flex size-[260px] items-center justify-center lg:size-[342px]"><Mark className="size-[86%] text-white" /></span>
-          {tab.visual}
+          <div className="flex items-end gap-3 text-pampas-100">
+            <Part label="Circle Infinity"><Image src="/brand/spark-circle-infinity.svg" alt="" width={64} height={64} /></Part>
+            <AddIcon className="mb-8 size-8" />
+            <Part label="Diamond Precision"><span className="block size-12 rotate-45 rounded-lg bg-white" /></Part>
+            <EqualIcon className="mb-8" />
+            <Part label="Logo Mark"><Mark className="size-16 text-white" /></Part>
+          </div>
         </div>
       </div>
     </div>

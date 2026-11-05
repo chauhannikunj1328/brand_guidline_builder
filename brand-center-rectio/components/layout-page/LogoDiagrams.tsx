@@ -103,7 +103,7 @@ const lightTile = "relative flex h-[330px] w-full items-start overflow-hidden bo
 
 export function PlacementTiles() {
   return (
-    <div className="flex flex-wrap justify-center gap-4 sm:justify-start">
+    <div className="flex flex-wrap justify-center gap-4 sm:justify-start xl:flex-nowrap xl:justify-between xl:gap-0">
       <TileColumn label="Primary" caption={<Numbered n={1}>Left-aligned Diagonal</Numbered>}>
         <div className={lightTile}>
           <div className="relative flex h-full flex-1 flex-col items-end justify-between overflow-hidden">
@@ -168,7 +168,7 @@ const dontCaption = "text-[10px] leading-3";
 
 export function DontTiles() {
   return (
-    <div className="flex flex-wrap justify-center gap-4 sm:justify-start">
+    <div className="flex flex-wrap justify-center gap-4 sm:justify-start xl:flex-nowrap xl:justify-between xl:gap-0">
       <TileColumn label="Primary" caption={<Verdict ok={false} className={dontCaption}>Don&apos;t align our wordmark to the right edge of a layout.</Verdict>}>
         <div className={darkTile}>
           <div className="flex h-full flex-1 flex-col items-end justify-between overflow-hidden">
