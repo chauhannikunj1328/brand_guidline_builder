@@ -5,6 +5,7 @@ All notable changes to the Rectio brand. Versions follow `tokens.json`.
 ## [2.1.0] — 2026-11-06
 ### Added
 - Font files for Geist, Geist Mono and Space Grotesk, with their licenses, in the assets and the download zip.
+- Section reveal motion pattern for the brand center.
 
 ### Fixed
 - Typo in a Brand OS Tiles example ("onn groceries").
