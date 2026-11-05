@@ -56,7 +56,7 @@ export default function Page() {
         <p className="t-intro max-w-[836px]">This section is the bedrock of our brand, outlining our purpose, positioning, and principles. It guides us in all the ways {brand.name} comes to life: how we look, what we stand for, and how we act in the world.</p>
       </section>
 
-      <section id="brand-purpose" className={`scroll-mt-6 space-y-[50px] bg-primary px-5 py-16 text-white lg:p-[70px] ${sg}`}>
+      <section id="brand-purpose" className={`scroll-mt-6 space-y-[50px] bg-pampas-700 px-5 py-16 text-white lg:p-[70px] ${sg}`}>
         <div className="text-[1.75rem] leading-9 lg:text-[2.5rem] lg:leading-[48px]">
           <h2 className="font-medium">Brand Purpose</h2>
           <p className="font-light">Guides the enterprise</p>

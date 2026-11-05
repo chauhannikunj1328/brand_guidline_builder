@@ -106,7 +106,7 @@ export default function Page() {
 
       {/* Clearspace */}
       <section id="clearspace" className="scroll-mt-6 bg-pampas-100 px-4 pb-16 pt-4 lg:px-[30px] lg:pb-[70px] lg:pt-[30px]">
-        <div className="flex flex-col gap-[60px] overflow-hidden rounded-3xl bg-pampas-600 p-8 text-white lg:p-[100px]">
+        <div className="flex flex-col gap-[60px] overflow-hidden rounded-3xl bg-pampas-700 p-8 text-white lg:p-[100px]">
           <div className="space-y-4 font-medium">
             <h2 className="text-[2.5rem] leading-[48px]">Clearspace</h2>
             <div className="max-w-[629px] space-y-5 text-xl leading-7">
@@ -131,7 +131,7 @@ export default function Page() {
           <div className="grid gap-5 md:grid-cols-2">
             {[
               { bg: "border border-grey-400", wm: "text-primary", label: "Pampas on White", text: "text-black" },
-              { bg: "bg-primary", wm: "text-white", label: "White on Pampas", text: "text-white" },
+              { bg: "bg-primary", wm: "text-white", label: "White on Pampas", text: "text-black" },
             ].map((c) => (
               <div key={c.label} className={`flex h-[306px] flex-col gap-5 rounded-xl p-5 ${c.bg}`}>
                 <div className="flex min-h-0 flex-1 items-center justify-center overflow-hidden"><Wordmark className={`text-[5rem] lg:text-[6.75rem] ${c.wm}`} /></div>

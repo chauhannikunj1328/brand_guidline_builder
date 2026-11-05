@@ -35,7 +35,7 @@ export default function SparkNotes() {
   const [i, setI] = useState(0);
   const tab = TABS[i];
   return (
-    <div className="flex flex-col gap-10 overflow-hidden rounded-[var(--radius-card)] bg-primary p-6 text-white lg:p-10">
+    <div className="flex flex-col gap-10 overflow-hidden rounded-[var(--radius-card)] bg-pampas-700 p-6 text-white lg:p-10">
       <div role="tablist" className="flex flex-wrap gap-2">
         {TABS.map((t, idx) => (
           <button

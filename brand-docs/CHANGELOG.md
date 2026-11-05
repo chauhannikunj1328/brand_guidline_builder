@@ -6,6 +6,7 @@ All notable changes to the Rectio brand. Versions follow `tokens.json`.
 ### Fixed
 - Primary buttons move from Pampas 500 to Pampas 700 (5.8:1), with Pampas 800 on hover. This differs from the Figma, which uses Pampas 500.
 - Color page accessibility samples and wording now match measured contrast. White on Pampas 500 passes AA for large text only.
+- Panels with small white text move to Pampas 700. Colour samples that must show Pampas 500 use Black text. These differ from the Figma.
 - Removed the `action.primary` contrast waiver. The `bg.brand` waiver stays, limited to logos and large text.
 
 ## [2.0.0] — 2026-11-06
