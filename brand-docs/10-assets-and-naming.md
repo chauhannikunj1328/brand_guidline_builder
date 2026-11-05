@@ -9,7 +9,8 @@ brand-assets/rectio/
                     rectio-wordmark-*.svg · rectio-lockup-h-*.svg (same colourways)
     png/            same names, @1x @2x @3x (e.g. rectio-mark-primary-pampas@2x.png)
     app-icons/      ios-1024.png · android-foreground.png · android-background.png · favicon.ico · apple-touch-icon.png
-  fonts/            Geist-*.ttf · SpaceGrotesk-*.ttf · *.woff2 for web
+  fonts/            Geist-Variable · GeistMono-Variable (.woff2, .ttf) · SpaceGrotesk-Latin · SpaceGrotesk-LatinExt (.woff2)
+  licenses/         ofl-geist.txt · ofl-space-grotesk.txt (SIL Open Font License, keep with the fonts)
   icons/            svg/ (24-grid, currentColor)
   imagery/          photo/ · illustration/  (see 06)
   templates/        slides/ · docs/ · social/ · email/

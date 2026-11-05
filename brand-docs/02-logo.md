@@ -28,7 +28,7 @@ Spark: clear space = **half the height of the Spark** on all sides. Wordmark: cl
 | Wordmark, standard | 24 px height | 0.25 in height |
 | Wordmark, small use | 14 px height | 0.15 in height |
 
-The small-use wordmark is drawn for small sizes and is not interchangeable with the standard one.
+No separate small-use wordmark is drawn yet: in the Figma it is the standard artwork scaled down. Use the standard file down to 14 px until one exists.
 
 ## Platform-specific
 | Platform | Asset | Spec |
