@@ -7,7 +7,7 @@
 | Secondary (display titles, captions) | **Space Grotesk** | 300 · 400 · 500 · 700 | system-ui, sans-serif |
 | Mono (code, data) | Geist Mono | 400 · 500 | ui-monospace |
 
-The Figma sets Geist and Space Grotesk. It sets no mono face; Geist Mono is chosen here to match.
+The Figma sets Geist and Space Grotesk. It sets no mono face; Geist Mono is chosen here to match. All three use the SIL Open Font License. Space Grotesk is supplied as web fonts only, so mobile apps need its `.ttf` added.
 
 Platform loading: web → `next/font` (self-hosted); iOS → bundle `.ttf`, register in `Info.plist`; Android → `res/font/`. Never load from a third-party CDN in production apps.
 

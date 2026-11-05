@@ -2,6 +2,14 @@
 
 All notable changes to the Rectio brand. Versions follow `tokens.json`.
 
+## [2.1.0] — 2026-11-06
+### Added
+- Font files for Geist, Geist Mono and Space Grotesk, with their licenses, in the assets and the download zip.
+
+### Fixed
+- Typo in a Brand OS Tiles example ("onn groceries").
+- Logo guide no longer describes a separate small-use wordmark, which doesn't exist in the Figma.
+
 ## [2.0.1] — 2026-11-06
 ### Fixed
 - Primary buttons move from Pampas 500 to Pampas 700 (5.8:1), with Pampas 800 on hover. This differs from the Figma, which uses Pampas 500.
