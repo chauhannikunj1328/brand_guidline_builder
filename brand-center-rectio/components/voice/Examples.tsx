@@ -10,7 +10,7 @@ import Photo from "@/components/ui/Photo";
 const SIZES = "(min-width: 1024px) 323px, 100vw";
 
 const Cta = ({ children }: { children: ReactNode }) => (
-  <span className="inline-flex items-center justify-center rounded-lg bg-primary px-2 py-1.5 text-sm font-medium leading-5 text-white">{children}</span>
+  <span className="inline-flex items-center justify-center rounded-lg bg-pampas-700 px-2 py-1.5 text-sm font-medium leading-5 text-white">{children}</span>
 );
 
 const Search = ({ children, className = "" }: { children: ReactNode; className?: string }) => (

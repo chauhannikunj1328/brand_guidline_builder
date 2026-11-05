@@ -16,8 +16,8 @@ Values come from the Figma variables in "Rectio | Full Project Design".
 | `pampas-400` | `#B59A82` | 181 154 130 | Decorative |
 | `pampas-500` | `#A5846A` | 165 132 106 | **Primary brand colour** |
 | `pampas-600` | `#98745E` | 152 116 94 | Bands, large text backgrounds |
-| `pampas-700` | `#7F5E4F` | 127 94 79 | Links, focus ring, button hover |
-| `pampas-800` | `#684E44` | 104 78 68 | Accent |
+| `pampas-700` | `#7F5E4F` | 127 94 79 | Buttons, links, focus ring |
+| `pampas-800` | `#684E44` | 104 78 68 | Accent, button hover |
 | `pampas-900` | `#554139` | 85 65 57 | Dark surfaces |
 | `pampas-950` | `#2D211D` | 45 33 29 | Dark Pampas: small-scale logo, darkest surface |
 
@@ -59,8 +59,8 @@ The Figma defines a light look only. The dark column is derived from the Pampas 
 | `text/on-brand` | white | white |
 | `text/link` | pampas-700 | pampas-300 |
 | `border/default` | grey-200 | pampas-800 |
-| `action/primary` | pampas-500 | pampas-700 |
-| `action/primary-hover` | pampas-700 | pampas-800 |
+| `action/primary` | pampas-700 | pampas-700 |
+| `action/primary-hover` | pampas-800 | pampas-800 |
 | `action/accent` | pampas-800 | pampas-300 |
 | `focus/ring` | pampas-700 | pampas-300 |
 
@@ -92,7 +92,7 @@ Ratios are measured by `npm run contrast` and this table.
 
 **Rule:** body text must be AAA (7 : 1). UI labels and large text may be AA (4.5 : 1, or 3 : 1 at 24 px and up, or 18.66 px bold).
 
-**Open waiver:** white on Pampas 500 is the core colourway in the Figma, including button labels. At 3.4 : 1 it does not meet 4.5 : 1 for small text, so it is recorded in `contrastWaivers` in `rectio.config.json`, pending a design decision.
+**Waiver:** white on Pampas 500 is the core colourway in the Figma. At 3.4 : 1 it does not meet 4.5 : 1 for normal text, so it is recorded in `contrastWaivers` in `rectio.config.json` and limited to logos and large text. Buttons use Pampas 700 (5.8 : 1), which differs from the Figma.
 
 ## Usage ratios
 Roughly **60% white and light neutrals, 30% Pampas, 10% Grey 950 and Dark Pampas**.

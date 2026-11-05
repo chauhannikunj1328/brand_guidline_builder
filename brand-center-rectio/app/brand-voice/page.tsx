@@ -132,7 +132,7 @@ export default function Page() {
                   {c.shade && <div className="absolute inset-0 bg-black/10" />}
                   <div className="relative flex flex-1 flex-col items-start justify-between">
                     <p className={`${c.className} ${c.text}`}>{c.title}</p>
-                    <span className="inline-flex w-[122px] justify-center rounded-lg bg-primary px-2 py-3 text-base font-medium leading-6 text-white">Shop now</span>
+                    <span className="inline-flex w-[122px] justify-center rounded-lg bg-pampas-700 px-2 py-3 text-base font-medium leading-6 text-white">Shop now</span>
                   </div>
                 </div>
               )))}

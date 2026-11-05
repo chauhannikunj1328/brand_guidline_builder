@@ -96,8 +96,8 @@
   --text-on-brand: var(--color-white);
   --text-link: var(--color-pampas-700);
   --border-default: var(--color-grey-200);
-  --action-primary: var(--color-pampas-500);
-  --action-primary-hover: var(--color-pampas-700);
+  --action-primary: var(--color-pampas-700);
+  --action-primary-hover: var(--color-pampas-800);
   --action-accent: var(--color-pampas-800);
   --focus-ring: var(--color-pampas-700);
 }

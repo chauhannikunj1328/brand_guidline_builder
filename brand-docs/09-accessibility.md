@@ -6,7 +6,7 @@
 - Body text ≥ 7 : 1 (AAA). Large text and UI labels ≥ 4.5 : 1. Non-text UI (borders, icons) ≥ 3 : 1.
 - Never convey meaning with colour alone — pair with icon, label or pattern.
 - Pampas 500 is never used for small text on light backgrounds (3.4 : 1). Use Pampas 700 for links.
-- White on Pampas 500 is limited to large text and logos. Small button labels are an open waiver (see `03-color.md`).
+- White on Pampas 500 is limited to large text and logos (see `03-color.md`). Buttons use Pampas 700.
 - Provide a dark theme; test both with the contrast table in `03-color.md`.
 
 ## Typography

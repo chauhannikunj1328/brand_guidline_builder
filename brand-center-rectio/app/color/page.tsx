@@ -65,13 +65,13 @@ function Half({ cls, hex }: { cls: string; hex: string }) {
 }
 
 /** Accessibility sample: two-colour box with "Large Text" / "Normal Text", checks on the left. */
-function A11yRow({ left, right, ok = [true, true] }: { left: string; right: string; ok?: [boolean, boolean] }) {
+function A11yRow({ left, right, ok = [true, true] }: { left: [string, string]; right: [string, string]; ok?: [boolean, boolean] }) {
   return (
     <div className="flex gap-2.5">
       <div className="flex w-7 shrink-0 flex-col gap-[29px] pt-[45px]"><Check ok={ok[0]} /><Check ok={ok[1]} /></div>
       <div className="flex h-[142px] flex-1 overflow-hidden rounded-xl border border-primary">
-        <Half cls={left} hex="#FFFFFF" />
-        <Half cls={right} hex="#A5846A" />
+        <Half cls={left[0]} hex={left[1]} />
+        <Half cls={right[0]} hex={right[1]} />
       </div>
     </div>
   );
@@ -164,20 +164,20 @@ export default function Page() {
           <div className="space-y-6 text-xl leading-7 text-grey-600">
             <p>The Web Content Accessibility Guidelines (WCAG) are standards that help make the internet accessible to everyone, including people with disabilities. With color, they tell us the amount of visual contrast required between a piece of text and the background to maintain legibility for users with visual impairments.</p>
             <p>When picking colors for web, we aim to comply with WCAG 2.0 standards for both large and normal text sizes. Large text is 14pt (18.66px) when set in a bold weight, or 18pt (24px) when set in a lighter weight. Any text beneath these sizes is considered normal text.</p>
-            <p>We always want to achieve a AAA rating, which is the highest possible compliance level (noted in green). Pampas text is not AA compliant at small sizes and should be avoided.</p>
+            <p>AA is our minimum, and we aim for AAA, the highest level, wherever we can. White and Pampas reach 3.4:1 together, which passes AA for large text only. Don’t use either one for normal text on the other.</p>
           </div>
         </div>
         <div className="flex flex-1 flex-col gap-[70px] p-5">
           <div className="space-y-10">
             <p className="font-[family-name:var(--font-secondary)] text-lg font-medium leading-6 text-pampas-950">Fully compliant</p>
             <div className="space-y-6">
-              <A11yRow left="bg-white text-pampas-900" right="bg-primary text-white" />
-              <A11yRow left="bg-black text-white" right="bg-primary text-white" />
+              <A11yRow left={["bg-white text-pampas-900", "#FFFFFF"]} right={["bg-primary text-black", "#A5846A"]} />
+              <A11yRow left={["bg-black text-white", "#000000"]} right={["bg-pampas-900 text-white", "#554139"]} />
             </div>
           </div>
           <div className="space-y-5">
             <p className="font-[family-name:var(--font-secondary)] text-lg font-medium leading-6 text-pampas-950">Partially compliant</p>
-            <A11yRow left="bg-white text-primary" right="bg-primary text-white" ok={[true, false]} />
+            <A11yRow left={["bg-white text-primary", "#FFFFFF"]} right={["bg-primary text-white", "#A5846A"]} ok={[true, false]} />
           </div>
         </div>
       </section>

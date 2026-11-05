@@ -9,8 +9,7 @@
       "assets": "brand-assets/rectio",
       "site": "brand-center-rectio",
       "contrastWaivers": {
-        "light: text.on-brand on bg.brand": "3.44:1. White on Pampas 500 is the core colourway in the Figma (Final Design). It passes 3:1 for large text and UI parts, not 4.5:1 for body text. Use only at 24px+ or 18.66px bold until the design decision is made.",
-        "light: text.on-brand on action.primary": "3.44:1. White on Pampas 500 is the core colourway in the Figma (Final Design). It passes 3:1 for large text and UI parts, not 4.5:1 for body text. Use only at 24px+ or 18.66px bold until the design decision is made."
+        "light: text.on-brand on bg.brand": "3.44:1. White on Pampas 500 is the core colourway in the Figma (Final Design). It passes 3:1 for large text and UI parts, not 4.5:1 for normal text. Limit it to logos and text at 24px+ or 18.66px bold. Buttons use Pampas 700."
       }
     },
     "base": {
