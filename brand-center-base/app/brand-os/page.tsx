@@ -37,14 +37,13 @@ const Blk = ({ cls }: { cls: string }) => <span className={`absolute rounded-lg 
 
 export default function Page() {
   return (
-    <PageShell title="Brand OS" rail={rail} after={<PrevNext prev={links.layout} next={links.logo} />}>
-      <PageHero title="Brand OS">
+    <PageShell hero={<PageHero title="Brand OS">
         <div className="flex items-center justify-center gap-12 overflow-hidden whitespace-nowrap">
           <span className="flex h-[150px] items-center gap-8 rounded-full bg-mid px-12 text-[3rem] text-ink">cart <span className="text-[3.5rem] font-light">+</span></span>
           <span className="flex h-[150px] items-center gap-8 rounded-full bg-white px-14 text-[3rem] text-ink"><svg viewBox="0 0 20 20" className="h-12 w-12" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="9" cy="9" r="6" /><path d="M14 14l4 4" /></svg>New at {brand.name}</span>
           <span className="flex h-[150px] items-center gap-8 rounded-full bg-mid px-14 text-[3rem] text-ink">Now trending</span>
         </div>
-      </PageHero>
+      </PageHero>} title="Brand OS" rail={rail} after={<PrevNext prev={links.layout} next={links.logo} />}>
 
       <Col id="frames" className="pt-[150px] pb-[150px]">
         <H3>Frames</H3>

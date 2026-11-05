@@ -85,12 +85,15 @@ export default function Page() {
       footerLabel="Download the assets"
       hero={
         <PageHero title="Color">
-          <div className="flex justify-center gap-4 lg:-mx-[120px]">
-            {heroSwatches.map((c) => <span key={c} className={`size-[160px] shrink-0 rounded-3xl lg:size-[260px] ${c}`} />)}
+          {/* Endless strip: six copies of the set, so the track fills ultra-wide screens and -50% lands on an identical frame. */}
+          <div aria-hidden className="-mx-5 overflow-hidden lg:-mx-[120px]">
+            <div className="marquee-track flex w-max">
+              {Array.from({ length: 6 }, (_, n) => heroSwatches.map((c) => <span key={`${n}-${c}`} className={`mr-4 size-[160px] shrink-0 rounded-3xl lg:size-[260px] ${c}`} />))}
+            </div>
           </div>
         </PageHero>
       }
-      after={<ExploreAssets except="color" />}
+      after={<ExploreAssets current="color" />}
     >
       <section id="introduction" className="scroll-mt-6 bg-white px-5 py-16 lg:p-[70px]">
         <p className="max-w-[863px] text-[2.5rem] leading-[48px] text-grey-950">Our color palette provides distinctiveness and differentiation through the consistent use of {brand.name}’s most iconic and recognizable colors: Pampas and White.</p>

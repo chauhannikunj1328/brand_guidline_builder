@@ -55,8 +55,7 @@ const sections: { id: string; title: string; intro?: string; items: Item[] }[] =
 
 export default function Page() {
   return (
-    <PageShell title="Trademarks" rail={rail}>
-      <PageHero title="Trademarks" />
+    <PageShell hero={<PageHero title="Trademarks" />} title="Trademarks" rail={rail}>
       <Col className="pt-[130px] pb-[120px]">
         <Lead className="space-y-4"><p>{N}&apos;s trademarks are invaluable assets that represent customer trust and goodwill in the brand.</p><p>{N} has the exclusive right to use — and authorise the use of — these names, logos, and other signifiers that distinguish its goods, services, and business activities.</p></Lead>
       </Col>

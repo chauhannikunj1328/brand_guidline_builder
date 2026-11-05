@@ -3,39 +3,41 @@
 ## Elements
 | Element | Use | File |
 | --- | --- | --- |
-| **Mark** | App icons, favicons, small spaces, social avatars | `logo/rectio-mark-*.svg` |
-| **Wordmark** | Headers, documents, signage, anywhere the name must be read | `logo/rectio-wordmark-*.svg` |
-| **Lockup — horizontal** | Wide formats (web header, email, letterhead) | `logo/rectio-lockup-h-*.svg` |
-| **Lockup — stacked** | Square/tall formats (splash screens, badges) | `logo/rectio-lockup-v-*.svg` |
+| **The Spark** (mark) | App icons, favicons, small spaces, social avatars | `logo/svg/rectio-mark-*.svg` |
+| **Small-use Spark** | Below 48 px. A separate drawing, not a scaled copy | `logo/svg/rectio-mark-mono-small.svg` |
+| **Wordmark** | Headers, documents, signage, anywhere the name must be read | `logo/svg/rectio-wordmark-*.svg` |
+| **Lockup, horizontal** | Wide formats (web header, email, letterhead) | `logo/svg/rectio-lockup-h-*.svg` |
 
-The mark and wordmark may share a composition but are **never placed side by side** except in the supplied lockups.
+Lockup spacing: gap = 26% of the Spark's height, wordmark height = 48% of the Spark's height. The Spark and wordmark are **never placed side by side** except in the supplied lockup. A stacked lockup is not drawn yet.
 
 ## Colourways
-| Name | Mark | Wordmark | Background |
-| --- | --- | --- | --- |
-| Primary | Signal Coral `#FF6B4A` | Rectio Indigo `#4338CA` | White / light |
-| Reverse | Signal Coral | White | Indigo / Midnight / photo |
-| Mono light | White | White | Dark backgrounds where coral clashes |
-| Mono dark | Midnight `#111C44` | Midnight | Print in one colour |
+| Name | Logo | Background |
+| --- | --- | --- |
+| Primary | Pampas 500 `#A5846A` | White |
+| Reverse | White | Pampas 500 |
+| Small-scale | Dark Pampas (Pampas 950 `#2D211D`) | Light Pampas (Pampas 200), for maximum contrast and legibility |
+| Mono | Black or White | One-colour print, or backgrounds where Pampas clashes |
 
 ## Clearspace
-Minimum clear space = **½ the mark's height** (`x/2`) on all sides. For the wordmark, clear space = cap height.
+Spark: clear space = **half the height of the Spark** on all sides. Wordmark: clear space = **half the height of the letter "R"**.
 
 ## Minimum sizes
 | Element | Digital | Print |
 | --- | --- | --- |
-| Mark | 16 px height | 6 mm (0.25 in) |
-| Wordmark | 80 px width | 25 mm (1 in) |
-| Lockup | 120 px width | 35 mm |
+| Spark | 16 px height | 0.25 in height |
+| Wordmark, standard | 24 px height | 0.25 in height |
+| Wordmark, small use | 14 px height | 0.15 in height |
+
+The small-use wordmark is drawn for small sizes and is not interchangeable with the standard one.
 
 ## Platform-specific
 | Platform | Asset | Spec |
 | --- | --- | --- |
-| Favicon | mark on indigo | 32/48/180 px, `favicon.ico` + `apple-touch-icon.png` |
-| iOS app icon | mark on indigo, no rounded corners in file (iOS masks) | 1024 × 1024 PNG |
-| Android adaptive icon | mark as foreground, indigo background layer | 108 dp canvas, 72 dp safe zone |
-| Splash screen | stacked lockup, reverse colourway | centred, ≤ 40% viewport width |
-| Social avatar | mark on indigo | 400 × 400 PNG, mark at 50% |
+| Favicon | white small-use Spark on Pampas 500 | 16/32 px, full Spark at 48 px, `favicon.ico` + `apple-touch-icon.png` (180 px) |
+| iOS app icon | white Spark on Pampas 500, no rounded corners in file (iOS masks) | 1024 × 1024 PNG |
+| Android adaptive icon | white Spark as foreground, Pampas 500 background layer | 108 dp canvas, 72 dp safe zone |
+| Splash screen | horizontal lockup, reverse colourway | centred, ≤ 40% viewport width |
+| Social avatar | white Spark on Pampas 500 | 400 × 400 PNG, Spark at 50% |
 | OG image | horizontal lockup, reverse | 1200 × 630 |
 
 ## Don'ts

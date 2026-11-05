@@ -2,22 +2,28 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { brand } from "@/content/brand.config";
 import { Mark } from "@/components/Logo";
+import { MenuIcon } from "@/components/ui/icons";
 import { useMenu } from "./MenuContext";
 
 export type RailItem = { id: string; label: string };
+/** A titled group of anchors (Typography / Layout rails). `id` makes the title a link too. */
+export type RailGroup = { group: string; id?: string; items: RailItem[] };
+export type RailEntry = RailItem | RailGroup;
 
-/* Fixed left rail on inner pages: appears once the hero has scrolled away (desktop only). */
-export default function SideRail({ title, items, threshold = 700 }: { title: string; items: RailItem[]; threshold?: number }) {
-  const { setOpen, railVisible, setRailVisible } = useMenu();
-  const [active, setActive] = useState(items[0]?.id ?? "");
+const isGroup = (e: RailEntry): e is RailGroup => "group" in e;
 
-  useEffect(() => {
-    const onScroll = () => setRailVisible(window.scrollY > threshold);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => { window.removeEventListener("scroll", onScroll); setRailVisible(false); };
-  }, [threshold, setRailVisible]);
+/* Figma page rail ("Card", 276px): sits beside the content and sticks to the top while it scrolls.
+   Mark + menu button, page title, then section anchors with the current one highlighted.
+   Flat rails (Logo, Wordmark, Color): grey-50, 18px title, 14px Space Grotesk anchors.
+   Grouped rails (Typography, Layout): white, 14px Space Grotesk title, 16px group titles, indented 14px anchors. */
+export default function SideRail({ title, items }: { title: string; items: RailEntry[] }) {
+  const { setOpen } = useMenu();
+  const grouped = items.some(isGroup);
+  const ids = items.flatMap((e) => (isGroup(e) ? [...(e.id ? [e.id] : []), ...e.items.map((i) => i.id)] : [e.id]));
+  const [active, setActive] = useState(ids[0] ?? "");
+  const key = ids.join(",");
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -27,34 +33,54 @@ export default function SideRail({ title, items, threshold = 700 }: { title: str
       },
       { rootMargin: "-20% 0px -70% 0px" }
     );
-    items.forEach((i) => { const el = document.getElementById(i.id); if (el) obs.observe(el); });
+    key.split(",").forEach((id) => { const el = id && document.getElementById(id); if (el) obs.observe(el); });
     return () => obs.disconnect();
-  }, [items]);
+  }, [key]);
+
+  const link = (i: RailItem, base: string) => (
+    <a href={`#${i.id}`} className={`transition-colors ${active === i.id ? "text-grey-950" : `${base} hover:text-grey-950`}`}>{i.label}</a>
+  );
 
   return (
-    <aside
-      className={`fixed left-0 top-0 z-30 hidden h-screen w-[var(--rail-w)] border-r border-line bg-white px-10 pt-10 transition-opacity duration-300 lg:block ${
-        railVisible ? "opacity-100" : "pointer-events-none opacity-0"
-      }`}
-    >
-      <div className="flex items-center gap-[100px]">
-        <Link href="/" aria-label="Home" className="text-accent"><Mark className="h-10 w-10" /></Link>
-        <button type="button" aria-label="Menu" onClick={() => setOpen(true)} className="relative h-4 w-5 text-ink">
-          <span className="absolute left-0 top-0 h-px w-5 bg-current" />
-          <span className="absolute left-0 top-[7px] h-px w-5 bg-current" />
-          <span className="absolute left-0 top-[14px] h-px w-5 bg-current" />
-        </button>
+    <aside className={`hidden w-[var(--rail-w)] shrink-0 border-r border-grey-200 lg:block ${grouped ? "bg-white" : "bg-grey-50"}`}>
+      <div className={`sticky top-0 flex max-h-screen flex-col overflow-y-auto px-10 py-[38px] ${grouped ? "gap-6" : "gap-4"}`}>
+        <div className="flex items-center justify-between">
+          <Link href="/" aria-label={`${brand.name} home`} className="flex size-11 items-center justify-center text-black"><Mark className="size-[86%]" /></Link>
+          <button type="button" aria-label="Open menu" onClick={() => setOpen(true)} className="flex size-10 items-center justify-center rounded-lg border border-pampas-200 text-grey-950">
+            <MenuIcon />
+          </button>
+        </div>
+        {grouped ? (
+          <div className="flex flex-col gap-5">
+            <h2 className="font-[family-name:var(--font-secondary)] text-sm leading-5 text-grey-700">{title}</h2>
+            <nav aria-label="Page sections">
+              <ul className="flex flex-col gap-2">
+                {items.map((e) =>
+                  isGroup(e) ? (
+                    <li key={e.group} className="flex flex-col gap-2">
+                      {e.id ? <a href={`#${e.id}`} className="text-base font-medium leading-6 text-grey-950">{e.group}</a> : <span className="text-base font-medium leading-6 text-grey-950">{e.group}</span>}
+                      <ul className="flex flex-col gap-1 pl-3.5 text-sm leading-5">
+                        {e.items.map((i) => <li key={i.id}>{link(i, "text-grey-500")}</li>)}
+                      </ul>
+                    </li>
+                  ) : (
+                    <li key={e.id} className="text-sm leading-5">{link(e, "text-grey-500")}</li>
+                  )
+                )}
+              </ul>
+            </nav>
+          </div>
+        ) : (
+          <>
+            <h2 className="text-lg leading-6 text-grey-800">{title}</h2>
+            <nav aria-label="Page sections">
+              <ul className="space-y-2.5 font-[family-name:var(--font-secondary)] text-sm leading-5">
+                {items.map((e) => !isGroup(e) && <li key={e.id}>{link(e, "text-grey-500")}</li>)}
+              </ul>
+            </nav>
+          </>
+        )}
       </div>
-      <h2 className="mt-14 text-sm font-bold text-ink">{title}</h2>
-      <nav aria-label="Page sections" className="mt-6">
-        <ul className="space-y-3">
-          {items.map((i) => (
-            <li key={i.id}>
-              <a href={`#${i.id}`} className={`text-base transition ${active === i.id ? "text-ink" : "text-muted hover:text-ink"}`}>{i.label}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </aside>
   );
 }

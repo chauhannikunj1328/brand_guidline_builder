@@ -3,27 +3,34 @@ import { brand } from "@/content/brand.config";
 import PageShell from "@/components/site/PageShell";
 import PageHero from "@/components/site/PageHero";
 import ExploreAssets from "@/components/site/ExploreAssets";
-import { Button, Col, Lead } from "@/components/ui";
+import { Button } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Internal Resources" };
 const rail = [{ id: "resources", label: "Resources" }];
 
+const resources = [
+  { title: "Powerpoint Template", text: "When creating a Powerpoint Presentation, always use the template for consistency:", cta: "Access PowerPoint Template" },
+  { title: "Canva", text: "Obtain a license and locate our templates:", cta: "Access Canva Template" },
+];
+
 export default function Page() {
   return (
-    <PageShell hero={<PageHero title="Internal Resources" />} title="Internal Resources" rail={rail} after={<ExploreAssets />}>
-      <Col className="pt-[120px] pb-[100px]">
-        <Lead className="max-w-none"><p>Links to templates and other resources for internal {brand.name} team members and vendors:</p></Lead>
-      </Col>
-      <section id="resources" className="band scroll-mt-24 bg-tint text-ink">
-        <div className="px-5 pt-14 pb-40 lg:px-7">
-          <h3 className="text-2xl font-bold">Resources</h3>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {[["Powerpoint Template", "When creating a Powerpoint Presentation, always use the template for consistency:", "Access PowerPoint Template"], ["Canva", "Obtain a license and locate our templates:", "Access Canva Templates"]].map(([t, d, c]) => (
-              <div key={t} className="flex min-h-[270px] flex-col items-center justify-center rounded-[var(--radius-card)] bg-white px-10 text-center">
-                <p className="t-h4">{t}</p><p className="t-small mt-4 max-w-[300px]">{d}</p><div className="mt-6"><Button href={brand.downloads.all} size="sm" download>{c}</Button></div>
+    <PageShell hero={<PageHero title="Internal Resources" />} title="Internal Resources" rail={rail} after={<ExploreAssets current="internal" />}>
+      <section className="bg-white px-5 pb-20 pt-24 lg:px-[70px] lg:pt-[140px]">
+        <p className="t-intro max-w-[836px]">Links to templates and other resources for internal {brand.name} team members and vendors:</p>
+      </section>
+      <section id="resources" className="scroll-mt-6 flex flex-col gap-20 bg-pampas-100 px-5 py-16 lg:p-[70px]">
+        <h2 className="font-[family-name:var(--font-secondary)] text-[2.5rem] font-medium leading-[48px] text-pampas-950">Resources</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          {resources.map((r) => (
+            <div key={r.title} className="flex flex-col items-center justify-between gap-8 rounded-[32px] bg-white p-8 text-center lg:p-[50px]">
+              <div className="space-y-2">
+                <h3 className="text-[2rem] font-medium leading-10 text-grey-950">{r.title}</h3>
+                <p className="font-[family-name:var(--font-secondary)] text-base leading-6 text-grey-700">{r.text}</p>
               </div>
-            ))}
-          </div>
+              <Button href={brand.downloads.all} download>{r.cta}</Button>
+            </div>
+          ))}
         </div>
       </section>
     </PageShell>

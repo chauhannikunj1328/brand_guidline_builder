@@ -98,10 +98,15 @@ export default function Page() {
       footerLabel="Download the assets"
       hero={
         <PageHero title="Typography">
-          <div className="flex justify-center lg:-mx-[120px]"><p aria-hidden className="whitespace-nowrap text-[clamp(3rem,18vw,16.2rem)] font-light leading-[1.15] text-black/80">AaBbCcEeFf</p></div>
+          {/* Endless strip: two copies of the alphabet, so -50% lands on an identical frame. Slower than the default because the set is long. */}
+          <div aria-hidden className="-mx-5 overflow-hidden lg:-mx-[120px]">
+            <div className="marquee-track flex w-max [--marquee-duration:180s]">
+              {[0, 1].map((n) => <p key={n} className="whitespace-pre text-[clamp(3rem,18vw,16.2rem)] font-light leading-[1.15] text-black/80">{"Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz "}</p>)}
+            </div>
+          </div>
         </PageHero>
       }
-      after={<ExploreAssets except="type" />}
+      after={<ExploreAssets current="type" />}
     >
       {/* Geist — Introduction */}
       <LeadSection id="introduction" title="Geist">
@@ -124,12 +129,12 @@ export default function Page() {
         {families.map((f) => (
           <div key={f.name} className="space-y-6">
             <p className="text-2xl font-medium leading-8 text-grey-500">{f.label}</p>
-            <div className={`flex flex-col gap-10 lg:flex-row lg:justify-between ${f.row}`}>
+            <div className={`flex flex-col gap-10 xl:flex-row xl:justify-between ${f.row}`}>
               <div className={`space-y-3 ${f.info}`}>
                 <p className={`text-[4rem] leading-[1.2] text-grey-950 lg:text-[6.25rem] ${f.cls}`}>{f.name}</p>
                 <p className={`text-base font-medium leading-6 text-grey-600 ${f.cls}`}>{f.text}</p>
               </div>
-              <ul className={`space-y-2 text-2xl leading-8 text-grey-600 lg:w-[272px] lg:shrink-0 ${f.cls}`}>
+              <ul className={`space-y-2 text-2xl leading-8 text-grey-600 xl:w-[272px] xl:shrink-0 ${f.cls}`}>
                 {f.weights.map(([w, c]) => <li key={w} className={c}>{w}</li>)}
               </ul>
             </div>
@@ -149,8 +154,8 @@ export default function Page() {
       </section>
 
       {/* Standard Color */}
-      <section id="standard-color" className="scroll-mt-6 flex flex-col gap-[60px] bg-white px-5 py-20 xl:flex-row xl:items-center lg:px-[70px] lg:py-[140px]">
-        <div className="space-y-4 text-grey-950 xl:w-[486px] xl:shrink-0">
+      <section id="standard-color" className="scroll-mt-6 flex flex-col gap-[60px] bg-white px-5 py-20 min-[1400px]:flex-row min-[1400px]:items-center lg:px-[70px] lg:py-[140px]">
+        <div className="space-y-4 text-grey-950 min-[1400px]:w-[486px] min-[1400px]:shrink-0">
           <H>Standard Color</H>
           <div className="space-y-7 text-xl leading-7">
             <p>When applying color to type, keep it simple and functional. Our standard approach is to use Black or White across all levels. Limit yourself to a single type color per layout.</p>
@@ -210,7 +215,7 @@ export default function Page() {
       </section>
 
       {/* Capitalization */}
-      <section id="capitalization" className="scroll-mt-6 flex flex-col gap-[60px] bg-white px-5 py-20 lg:flex-row lg:px-[70px] lg:py-[140px]">
+      <section id="capitalization" className="scroll-mt-6 flex flex-col gap-[60px] bg-white px-5 py-20 min-[1400px]:flex-row lg:px-[70px] lg:py-[140px]">
         <div className="space-y-10 text-grey-950 lg:w-[363px] lg:shrink-0">
           <H>Capitalization</H>
           <div className="space-y-3 text-sm leading-5">

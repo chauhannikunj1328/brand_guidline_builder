@@ -30,7 +30,7 @@ Platform: CSS `transition` / Framer Motion; iOS `withAnimation(.timingCurve(0.16
 | Sheet / modal | slide up 24 px + fade, `duration-base` |
 | Toast | slide in from bottom, `duration-fast`; auto-dismiss 4 s |
 | List stagger | 40 ms between items, max 8 items animated |
-| Skeleton loading | shimmer 1.5 s linear loop, Cloud → Fog |
+| Skeleton loading | shimmer 1.5 s linear loop, Pampas 100 → Grey 50 |
 
 ## Brand mark motion
 - Loading: mark rotates 360° over 1.2 s, `ease-in-out`, loops.

@@ -72,7 +72,7 @@ export default function Page() {
           </div>
         </HeroFrame>
       }
-      after={<ExploreAssets except="wordmark" />}
+      after={<ExploreAssets current="wordmark" />}
     >
       {/* Introduction */}
       <section id="introduction" className="scroll-mt-6 bg-white px-5 py-16 lg:p-[70px]">
@@ -95,7 +95,7 @@ export default function Page() {
           </div>
           <div className="space-y-2 font-[family-name:var(--font-secondary)] text-xs leading-4">
             <p className="font-medium">Note</p>
-            <p>PLACEHOLDER — note which weight of {brand.fontName} the wordmark is drawn to match.</p>
+            <p>The wordmark is a fixed piece of artwork. Always use the supplied file; never retype it in {brand.fontName} or {brand.fontHeadline}.</p>
           </div>
         </div>
         {/* Figma: square logo frame as tall as the text column (480px), wordmark inset 9.4% each side. */}

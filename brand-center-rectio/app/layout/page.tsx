@@ -53,7 +53,7 @@ function Intro({ title, children, note }: { title: string; children: ReactNode; 
 
 export default function Page() {
   return (
-    <PageShell title="Layout" rail={rail} hero={<LayoutHero />} after={<ExploreAssets except="layout" />}>
+    <PageShell title="Layout" rail={rail} hero={<LayoutHero />} after={<ExploreAssets current="layout" />}>
       {/* ---------------- Grids ---------------- */}
       <section id="grids" className="scroll-mt-6 bg-white px-5 pb-16 pt-20 lg:px-[70px] lg:pb-20 lg:pt-[140px]">
         <div className="flex flex-col gap-10 lg:gap-[60px]">

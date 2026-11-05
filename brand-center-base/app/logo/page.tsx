@@ -26,8 +26,7 @@ const p = brand.palette;
 
 export default function Page() {
   return (
-    <PageShell title={brand.markName} rail={rail} footerLabel={`Download the ${M} assets`} after={<PrevNext prev={links["brand-os"]} next={links.wordmark} />}>
-      <PageHero title={brand.markName}>
+    <PageShell hero={<PageHero title={brand.markName}>
         {/* phone mock-up bleeding out of the hero */}
         <div className="mx-auto h-[400px] w-[900px] max-w-[92vw] rounded-t-[60px] border-[10px] border-b-0 border-neutral-800 bg-ink shadow-2xl">
           <div className="flex justify-between px-14 pt-12 text-white"><span className="text-xl">3:42</span><span className="text-xl">▮▮▮ ◔ ▬</span></div>
@@ -37,7 +36,7 @@ export default function Page() {
             <div className="h-[190px] w-[190px] rounded-[40px] bg-white/10" />
           </div>
         </div>
-      </PageHero>
+      </PageHero>} title={brand.markName} rail={rail} footerLabel={`Download the ${M} assets`} after={<PrevNext prev={links["brand-os"]} next={links.wordmark} />}>
 
       <Col id="introduction" className="pt-[150px] pb-[150px]">
         <Lead>

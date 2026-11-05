@@ -49,12 +49,11 @@ function A11y({ a, b, small = true }: { a: { hex: string; name: string }; b: { h
 
 export default function Page() {
   return (
-    <PageShell title="Color" rail={rail} footerLabel="Download the color assets" after={<PrevNext prev={links.wordmark} next={links.typography} />}>
-      <PageHero title="Color">
+    <PageShell hero={<PageHero title="Color">
         <div className="flex justify-center gap-4 overflow-hidden">
           {[p.white, p.tint, p.accent, p.ink, p.mid, p.primary, p.tint].map((c, i) => <div key={i} className="h-[200px] w-[210px] shrink-0 rounded-[var(--radius-card)]" style={{ background: c.hex }} />)}
         </div>
-      </PageHero>
+      </PageHero>} title="Color" rail={rail} footerLabel="Download the color assets" after={<PrevNext prev={links.wordmark} next={links.typography} />}>
 
       <Col className="pt-[150px] pb-[150px]">
         <Lead><p>Our color palette provides distinctiveness and differentiation through the consistent use of {brand.name}&apos;s most iconic and recognisable colors: {p.primary.name} and {p.accent.name}.</p></Lead>

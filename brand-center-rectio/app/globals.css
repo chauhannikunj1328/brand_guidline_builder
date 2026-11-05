@@ -123,6 +123,7 @@ h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
 .t-display { font-family: var(--font-secondary); font-size: clamp(3rem, 7.4vw, 9.125rem); font-weight: 300; line-height: 1.2; }
 .t-h2 { font-size: clamp(2.25rem, 3.9vw, 3.5rem); font-weight: 500; line-height: 1.143; }
 .t-lead { font-size: clamp(1.5rem, 2.8vw, 2.5rem); font-weight: 400; line-height: 1.2; }
+.t-intro { font-size: clamp(1.75rem, 2.8vw, 2.5rem); font-weight: 300; line-height: 1.2; color: var(--grey-600); }
 .t-section { font-family: var(--font-secondary); font-size: clamp(2.25rem, 3.4vw, 3rem); font-weight: 400; line-height: 1.19; }
 .t-section-lg { font-family: var(--font-secondary); font-size: clamp(2.5rem, 4.2vw, 3.75rem); font-weight: 400; line-height: 1.13; }
 .t-h3 { font-size: 2rem; font-weight: 500; line-height: 1.25; }
@@ -145,6 +146,12 @@ h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
 @media (min-width: 1024px) {
   .forest-mask { mask-image: url(/brand/hero-mask.svg); mask-size: 1927px 1378px; mask-position: -100px 47px; }
 }
+
+/* Endless horizontal strip. Pauses on hover and stays still for people who ask for reduced motion. */
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee-track { animation: marquee var(--marquee-duration, 90s) linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
 
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

@@ -23,7 +23,7 @@ These are internal filters — not taglines. Every touchpoint should pass all th
 | --- | --- | --- |
 | **Grounded** | Relatable, down-to-earth, part of the community | Plain language, real photography, no hype |
 | **Agile** | Constantly improving, always adapting | Fast motion, lightweight UI, ship-and-learn |
-| **Pioneering** | We blaze a path and never settle | Bold colour, confident type, unexpected but useful details |
+| **Pioneering** | We blaze a path and never settle | Confident colour and type, unexpected but useful details |
 
 ## Personality
 If Rectio were a person: **a sharp, friendly expert** — knows their stuff, explains it simply, never talks down.
@@ -37,4 +37,4 @@ If Rectio were a person: **a sharp, friendly expert** — knows their stuff, exp
 - **Co-branding:** Rectio lockup first, divider, partner logo at equal optical weight.
 
 ## One-line brief
-> Bold indigo and coral, generous rounded cards, light-weight display type, plain-spoken copy.
+> Warm Pampas neutrals on white, the Spark, rounded cards, Geist with Space Grotesk display titles, plain-spoken copy.

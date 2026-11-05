@@ -2,19 +2,19 @@
 
 ## Folder structure
 ```
-brand-assets/
+brand-assets/rectio/
   logo/
-    svg/            rectio-mark-coral.svg · rectio-mark-white.svg · rectio-mark-midnight.svg
-                    rectio-wordmark-indigo.svg · rectio-wordmark-white.svg
-                    rectio-lockup-h-primary.svg · rectio-lockup-v-reverse.svg …
-    png/            same names @1x @2x @3x (e.g. rectio-mark-coral@2x.png)
+    svg/            rectio-mark-primary-pampas.svg · rectio-mark-reverse-white.svg · rectio-mark-mono-black.svg
+                    rectio-mark-mono-currentcolor.svg · rectio-mark-mono-small.svg (small-use Spark)
+                    rectio-wordmark-*.svg · rectio-lockup-h-*.svg (same colourways)
+    png/            same names, @1x @2x @3x (e.g. rectio-mark-primary-pampas@2x.png)
     app-icons/      ios-1024.png · android-foreground.png · android-background.png · favicon.ico · apple-touch-icon.png
-  fonts/            PlusJakartaSans-*.ttf · Inter-*.ttf · *.woff2 for web
+  fonts/            Geist-*.ttf · SpaceGrotesk-*.ttf · *.woff2 for web
   icons/            svg/ (24-grid, currentColor)
   imagery/          photo/ · illustration/  (see 06)
   templates/        slides/ · docs/ · social/ · email/
-  tokens/           tokens.json (source) · generated/ (tailwind.css · Colors.swift · Color.kt)
 ```
+`npm run assets` adds `tokens/` (tokens.json and generated files) to the download zip.
 
 ## Naming convention
 `{brand}-{element}-{variant}-{colour}[@scale].{ext}` — lowercase, hyphens, no spaces.
@@ -23,10 +23,10 @@ brand-assets/
 | --- | --- |
 | element | `mark` · `wordmark` · `lockup-h` · `lockup-v` · `icon` · `illus` · `photo` |
 | variant | `primary` · `reverse` · `mono` (logos) · descriptive slug (others) |
-| colour | `coral` · `indigo` · `midnight` · `white` |
+| colour | `pampas` · `black` · `white` · `currentcolor` (`small` marks the small-use Spark) |
 | scale | `@2x` · `@3x` (PNG only) |
 
-Examples: `rectio-mark-coral.svg`, `rectio-lockup-h-reverse@2x.png`, `icon-arrow-right.svg`, `photo-team-workshop-01.jpg`.
+Examples: `rectio-mark-primary-pampas.svg`, `rectio-lockup-h-reverse-white@2x.png`, `icon-arrow-right.svg`, `photo-team-workshop-01.jpg`.
 
 ## Export specs
 | Asset | Format | Notes |

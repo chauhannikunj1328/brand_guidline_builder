@@ -2,9 +2,24 @@
 
 All notable changes to the Rectio brand. Versions follow `tokens.json`.
 
+## [2.0.0] — 2026-11-06
+### Changed
+- **Breaking:** palette replaced with the Figma values. Pampas and Grey scales replace Indigo, Coral, Midnight, Cloud, Sky, Fog and Slate. Token names change.
+- **Breaking:** typefaces changed. Geist replaces Plus Jakarta Sans and Inter, Space Grotesk added for display titles, Geist Mono replaces JetBrains Mono.
+- `radius.lg` is now 16 px. Buttons use 8 px corners instead of pill.
+- Logo files replaced with the real Spark, wordmark and horizontal lockup. New app icons and favicon.
+- Logo clear space and minimum sizes now match the Figma.
+- Contrast waivers replaced: white on Pampas 500 (3.44:1) is waived pending a design decision.
+
+### Added
+- Dark semantic tokens derived from the Pampas scale. Not yet designed in Figma.
+
+### Removed
+- "The Angle" and floating pill header layout devices, which are not in the Figma.
+
 ## [1.0.0] — 2026-09-18
 ### Added
 - Initial brand system: purpose, principles, voice, logo, colour, typography, spacing, iconography, motion, components, accessibility.
 - `tokens.json` (W3C DTCG) with light/dark semantic tokens.
 - Platform guides for website, mobile and web app.
-- Brand Center website template (`../brand-center-template`).
+- Brand Center website template.

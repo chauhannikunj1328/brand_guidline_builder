@@ -10,8 +10,7 @@ const rail = [{ id: "resources", label: "Resources" }];
 
 export default function Page() {
   return (
-    <PageShell title="Internal Resources" rail={rail} after={<ExploreAssets />}>
-      <PageHero title="Internal Resources" />
+    <PageShell hero={<PageHero title="Internal Resources" />} title="Internal Resources" rail={rail} after={<ExploreAssets />}>
       <Col className="pt-[120px] pb-[100px]">
         <Lead className="max-w-none"><p>Links to templates and other resources for internal {brand.name} team members and vendors:</p></Lead>
       </Col>

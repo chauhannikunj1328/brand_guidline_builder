@@ -21,10 +21,9 @@ const rail = [
 
 export default function Page() {
   return (
-    <PageShell title="Wordmark" rail={rail} footerLabel="Download the wordmark assets" after={<PrevNext prev={links.logo} next={links.color} />}>
-      <PageHero title="Wordmark">
+    <PageShell hero={<PageHero title="Wordmark">
         <div className="flex justify-center overflow-hidden whitespace-nowrap"><Wordmark className="text-[16rem] leading-none lg:text-[22rem]" /></div>
-      </PageHero>
+      </PageHero>} title="Wordmark" rail={rail} footerLabel="Download the wordmark assets" after={<PrevNext prev={links.logo} next={links.color} />}>
 
       <Col id="introduction" className="pt-[150px] pb-[150px]">
         <Lead>

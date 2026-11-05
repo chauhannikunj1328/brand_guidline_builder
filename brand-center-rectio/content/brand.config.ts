@@ -8,7 +8,6 @@ export const brand = {
   /** What the symbol/mark is called */
   markName: "The Spark",
   markShort: "Spark",
-  /** PLACEHOLDER — the Figma uses Walmart's slogan here; replace with Rectio's own tagline. */
   tagline: "Make it simple. Make it yours.",
   taglineLines: ["Make it simple.", "Make it yours."],
   description: "Guidelines, assets and tools for applying the Rectio brand consistently everywhere it shows up.",
@@ -16,8 +15,8 @@ export const brand = {
   fontHeadline: "Space Grotesk",
   fontMono: "Geist Mono",
   fontUI: "Geist",
-  contactTeam: "Rectio Brand Studio",
-  contactEmail: "brand@rectio.com",
+  contactTeam: "artonest creative design studio",
+  contactEmail: "artonest.design@gmail.com",
   siteLabel: "rectio.com",
 
   /* Figma variables: Primary Color/Pampas, BlackColors, Grey Colors, SuccessColors. */

@@ -18,7 +18,7 @@ export default function MenuOverlay() {
       aria-hidden={!open}
       className={`fixed inset-0 z-50 bg-ink text-white transition-opacity duration-300 ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
     >
-      <div className="absolute left-14 top-10 text-accent"><Mark className="h-10 w-10" /></div>
+      <div className="absolute left-14 top-10 text-pampas-300"><Mark className="h-10 w-10" /></div>
       <button type="button" aria-label="Close menu" onClick={close} className="absolute right-14 top-12 h-8 w-8">
         <span className="absolute left-1/2 top-1/2 h-px w-7 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-current" />
         <span className="absolute left-1/2 top-1/2 h-px w-7 -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-current" />
@@ -33,7 +33,7 @@ export default function MenuOverlay() {
                   <button
                     type="button"
                     onClick={() => setExpanded(expanded === item.label ? null : item.label)}
-                    className={`font-display text-[2.25rem] leading-none tracking-[-0.01em] lg:text-[5rem] ${expanded === item.label ? "text-mid" : ""}`}
+                    className={`font-display text-[2.25rem] leading-none tracking-[-0.01em] lg:text-[5rem] ${expanded === item.label ? "text-pampas-300" : ""}`}
                   >
                     {item.label}
                   </button>
@@ -55,7 +55,7 @@ export default function MenuOverlay() {
             <div className="hidden border-l border-white/40 pl-20 lg:block">
               <ul className="space-y-4">
                 {active.children.map((c) => (
-                  <li key={c.href}><Link href={c.href} onClick={close} className="text-2xl hover:text-mid">{c.label}</Link></li>
+                  <li key={c.href}><Link href={c.href} onClick={close} className="text-2xl hover:text-pampas-300">{c.label}</Link></li>
                 ))}
               </ul>
             </div>

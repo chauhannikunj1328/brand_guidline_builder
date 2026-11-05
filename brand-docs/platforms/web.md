@@ -1,6 +1,6 @@
 # Platform · Website (marketing / brand center)
 
-Stack: Next.js (App Router) + Tailwind v4. Reference implementation: `../../brand-center-template/`.
+Stack: Next.js (App Router) + Tailwind v4. Reference implementation: `../../brand-center-rectio/`.
 
 ## Tokens → code
 - `app/globals.css` `:root` = semantic tokens from `tokens.json` (generate with Style Dictionary or copy by hand).
@@ -16,7 +16,7 @@ Stack: Next.js (App Router) + Tailwind v4. Reference implementation: `../../bran
 ## Performance & SEO
 - LCP < 2.5 s: hero is CSS/SVG, not a raster image. Images via `next/image`, AVIF/WebP.
 - `metadata` per page: title template `%s · Rectio`, OG image 1200 × 630 (reverse lockup).
-- Favicon set: `favicon.ico`, `icon.svg`, `apple-touch-icon.png`, `manifest.webmanifest` (theme colour Indigo).
+- Favicon set: `favicon.ico`, `icon.svg`, `apple-touch-icon.png`, `manifest.webmanifest` (theme colour Pampas 500).
 
 ## Interaction
 - Hover states exist here (unlike mobile): card lift, button brightness.

@@ -34,8 +34,7 @@ const practices = [
 
 export default function Page() {
   return (
-    <PageShell title="Brand Voice" rail={rail} after={<ExploreAssets />}>
-      <PageHero title="Brand Voice">
+    <PageShell hero={<PageHero title="Brand Voice">
         <HeroStrip>
           {["Ad example 1", "Ad example 2", "Ad example 3", "Ad example 4"].map((l, i) => (
             <div key={l} className={`relative h-[240px] w-[345px] shrink-0 overflow-hidden ${i % 2 ? "bg-tint" : "bg-white"} text-ink`}>
@@ -44,7 +43,7 @@ export default function Page() {
             </div>
           ))}
         </HeroStrip>
-      </PageHero>
+      </PageHero>} title="Brand Voice" rail={rail} after={<ExploreAssets />}>
 
       <Col id="voice-principles" className="pt-[150px] pb-[150px]">
         <H3>Voice Principles</H3>

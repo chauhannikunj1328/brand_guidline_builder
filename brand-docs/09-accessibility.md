@@ -5,7 +5,8 @@
 ## Colour & contrast
 - Body text ≥ 7 : 1 (AAA). Large text and UI labels ≥ 4.5 : 1. Non-text UI (borders, icons) ≥ 3 : 1.
 - Never convey meaning with colour alone — pair with icon, label or pattern.
-- Coral is never used for text on light backgrounds.
+- Pampas 500 is never used for small text on light backgrounds (3.4 : 1). Use Pampas 700 for links.
+- White on Pampas 500 is limited to large text and logos. Small button labels are an open waiver (see `03-color.md`).
 - Provide a dark theme; test both with the contrast table in `03-color.md`.
 
 ## Typography
@@ -19,7 +20,7 @@
 
 ## Keyboard & focus
 - Everything interactive is reachable and operable by keyboard; logical tab order.
-- Visible focus ring: 2 px `focus/ring` (Coral), 2 px offset — never `outline: none` without replacement.
+- Visible focus ring: 2 px `focus/ring` (Pampas 700 on light, Pampas 300 on dark), 2 px offset — never `outline: none` without replacement.
 - Skip-to-content link on every web page.
 - Overlay menu / modals trap focus and restore it on close; Esc closes.
 

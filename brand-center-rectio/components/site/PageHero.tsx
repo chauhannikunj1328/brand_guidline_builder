@@ -4,11 +4,11 @@ import { Mark } from "@/components/Logo";
 
 /* Forest backdrop shared by every hero (Figma "Hero Section" → BG): watercolour forest masked with a
    feathered shape (hero-mask.svg), then a 40% Pampas-100 wash. Geometry matches the 1440px frame. */
-export function ForestBackground() {
+export function ForestBackground({ tall = false }: { tall?: boolean }) {
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0">
       <div
-        className="forest-mask absolute left-[calc(50%-877.5px)] top-[-60px] h-[1079px] w-[1755px] origin-top scale-[0.42] lg:top-[-179px] lg:scale-100"
+        className={`forest-mask absolute top-[-60px] h-[1079px] w-[1755px] origin-top scale-[0.42] lg:scale-100 left-[calc(50%-877.5px)] ${tall ? "lg:left-[calc(50%-900px)] lg:top-[-40px]" : "lg:top-[-179px]"}`}
       >
         <Image src="/brand/hero-forest-1.png" alt="" fill priority sizes="1755px" className="object-cover" />
         <Image src="/brand/hero-forest-2.png" alt="" fill priority sizes="1755px" className="object-cover" />
@@ -47,6 +47,17 @@ export default function PageHero({ title, children }: { title: string; children?
       <h1 className="t-h2 text-center text-grey-600">{title}</h1>
       {children && <div className="mt-16 w-full lg:mt-[100px]">{children}</div>}
     </HeroFrame>
+  );
+}
+
+/** Figma 932px hero: title above a full-bleed row of 340px-tall images or cards (Foundation, Voice, Brand OS). */
+export function RowHero({ title, gap = "gap-4", children }: { title: string; gap?: string; children: ReactNode }) {
+  return (
+    <section className="relative flex flex-col items-center justify-center gap-16 overflow-hidden px-5 pb-20 pt-24 lg:h-[932px] lg:gap-[100px] lg:px-[120px] lg:pt-40">
+      <ForestBackground tall />
+      <h1 className="t-h2 relative text-center text-grey-600">{title}</h1>
+      <div className={`relative flex w-full justify-center ${gap}`}>{children}</div>
+    </section>
   );
 }
 
