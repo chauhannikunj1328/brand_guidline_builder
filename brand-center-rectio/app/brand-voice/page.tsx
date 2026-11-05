@@ -39,13 +39,13 @@ const heroCards: { title: ReactNode; className: string; text: string; src?: stri
 const principles = [
   { from: "Grassroots", name: "Conversational", cls: "bg-white", head: "text-pampas-950", body: "text-grey-700", num: "border-pampas-600 text-grey-950", brand: "We never forget our humble beginnings; we're relatable, down-to-earth and part of the community.", short: "Our voice is just as down-to-earth as our customers and associates. We want to be the realest voice in our category.", cheat: "Our voice is just as down-to-earth as our customers and associates. We’re the realest voice in our category." },
   { from: "Agile", name: "Captivating", cls: "bg-pampas-200", head: "text-pampas-950", body: "text-grey-700", num: "border-pampas-600 text-grey-950", brand: "Agility is our x-factor. We are constantly improving, endlessly testing, always adapting.", short: "We must always engage the reader, so our voice needs to be dynamic and energizing.", cheat: "We must always engage the reader, so our voice needs to be dynamic and energizing." },
-  { from: "Pioneering", name: "Confident", cls: "bg-primary", head: "text-white", body: "text-white", num: "border-pampas-200 text-white", brand: "Since the beginning, we’ve blazed a path and never settled because that’s what it takes to make life better and easier.", short: `Because ${N} is a leader, our voice should be decisive and inspiring.`, cheat: `Because ${N} is a leader, our voice should be decisive and inspiring.` },
+  { from: "Pioneering", name: "Confident", cls: "bg-pampas-700", head: "text-white", body: "text-white", num: "border-pampas-200 text-white", brand: "Since the beginning, we’ve blazed a path and never settled because that’s what it takes to make life better and easier.", short: `Because ${N} is a leader, our voice should be decisive and inspiring.`, cheat: `Because ${N} is a leader, our voice should be decisive and inspiring.` },
 ];
 
 const closing = [
   { text: "We’re always Conversational, Captivating, and Confident, but our writing will lean into—or away from—a principle depending on what we’re writing and who we’re writing for.", cls: "bg-pampas-100 text-grey-700", num: "border-pampas-600 text-grey-950" },
   { text: "Consider every customer. Demographics and backgrounds matter, so make sure your words are clear and resonate with the majority.", cls: "bg-pampas-300 text-grey-700", num: "border-pampas-600 text-grey-950" },
-  { text: "Write how you talk. Literally.", cls: "bg-pampas-600 text-white", num: "border-white text-white" },
+  { text: "Write how you talk. Literally.", cls: "bg-pampas-700 text-white", num: "border-white text-white" },
   { text: "We are the realest voice in our category. Live it. Breathe it. Own it.", cls: "bg-pampas-800 text-white", num: "border-white text-white" },
 ];
 

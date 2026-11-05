@@ -69,8 +69,8 @@ The Figma defines a light look only. The dark column is derived from the Pampas 
 | --- | --- | --- |
 | White / Grey 50 / Pampas 100 | Grey 950 | Pampas 500 |
 | Pampas 200 / Pampas 300 | Grey 950 | Pampas 950 |
-| Pampas 500 | White at large sizes only, Grey 950 for body text | White |
-| Pampas 800 / 900 / 950 | White | White |
+| Pampas 500 | White at large sizes only, Black or Grey 950 for smaller text | White |
+| Pampas 700 / 800 / 900 / 950 | White | White |
 
 ## Contrast (WCAG 2.2)
 Ratios are measured by `npm run contrast` and this table.
@@ -92,7 +92,7 @@ Ratios are measured by `npm run contrast` and this table.
 
 **Rule:** body text must be AAA (7 : 1). UI labels and large text may be AA (4.5 : 1, or 3 : 1 at 24 px and up, or 18.66 px bold).
 
-**Waiver:** white on Pampas 500 is the core colourway in the Figma. At 3.4 : 1 it does not meet 4.5 : 1 for normal text, so it is recorded in `contrastWaivers` in `rectio.config.json` and limited to logos and large text. Buttons use Pampas 700 (5.8 : 1), which differs from the Figma.
+**Waiver:** white on Pampas 500 is the core colourway in the Figma. At 3.4 : 1 it does not meet 4.5 : 1 for normal text, so it is recorded in `contrastWaivers` in `rectio.config.json` and limited to logos and large text. Buttons and panels with small white text use Pampas 700 (5.8 : 1), which differs from the Figma. Swatches that must show Pampas 500 use Black text (6.1 : 1).
 
 ## Usage ratios
 Roughly **60% white and light neutrals, 30% Pampas, 10% Grey 950 and Dark Pampas**.

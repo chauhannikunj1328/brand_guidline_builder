@@ -22,7 +22,7 @@ const rail = [
 ];
 
 const colorCards = [
-  { bg: "bg-primary text-white", mark: "text-white", label: ["Rectio White", "on Pampas"], hex: "#FFFFFF", rgb: "255 255 255", sub: "text-grey-100" },
+  { bg: "bg-primary text-black", mark: "text-white", label: ["Rectio White", "on Pampas"], hex: "#FFFFFF", rgb: "255 255 255", sub: "" },
   { bg: "border border-grey-300 bg-pampas-50 text-black", mark: "text-primary", label: ["Rectio Pampas", "on White"], hex: "#A5846A", rgb: "165 132 106", sub: "" },
   { bg: "border border-grey-300 bg-pampas-200 text-black", mark: "text-pampas-950", label: ["Rectio Dark Pampas", "on Light Pampas"], hex: "#2D211D", rgb: "045 033 029", sub: "" },
 ];
@@ -107,7 +107,7 @@ export default function Page() {
 
       {/* Sizing + App Icon */}
       <section className="flex flex-col gap-10 bg-grey-100 p-4 lg:p-[30px]">
-        <div id="sizing" className="scroll-mt-6 flex flex-col justify-between gap-12 overflow-hidden rounded-[var(--radius-card)] bg-primary p-6 text-white lg:h-[506px] lg:flex-row lg:items-center lg:p-10">
+        <div id="sizing" className="scroll-mt-6 flex flex-col justify-between gap-12 overflow-hidden rounded-[var(--radius-card)] bg-pampas-700 p-6 text-white lg:h-[506px] lg:flex-row lg:items-center lg:p-10">
           <div className="max-w-[363px] space-y-[18px]">
             <div className="space-y-4">
               <h2 className="t-section">Minimum Sizing</h2>

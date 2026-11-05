@@ -24,7 +24,7 @@ const rail = [
 const heroSwatches = ["bg-white", "bg-black", "bg-grey-400", "bg-primary", "bg-green-500"];
 
 const palette = [
-  { s: { name: "Pampas", hex: "#A5846A", rgb: "165 132 106", hsl: "26 25 53", hsb: "26 36 65" }, className: "border border-grey-400 bg-primary text-white" },
+  { s: { name: "Pampas", hex: "#A5846A", rgb: "165 132 106", hsl: "26 25 53", hsb: "26 36 65" }, className: "border border-grey-400 bg-primary text-black" },
   { s: { name: "White", hex: "#FFFFFF", rgb: "255 255 255", hsl: "0 0 100", hsb: "0 0 100" }, className: "border border-pampas-400 bg-white text-grey-950" },
   { s: { name: "Black", hex: "#000000", rgb: "0 0 0", hsl: "0 0 0", hsb: "0 0 0" }, className: "border border-grey-400 bg-black text-white" },
 ];
@@ -33,7 +33,7 @@ const waterfall = [
   { n: 1, name: "White", cls: "bg-white text-grey-950" },
   { n: 2, name: "Pearl Bush", cls: "bg-pampas-200 text-grey-950" },
   { n: 3, name: "Vanilla", cls: "bg-pampas-300 text-grey-950" },
-  { n: 4, name: "Pampas", cls: "bg-primary text-white" },
+  { n: 4, name: "Pampas", cls: "bg-primary text-black" },
   { n: 5, name: "Roman Coffee", cls: "bg-pampas-700 text-white" },
 ];
 
