@@ -17,9 +17,9 @@ Values come from the Figma variables in "Rectio | Full Project Design".
 | `pampas-500` | `#A5846A` | 165 132 106 | **Primary brand colour** |
 | `pampas-600` | `#98745E` | 152 116 94 | Bands, large text backgrounds |
 | `pampas-700` | `#7F5E4F` | 127 94 79 | Links, focus ring, button hover |
-| `pampas-800` | `#684E44` | 104 78 68 | Dark Pampas: accent, small-scale logo |
+| `pampas-800` | `#684E44` | 104 78 68 | Accent |
 | `pampas-900` | `#554139` | 85 65 57 | Dark surfaces |
-| `pampas-950` | `#2D211D` | 45 33 29 | Darkest surface |
+| `pampas-950` | `#2D211D` | 45 33 29 | Dark Pampas: small-scale logo, darkest surface |
 
 ### Grey and base
 | Token | HEX | Role |
@@ -68,7 +68,7 @@ The Figma defines a light look only. The dark column is derived from the Pampas 
 | Background | Text | Logo |
 | --- | --- | --- |
 | White / Grey 50 / Pampas 100 | Grey 950 | Pampas 500 |
-| Pampas 200 / Pampas 300 | Grey 950 | Pampas 800 or Black |
+| Pampas 200 / Pampas 300 | Grey 950 | Pampas 950 |
 | Pampas 500 | White at large sizes only, Grey 950 for body text | White |
 | Pampas 800 / 900 / 950 | White | White |
 

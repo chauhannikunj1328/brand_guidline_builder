@@ -72,7 +72,7 @@ export default function ExploreAssets({ items, except, heading = "Explore our As
         {keys.map((k) => {
           const c = cards[k];
           return (
-            <Link key={k} href={c.href} className={`relative h-[420px] overflow-hidden p-[30px] transition-transform hover:-translate-y-1 lg:h-[510px] ${k === "brand-os" ? "" : "rounded-[var(--radius-card)]"} ${c.tone}`}>
+            <Link key={k} href={c.href} className={`relative h-[420px] overflow-hidden p-[30px] transition-transform hover:-translate-y-1 lg:h-[510px] rounded-[var(--radius-card)] ${c.tone}`}>
               {c.body}
               <span className="relative text-[2rem] font-medium leading-10">{c.label}</span>
             </Link>

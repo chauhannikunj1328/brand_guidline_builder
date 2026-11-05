@@ -15,7 +15,7 @@ Lockup spacing: gap = 26% of the Spark's height, wordmark height = 48% of the Sp
 | --- | --- | --- |
 | Primary | Pampas 500 `#A5846A` | White |
 | Reverse | White | Pampas 500 |
-| Small-scale | Dark Pampas (Pampas 800 `#684E44`) | White / Pampas 100, where Pampas 500 is too light |
+| Small-scale | Dark Pampas (Pampas 950 `#2D211D`) | Light Pampas (Pampas 200), for maximum contrast and legibility |
 | Mono | Black or White | One-colour print, or backgrounds where Pampas clashes |
 
 ## Clearspace
