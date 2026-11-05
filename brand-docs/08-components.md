@@ -10,9 +10,9 @@
 | Secondary | `bg/surface-tint` | `text/primary` | none | Supporting actions |
 | Outline | transparent | current | 1 px current | On brand/dark surfaces |
 | Ghost | transparent | `text/link` | none | Tertiary, inline |
-| Destructive | `danger` | white | none | Irreversible actions |
+| Destructive | `danger` | `text/primary` (light) | none | Irreversible actions |
 
-- Shape: **pill** (`radius-pill`). Height: 40 (sm) · 48 (md) · 56 (lg). Padding X: 16 / 24 / 32.
+- Shape: 8 px corners (`radius-sm`). Height: 40 (sm) · 48 (md) · 56 (lg). Padding X: 16 / 24 / 32.
 - Type: `label`, weight 500. Icon 20 px, gap `space-2`.
 - Hover: brightness +10%. Pressed: scale 0.97. Focus: 2 px `focus/ring` offset 2 px. Disabled: 40% opacity.
 - Min touch target 44 × 44 (iOS) / 48 × 48 (Android).
@@ -37,7 +37,7 @@
 Active item: `text/link` + weight 600. Icons 24 px.
 
 ## Modal / Sheet
-- Web: centred modal, max-width 560, `radius-lg`, elevation 2, scrim Midnight 60%.
+- Web: centred modal, max-width 560, `radius-lg`, elevation 2, scrim Grey 950 60%.
 - Mobile: bottom sheet, `radius-xl` top corners, drag handle 36 × 4.
 - Always dismissible via close button, scrim tap, Esc / back.
 
@@ -46,7 +46,7 @@ Active item: `text/link` + weight 600. Icons 24 px.
 - Icon 20 px + `body-sm`. Optional single action. Auto-dismiss 4 s; errors persist.
 
 ## Tabs / Segmented control
-- Pill tabs on dark surfaces (see brand center "Logo Notes"): 1 px border, active = white fill + Midnight text.
+- Pill tabs on dark surfaces (see brand center "Logo Notes"): 1 px border, active = white fill + Grey 950 text.
 - Underline tabs on light surfaces: 2 px `action/primary` indicator, `duration-fast` slide.
 
 ## Swatch / Colour chip

@@ -22,11 +22,11 @@ Units: web `rem` (÷16), iOS `pt`, Android `dp`. Values are identical across pla
 ## Radius
 | Token | Value | Use |
 | --- | --- | --- |
-| `radius-sm` | 8 | Inputs, chips, tags |
-| `radius-md` | 12 | Buttons (non-pill), small cards |
-| `radius-lg` | 24 | Cards, panels, modals |
+| `radius-sm` | 8 | Buttons, inputs, chips, tags |
+| `radius-md` | 12 | Small cards |
+| `radius-lg` | 16 | Cards, panels, modals |
 | `radius-xl` | 32 | Hero cards, large containers |
-| `radius-pill` | 999 | Primary buttons, pills |
+| `radius-pill` | 999 | Tags, avatars, pill tabs |
 
 Cards are the signature container: `radius-lg`, `space-6`/`space-8` padding, 1 px `border/default` or a tint fill — never both plus a shadow.
 
@@ -61,6 +61,5 @@ Cards are the signature container: `radius-lg`, `space-6`/`space-8` padding, 1 p
 - Bottom actions: ≥ 16 pt above home indicator.
 
 ## Signature layout devices
-- **Floating pill header** — fixed, inset by `space-4`, Midnight background.
-- **The Angle** — a diagonal split (`clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%)`) between two brand colours in heroes.
-- **Tint card** — Cloud background, centred display headline, one CTA.
+- **Side rail** — a sticky 276 px rail lists the page's sections beside the content on desktop.
+- **Tint card** — Pampas 100 background, centred display headline, one CTA.

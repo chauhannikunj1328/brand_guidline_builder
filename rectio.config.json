@@ -9,9 +9,8 @@
       "assets": "brand-assets/rectio",
       "site": "brand-center-rectio",
       "contrastWaivers": {
-        "light: text.secondary on bg.page": "4.35:1 \u2014 pending design decision (darken Slate or restrict to white surfaces)",
-        "light: focus.ring on bg.page": "2.63:1 \u2014 pending design decision (coral ring needs a dark outline on light backgrounds)",
-        "light: focus.ring on bg.surface": "2.82:1 \u2014 pending design decision (see above)"
+        "light: text.on-brand on bg.brand": "3.44:1. White on Pampas 500 is the core colourway in the Figma (Final Design). It passes 3:1 for large text and UI parts, not 4.5:1 for body text. Use only at 24px+ or 18.66px bold until the design decision is made.",
+        "light: text.on-brand on action.primary": "3.44:1. White on Pampas 500 is the core colourway in the Figma (Final Design). It passes 3:1 for large text and UI parts, not 4.5:1 for body text. Use only at 24px+ or 18.66px bold until the design decision is made."
       }
     },
     "base": {

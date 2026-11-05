@@ -3,9 +3,11 @@
 ## Families
 | Role | Family | Weights | Fallback |
 | --- | --- | --- | --- |
-| Display (headlines) | **Plus Jakarta Sans** | 300 · 400 · 500 · 600 · 700 · 800 | system-ui, sans-serif |
-| Body (paragraphs, UI) | **Inter** | 400 · 500 · 600 | system-ui, sans-serif |
-| Mono (code, data) | JetBrains Mono | 400 · 500 | ui-monospace |
+| Primary (headings, paragraphs, UI) | **Geist** | 300 · 400 · 500 · 600 | system-ui, sans-serif |
+| Secondary (display titles, captions) | **Space Grotesk** | 300 · 400 · 500 · 700 | system-ui, sans-serif |
+| Mono (code, data) | Geist Mono | 400 · 500 | ui-monospace |
+
+The Figma sets Geist and Space Grotesk. It sets no mono face; Geist Mono is chosen here to match.
 
 Platform loading: web → `next/font` (self-hosted); iOS → bundle `.ttf`, register in `Info.plist`; Android → `res/font/`. Never load from a third-party CDN in production apps.
 
@@ -30,9 +32,9 @@ One scale, expressed in each platform's unit. Base = 16.
 Mobile note: iOS/Android body is slightly larger for touch-distance reading; scale headings down one step on screens < 375 pt.
 
 ## Rules
-- Display sizes use **Light (300)** — the brand's signature look. Headings 1–4 use Medium/SemiBold.
-- Body copy is always Inter, never the display face.
-- Max **two weights** per layout; max **one type colour** per layout (Midnight or White).
+- Large display titles use Space Grotesk, Light (300) to Medium (500). Headings use Geist Medium (500).
+- Body copy is always Geist. Space Grotesk is for display titles and captions.
+- Max **two weights** per layout; max **one type colour** per layout (Grey 950 or White).
 - Sentence case everywhere. Overline is the only uppercase style.
 - Measure: 45–75 characters per line for body; `max-width: 65ch`.
 - Support Dynamic Type (iOS) and font scaling (Android) — never lock text size.

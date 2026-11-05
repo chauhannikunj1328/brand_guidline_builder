@@ -7,7 +7,7 @@
 | Grid | 24 × 24, 2 px padding (20 px live area) |
 | Stroke | 1.75 px, round caps and joins |
 | Sizes | 16 (inline), 20 (buttons, inputs), 24 (default), 32 (feature), 48 (empty states) |
-| Colour | Inherit text colour (`currentColor`). Coral only for a single highlighted state |
+| Colour | Inherit text colour (`currentColor`). Pampas 800 only for a single highlighted state |
 | Fill | Outline by default; filled variant only for "active/selected" states |
 
 Custom icons follow the same grid and stroke. Export as SVG with `stroke="currentColor"`, no embedded fills or IDs.
@@ -17,14 +17,14 @@ Platform: web → inline SVG / `lucide-react`; iOS → SF Symbols where an equiv
 ## Photography
 - **Subject:** real people using real things; candid over posed.
 - **Light:** natural, warm, soft shadows. No heavy filters or HDR.
-- **Colour grade:** slight lift in blues to sit with Indigo; skin tones untouched.
+- **Colour grade:** warm and slightly muted to sit with Pampas; skin tones untouched.
 - **Composition:** leave negative space for type on one side.
-- **Overlay for text:** `linear-gradient(Midnight 0% → transparent 60%)` at 60% opacity, or a Cloud panel.
-- **Type over photos:** White only. Never Indigo on photos.
+- **Overlay for text:** `linear-gradient(Grey 950 0% → transparent 60%)` at 60% opacity, or a Pampas 100 panel.
+- **Type over photos:** White only. Never Pampas on photos.
 
 ## Illustration
 - Flat, geometric, built from circles and rounded rectangles — echoes the mark.
-- Palette: Indigo, Sky, Cloud, Midnight, with Coral as a single accent per scene.
+- Palette: the Pampas scale, with Grey 950 as the dark value.
 - No gradients, no outlines, no 3D.
 
 ## Graphic devices

@@ -32,4 +32,4 @@ Every project (Figma, Next.js, iOS, Android) reads from these files — nothing 
 
 ## Related
 
-- Brand Center website template: `../brand-center-template/` (reads the same values via `content/brand.config.ts` + `app/globals.css`)
+- Brand Center website: `../brand-center-rectio/` (reads the same values via `content/brand.config.ts` + `app/globals.css`)

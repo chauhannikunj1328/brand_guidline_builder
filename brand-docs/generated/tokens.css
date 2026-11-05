@@ -3,21 +3,36 @@
  */
 
 :root {
-  --color-indigo: #4338ca; /** Rectio Indigo — primary */
-  --color-coral: #ff6b4a; /** Signal Coral — accent / mark */
-  --color-midnight: #111c44;
-  --color-cloud: #dfe4ff;
-  --color-sky: #8fa3ff;
+  --color-pampas-50: #f8f6f4;
+  --color-pampas-100: #f1ede7;
+  --color-pampas-200: #dfd5c9;
+  --color-pampas-300: #cbbaa6;
+  --color-pampas-400: #b59a82;
+  --color-pampas-500: #a5846a; /** Rectio Pampas, the primary brand colour */
+  --color-pampas-600: #98745e;
+  --color-pampas-700: #7f5e4f;
+  --color-pampas-800: #684e44;
+  --color-pampas-900: #554139;
+  --color-pampas-950: #2d211d;
+  --color-grey-50: #fafafa;
+  --color-grey-100: #f4f4f5;
+  --color-grey-200: #e5e5e5;
+  --color-grey-300: #d4d4d8;
+  --color-grey-400: #a1a1aa;
+  --color-grey-500: #71717a;
+  --color-grey-600: #52525b;
+  --color-grey-700: #3f3f46;
+  --color-grey-800: #27272a;
+  --color-grey-950: #09090b;
   --color-white: #ffffff;
-  --color-fog: #f6f7fb;
-  --color-slate: #6b7394;
-  --color-success: #15803d;
-  --color-warning: #b45309;
-  --color-danger: #dc2626;
-  --action-primary-hover: #3730a3;
-  --font-family-display: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-family-body: Inter, system-ui, sans-serif;
-  --font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --color-black: #000000;
+  --color-success: #619250; /** Figma Green 500 */
+  --color-warning: #ef8020; /** Figma Yellow 500 */
+  --color-danger: #ec4747; /** Figma Red 500 */
+  --font-family-display: Geist, system-ui, sans-serif;
+  --font-family-body: Geist, system-ui, sans-serif;
+  --font-family-secondary: 'Space Grotesk', system-ui, sans-serif;
+  --font-family-mono: 'Geist Mono', ui-monospace, monospace;
   --font-size-display-xl: 96px;
   --font-size-display-lg: 64px;
   --font-size-heading-1: 40px;
@@ -54,7 +69,7 @@
   --space-32: 128px;
   --radius-sm: 8px;
   --radius-md: 12px;
-  --radius-lg: 24px;
+  --radius-lg: 16px;
   --radius-xl: 32px;
   --radius-pill: 999px;
   --breakpoint-sm: 640px;
@@ -69,19 +84,20 @@
   --motion-easing-out: cubic-bezier(0.16, 1, 0.3, 1);
   --motion-easing-in: cubic-bezier(0.7, 0, 0.84, 0);
   --motion-easing-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --shadow-1: 0px 8px 24px 0px #111C441F;
-  --shadow-2: 0px 24px 64px 0px #111C4433;
-  --bg-page: var(--color-fog);
+  --shadow-1: 0px 8px 24px 0px #09090B1F;
+  --shadow-2: 0px 24px 64px 0px #09090B33;
+  --bg-page: var(--color-grey-50);
   --bg-surface: var(--color-white);
-  --bg-surface-tint: var(--color-cloud);
-  --bg-brand: var(--color-indigo);
-  --bg-inverse: var(--color-midnight);
-  --text-primary: var(--color-midnight);
-  --text-secondary: var(--color-slate);
+  --bg-surface-tint: var(--color-pampas-100);
+  --bg-brand: var(--color-pampas-500);
+  --bg-inverse: var(--color-grey-950);
+  --text-primary: var(--color-grey-950);
+  --text-secondary: var(--color-grey-600);
   --text-on-brand: var(--color-white);
-  --text-link: var(--color-indigo);
-  --border-default: var(--color-cloud);
-  --action-primary: var(--color-indigo);
-  --action-accent: var(--color-coral);
-  --focus-ring: var(--color-coral);
+  --text-link: var(--color-pampas-700);
+  --border-default: var(--color-grey-200);
+  --action-primary: var(--color-pampas-500);
+  --action-primary-hover: var(--color-pampas-700);
+  --action-accent: var(--color-pampas-800);
+  --focus-ring: var(--color-pampas-700);
 }
