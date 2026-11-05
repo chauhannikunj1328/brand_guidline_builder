@@ -1,30 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { Mark } from "@/components/Logo";
+import { brand } from "@/content/brand.config";
+import { FullLogo } from "@/components/Logo";
 import { useMenu } from "./MenuContext";
+import { MenuIcon } from "@/components/ui/icons";
 
-/* Floating pill header. Slides away when the side rail takes over (inner pages, desktop). */
+/* Top bar (Figma "Header"): grey-50 bar, full logo left, primary menu button right. */
 export default function Header() {
-  const { setOpen, railVisible } = useMenu();
+  const { setOpen } = useMenu();
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-40 px-5 pt-5 transition-transform duration-300 lg:px-10 lg:pt-6 ${
-        railVisible ? "lg:-translate-y-32" : ""
-      }`}
-    >
-      <div className="flex h-[76px] items-center justify-between rounded-2xl bg-ink px-6 text-white">
-        <Link href="/" aria-label="Home" className="text-accent">
-          <Mark className="h-9 w-9" />
-        </Link>
-        <button type="button" aria-label="Menu" onClick={() => setOpen(true)} className="flex h-10 w-10 items-center justify-center">
-          <span className="relative block h-3.5 w-5">
-            <span className="absolute left-0 top-0 h-px w-5 bg-current" />
-            <span className="absolute left-0 top-[6px] h-px w-5 bg-current" />
-            <span className="absolute left-0 top-[12px] h-px w-5 bg-current" />
-          </span>
-        </button>
-      </div>
+    <header className="relative z-20 flex items-center justify-between h-20 border-b border-grey-200 bg-grey-50 px-5 lg:px-10">
+      <Link href="/" aria-label={`${brand.name} home`} className="text-ink">
+        <FullLogo size={36} />
+      </Link>
+      <button type="button" aria-label="Open menu" onClick={() => setOpen(true)} className="flex size-10 items-center justify-center rounded-lg bg-primary text-white">
+        <MenuIcon />
+      </button>
     </header>
   );
 }

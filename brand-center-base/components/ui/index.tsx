@@ -7,7 +7,7 @@ import { Mark, Wordmark } from "@/components/Logo";
 
 export type Tone = "primary" | "ink" | "tint" | "mid" | "white";
 export const toneBg: Record<Tone, string> = {
-  primary: "bg-primary text-white",
+  primary: "bg-primary text-white hover:bg-pampas-700",
   ink: "bg-ink text-white",
   tint: "bg-tint text-ink",
   mid: "bg-mid text-ink",
@@ -87,14 +87,14 @@ export function Split({ left, right, align = "center", className = "" }: { left:
 /* ---- Buttons ---- */
 export function Button({ href, children, variant = "primary", size = "md", download = false }: { href: string; children: ReactNode; variant?: "primary" | "outline" | "mid" | "white-outline"; size?: "sm" | "md"; download?: boolean }) {
   const v = {
-    primary: "bg-primary text-white",
+    primary: "bg-primary text-white hover:bg-pampas-700",
     mid: "bg-mid text-ink",
     outline: "border border-current text-ink",
     "white-outline": "border border-white text-white",
   }[variant];
-  const s = size === "sm" ? "h-10 px-5 text-sm" : "h-11 px-6 text-sm";
+  const s = size === "sm" ? "p-2.5 text-sm leading-5" : "p-3 text-base leading-6";
   return (
-    <a href={href} download={download || undefined} className={`inline-flex items-center justify-center rounded-full font-medium ${v} ${s}`}>
+    <a href={href} download={download || undefined} className={`inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors ${v} ${s}`}>
       {children}
     </a>
   );

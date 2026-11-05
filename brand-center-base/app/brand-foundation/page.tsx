@@ -24,12 +24,11 @@ const principles = [
 export default function Page() {
   const [l1, l2] = brand.taglineLines;
   return (
-    <PageShell title="Brand Foundation" rail={rail} after={<ExploreAssets />}>
-      <PageHero title="Brand Foundation">
+    <PageShell hero={<PageHero title="Brand Foundation">
         <HeroStrip>
           {["Archive photo", "Founder", "Early store", "Community"].map((l) => <Ph key={l} label={l} className="h-[240px] w-[345px] shrink-0" />)}
         </HeroStrip>
-      </PageHero>
+      </PageHero>} title="Brand Foundation" rail={rail} after={<ExploreAssets />}>
 
       {/* Intro */}
       <Col id="brand-foundation" className="pt-[150px] pb-[150px]">

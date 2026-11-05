@@ -47,8 +47,7 @@ function Poster({ mark = "tr", wm = "bl", head, headPos = "tl", tone = "white", 
 export default function Page() {
   const [l1, l2] = brand.taglineLines;
   return (
-    <PageShell title="Layout" rail={rail} after={<PrevNext prev={links.typography} next={links["brand-os"]} />}>
-      <PageHero title="Layout">
+    <PageShell hero={<PageHero title="Layout">
         <HeroStrip>
           {[0, 1, 2, 3].map((i) => (
             <div key={i} className={`relative h-[240px] w-[345px] shrink-0 overflow-hidden ${i === 3 ? "bg-ink text-white" : "bg-white text-ink"}`}>
@@ -58,7 +57,7 @@ export default function Page() {
             </div>
           ))}
         </HeroStrip>
-      </PageHero>
+      </PageHero>} title="Layout" rail={rail} after={<PrevNext prev={links.typography} next={links["brand-os"]} />}>
 
       <Col id="grids" className="pt-[150px] pb-[150px]">
         <H3>Grids</H3>

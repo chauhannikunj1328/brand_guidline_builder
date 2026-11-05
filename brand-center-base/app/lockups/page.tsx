@@ -10,8 +10,7 @@ const rail = [{ id: "brand-and-vendor-lockups", label: "Brand & Vendor lockups" 
 
 export default function Page() {
   return (
-    <PageShell title="Lockups" rail={rail} after={<ExploreAssets />}>
-      <PageHero title="Lockups" />
+    <PageShell hero={<PageHero title="Lockups" />} title="Lockups" rail={rail} after={<ExploreAssets />}>
       <Col className="pt-[130px] pb-[150px]">
         <Lead className="max-w-[900px] space-y-4">
           <p>Lockups are graphic assets that pair our {brand.name} logos with additional elements like taglines, campaign lines, or partner logos.</p>

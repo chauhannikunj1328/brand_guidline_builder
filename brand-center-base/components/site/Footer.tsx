@@ -1,32 +1,37 @@
 import Link from "next/link";
 import { brand } from "@/content/brand.config";
-import { Mark } from "@/components/Logo";
+import { FullLogo } from "@/components/Logo";
+import { Button } from "@/components/ui";
 
+/* Figma "Footer": black, logo + "Download the assets" left, three link columns + trademark row right.
+   The first link in each footerNav column is that column's heading. */
 export default function Footer({ downloadLabel = "Download the assets" }: { downloadLabel?: string }) {
   return (
-    <footer className="bg-ink text-white">
-      <div className="edge-x pt-10 pb-24">
-        <Mark className="h-9 w-9 text-accent" />
-        <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_1fr] lg:pl-[100px]">
-          <div>
-            <h2 className="t-h2 max-w-md">{downloadLabel}</h2>
-            <a href={brand.downloads.all} download className="mt-14 inline-flex h-10 items-center rounded-full bg-mid px-6 text-sm text-ink">
-              {brand.downloads.label}
-            </a>
+    <footer className="bg-black text-white">
+      <div className="flex flex-col gap-14 px-5 py-16 lg:flex-row lg:justify-between lg:px-[100px] lg:py-20">
+        <div className="flex flex-col justify-between gap-10 lg:w-[331px]">
+          <div className="space-y-4">
+            <FullLogo size={50} />
+            <h2 className="text-[2rem] font-medium leading-10">{downloadLabel}</h2>
           </div>
-          <div className="lg:pl-[130px]">
-            <div className="grid grid-cols-2 gap-x-6 gap-y-5 text-xs font-bold md:grid-cols-3">
-              {brand.footerNav.map((col, i) => (
-                <ul key={i} className="space-y-4">
-                  {col.map((l) => (
-                    <li key={l.href}><Link href={l.href} className="hover:text-mid">{l.label}</Link></li>
+          <div><Button href={brand.downloads.all} download>{brand.downloads.label}</Button></div>
+        </div>
+
+        <div className="flex flex-col justify-center gap-10 lg:w-[670px]">
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-[70px] gap-y-10 md:flex">
+            {brand.footerNav.map(([head, ...links]) => (
+              <div key={head.href} className="space-y-4">
+                <Link href={head.href} className="block text-lg uppercase leading-6 hover:text-pampas-300">{head.label}</Link>
+                <ul className="space-y-1.5">
+                  {links.map((l) => (
+                    <li key={l.href}><Link href={l.href} className="text-base leading-6 text-white/80 hover:text-white">{l.label}</Link></li>
                   ))}
                 </ul>
-              ))}
-            </div>
-            <div className="mt-14 border-t border-white/40 pt-4 text-xs">
-              <Link href={brand.trademarks.href} className="hover:text-mid">{brand.trademarks.label}</Link>
-            </div>
+              </div>
+            ))}
+          </nav>
+          <div className="border-t border-white/40 pt-5">
+            <Link href={brand.trademarks.href} className="text-lg uppercase leading-6 hover:text-pampas-300">{brand.trademarks.label}</Link>
           </div>
         </div>
       </div>

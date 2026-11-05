@@ -35,10 +35,9 @@ function TypeStack({ h = "font-display font-bold", s = "font-bold", b = "", cls 
 export default function Page() {
   const [l1, l2] = brand.taglineLines;
   return (
-    <PageShell title="Typography" rail={rail} footerLabel="Download the type assets" after={<PrevNext prev={links.color} next={links.layout} />}>
-      <PageHero title="Typography">
+    <PageShell hero={<PageHero title="Typography">
         <div className="overflow-hidden whitespace-nowrap pl-0 font-display text-[18rem] font-light leading-none text-ink lg:text-[22rem]">AaBbCc</div>
-      </PageHero>
+      </PageHero>} title="Typography" rail={rail} footerLabel="Download the type assets" after={<PrevNext prev={links.color} next={links.layout} />}>
 
       <Col id="font" className="pt-[150px] pb-[150px]">
         <H3>{F}</H3>
