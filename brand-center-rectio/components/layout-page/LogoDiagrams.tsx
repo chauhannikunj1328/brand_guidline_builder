@@ -5,15 +5,14 @@ import { Asset, Verdict, WordmarkArt } from "./Asset";
 
 /* Applying Logos diagrams (Figma 40007016:8006 Proportions, 40007018:29968 Scale / Placement / Don'ts). */
 
-const M = brand.markShort;
 const sg = "font-[family-name:var(--font-secondary)]";
 
 /** Proportions: the Spark and wordmark at 1.7 : 1 between 20%-black rules, on a 30% white panel. */
-export function ProportionsDiagram() {
+export function ProportionsDiagram({ aria }: { aria: string }) {
   return (
-    <div className="relative aspect-[1024/307] w-full overflow-hidden">
+    <div dir="ltr" className="relative aspect-[1024/307] w-full overflow-hidden">
       {/* Logo box 896×273 at x=61.7 (Figma Full Logo 933×306 centred, logo inset 16.4px) */}
-      <div role="img" aria-label={`${M} and wordmark proportions`} className="absolute left-[6.03%] top-[5.34%] h-[89%] w-[87.51%]">
+      <div role="img" aria-label={aria} className="absolute left-[6.03%] top-[5.34%] h-[89%] w-[87.51%]">
         <Mark className="absolute inset-y-0 left-0 h-full w-[30.38%] text-black/60" />
         <Asset src="proportions-wordmark.svg" className="absolute inset-[26.25%_1.24%_26.15%_38.33%]" sizes="545px" />
       </div>
@@ -26,16 +25,16 @@ export function ProportionsDiagram() {
 }
 
 /** Scale: a 437×293 Pampas-100 layout with tinted 16px margins, dotted rules, Spark top-right, wordmark bottom-left. */
-export function ScaleDiagram() {
+export function ScaleDiagram({ caption }: { caption: string }) {
   return (
-    <div className="relative flex h-[293.5px] w-full max-w-[437px] shrink-0 overflow-hidden bg-pampas-100 p-[15.654px]">
+    <div dir="ltr" className="relative flex h-[293.5px] w-full max-w-[437px] shrink-0 overflow-hidden bg-pampas-100 p-[15.654px]">
       <div className="relative flex flex-1 flex-col gap-[6.5px]">
         <div className="flex flex-1 flex-col items-end">
           <Mark className="size-[23.3px] text-pampas-800" />
         </div>
         <WordmarkArt tone="grey-950" className="h-[16.96px] w-[70.62px]" />
-        <p className="absolute left-[27.35px] right-4 top-[44.1px] text-base leading-6 text-grey-700 sm:right-auto sm:w-[351px] sm:text-xl sm:leading-7">
-          Our standard wordmark height <br className="hidden sm:inline" />is equal to our margin. Our {M} <br className="hidden sm:inline" />height is 1.7x this measurement.
+        <p dir="auto" className="absolute left-[27.35px] right-4 top-[44.1px] text-base leading-6 text-grey-700 sm:right-auto sm:w-[351px] sm:text-xl sm:leading-7">
+          {caption}
         </p>
       </div>
       <div className="absolute inset-y-0 left-0 w-[15.654px] bg-white/5" />
@@ -83,9 +82,9 @@ function Rules({ dark }: { dark?: boolean }) {
 function TileColumn({ label, children, caption }: { label?: string; children: ReactNode; caption: ReactNode }) {
   return (
     <figure className="flex w-[229px] shrink-0 flex-col gap-3">
-      <p aria-hidden={!label} className={`text-sm font-medium leading-5 text-grey-700 ${label ? "" : "opacity-0"}`}>{label ?? "Primary"}</p>
+      <p aria-hidden={!label} className={`text-sm font-medium leading-5 text-grey-700 ${label ? "" : "opacity-0"}`}>{label ?? "\u00a0"}</p>
       {children}
-      <figcaption>{caption}</figcaption>
+      <figcaption dir="auto">{caption}</figcaption>
     </figure>
   );
 }
@@ -101,10 +100,12 @@ function Numbered({ n, children }: { n: number; children: ReactNode }) {
 
 const lightTile = "relative flex h-[330px] w-full items-start overflow-hidden border border-grey-400 p-[14px]";
 
-export function PlacementTiles() {
+type TileText = { primary: string; secondary: string; captions: string[] };
+
+export function PlacementTiles({ primary, secondary, captions }: TileText) {
   return (
-    <div className="flex flex-wrap justify-center gap-4 sm:justify-start xl:flex-nowrap xl:justify-between xl:gap-0">
-      <TileColumn label="Primary" caption={<Numbered n={1}>Left-aligned Diagonal</Numbered>}>
+    <div dir="ltr" className="flex flex-wrap justify-center gap-4 sm:justify-start xl:flex-nowrap xl:justify-between xl:gap-0">
+      <TileColumn label={primary} caption={<Numbered n={1}>{captions[0]}</Numbered>}>
         <div className={lightTile}>
           <div className="relative flex h-full flex-1 flex-col items-end justify-between overflow-hidden">
             <Columns />
@@ -116,7 +117,7 @@ export function PlacementTiles() {
         </div>
       </TileColumn>
 
-      <TileColumn label="Secondary" caption={<Numbered n={2}>Left-aligned Vertical</Numbered>}>
+      <TileColumn label={secondary} caption={<Numbered n={2}>{captions[1]}</Numbered>}>
         <div className={lightTile}>
           <div className="relative flex h-full flex-1 flex-col items-start justify-between overflow-hidden">
             <Columns>
@@ -133,7 +134,7 @@ export function PlacementTiles() {
         </div>
       </TileColumn>
 
-      <TileColumn caption={<Numbered n={3}>Baseline horizontal</Numbered>}>
+      <TileColumn caption={<Numbered n={3}>{captions[2]}</Numbered>}>
         <div className={lightTile}>
           <div className="relative flex h-full flex-1 items-end justify-between overflow-hidden">
             <Columns />
@@ -149,7 +150,7 @@ export function PlacementTiles() {
         </div>
       </TileColumn>
 
-      <TileColumn caption={<Numbered n={4}>Centered vertical</Numbered>}>
+      <TileColumn caption={<Numbered n={4}>{captions[3]}</Numbered>}>
         <div className={lightTile}>
           <div className="relative flex h-full flex-1 flex-col items-center justify-between overflow-hidden py-12">
             <Asset src="placement-centered-frame.svg" className="absolute left-1/2 top-1/2 h-[300px] w-[199px] -translate-x-1/2 -translate-y-1/2" sizes="199px" />
@@ -166,10 +167,10 @@ export function PlacementTiles() {
 const darkTile = "relative flex h-[330px] w-full items-start overflow-hidden bg-pampas-600 p-[14px]";
 const dontCaption = "text-[10px] leading-3";
 
-export function DontTiles() {
+export function DontTiles({ primary, secondary, captions }: TileText) {
   return (
-    <div className="flex flex-wrap justify-center gap-4 sm:justify-start xl:flex-nowrap xl:justify-between xl:gap-0">
-      <TileColumn label="Primary" caption={<Verdict ok={false} className={dontCaption}>Don&apos;t align our wordmark to the right edge of a layout.</Verdict>}>
+    <div dir="ltr" className="flex flex-wrap justify-center gap-4 sm:justify-start xl:flex-nowrap xl:justify-between xl:gap-0">
+      <TileColumn label={primary} caption={<Verdict ok={false} className={dontCaption}>{captions[0]}</Verdict>}>
         <div className={darkTile}>
           <div className="flex h-full flex-1 flex-col items-end justify-between overflow-hidden">
             <Mark className={`${spark} text-white`} />
@@ -179,7 +180,7 @@ export function DontTiles() {
         </div>
       </TileColumn>
 
-      <TileColumn label="Secondary" caption={<Verdict ok={false} className={dontCaption}>Don&apos;t align our wordmark to the top margin.</Verdict>}>
+      <TileColumn label={secondary} caption={<Verdict ok={false} className={dontCaption}>{captions[1]}</Verdict>}>
         <div className={darkTile}>
           <div className="flex h-full flex-1 flex-col items-end justify-between overflow-hidden">
             <div className="w-full"><WordmarkArt tone="white" className={wm} /></div>
@@ -189,7 +190,7 @@ export function DontTiles() {
         </div>
       </TileColumn>
 
-      <TileColumn caption={<Verdict ok={false} className={dontCaption}>Don&apos;t alter the size relationship between our wordmark and {M}.</Verdict>}>
+      <TileColumn caption={<Verdict ok={false} className={dontCaption}>{captions[2]}</Verdict>}>
         <div className={darkTile}>
           <div className="flex h-full flex-1 flex-col items-end justify-between overflow-hidden">
             <Mark className="size-[39.7px] shrink-0 text-white" />
@@ -199,7 +200,7 @@ export function DontTiles() {
         </div>
       </TileColumn>
 
-      <TileColumn caption={<Verdict ok={false} className={dontCaption}>Don&apos;t create a lockup with our wordmark and {M}.</Verdict>}>
+      <TileColumn caption={<Verdict ok={false} className={dontCaption}>{captions[3]}</Verdict>}>
         <div className={darkTile}>
           <div className="flex h-full flex-1 flex-col items-start justify-end overflow-hidden">
             <div role="img" aria-label={`${brand.name} lockup`} className="relative h-[26px] w-[79.3px] shrink-0">

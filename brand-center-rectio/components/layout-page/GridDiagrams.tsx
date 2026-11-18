@@ -8,23 +8,23 @@ import { Asset } from "./Asset";
 const sg = "font-[family-name:var(--font-secondary)]";
 
 /** Sample document sizes table (Figma "Typography Scale": 354px, pampas-200 header, last column pampas-50). */
-export function SpecTable({ last, rows }: { last: string; rows: [string, string, string][] }) {
+export function SpecTable({ head, rows }: { head: [string, string, string]; rows: [string, string, string][] }) {
   return (
     <table className="w-full max-w-[354px] shrink-0 table-fixed border-collapse text-[10px] leading-4">
       <colgroup><col /><col className="w-24" /><col className="w-[63px]" /></colgroup>
       <thead>
-        <tr className={`bg-pampas-200 text-left font-medium text-pampas-950 ${sg}`}>
-          <th className="px-3 py-2 font-medium">Document Type</th>
-          <th className="whitespace-nowrap px-3 py-2 font-medium">Dimensions</th>
-          <th className="px-3 py-2 font-medium">{last}</th>
+        <tr className={`bg-pampas-200 text-start font-medium text-pampas-950 ${sg}`}>
+          <th className="px-3 py-2 font-medium">{head[0]}</th>
+          <th className="whitespace-nowrap px-3 py-2 font-medium">{head[1]}</th>
+          <th className="px-3 py-2 font-medium">{head[2]}</th>
         </tr>
       </thead>
       <tbody className="text-grey-700">
         {rows.map((r) => (
           <tr key={r[0]} className="border-b border-pampas-200">
             <td className="whitespace-nowrap px-3 py-1.5">{r[0]}</td>
-            <td className="whitespace-nowrap px-3 py-1.5">{r[1]}</td>
-            <td className="whitespace-nowrap bg-pampas-50 px-3 py-1.5">{r[2]}</td>
+            <td dir="ltr" className="whitespace-nowrap px-3 py-1.5 text-start">{r[1]}</td>
+            <td dir="ltr" className="whitespace-nowrap bg-pampas-50 px-3 py-1.5 text-start">{r[2]}</td>
           </tr>
         ))}
       </tbody>
@@ -36,10 +36,10 @@ export function SpecTable({ last, rows }: { last: string; rows: [string, string,
 function Copy({ big, small }: { big: string[]; small: string[] }) {
   return (
     <>
-      <p className={`absolute left-[60px] right-[60px] top-[60px] text-2xl leading-[1.2] text-black lg:right-auto lg:left-[85px] lg:top-[73px] lg:whitespace-nowrap lg:text-5xl lg:leading-[58px] ${sg}`}>
+      <p dir="auto" className={`absolute left-[60px] right-[60px] top-[60px] text-2xl leading-[1.2] text-black lg:right-auto lg:left-[85px] lg:top-[73px] lg:whitespace-nowrap lg:text-5xl lg:leading-[58px] ${sg}`}>
         {big.map((l, i) => <span key={i} className="lg:block">{l}{" "}</span>)}
       </p>
-      <p className="absolute bottom-[60px] left-[60px] right-[60px] text-sm text-grey-950 lg:bottom-auto lg:left-[89px] lg:right-auto lg:top-[392px] lg:w-[380px] lg:text-lg lg:leading-6">
+      <p dir="auto" className="absolute bottom-[60px] left-[60px] right-[60px] text-sm text-grey-950 lg:bottom-auto lg:left-[89px] lg:right-auto lg:top-[392px] lg:w-[380px] lg:text-lg lg:leading-6">
         {small.map((l, i) => <span key={i} className="lg:block">{l}{" "}</span>)}
       </p>
     </>
@@ -54,7 +54,7 @@ export function Dimension({ label }: { label: string }) {
   return (
     <div className="flex w-full items-center gap-4">
       <Asset src="dimension-line.svg" className="h-1.5 flex-1" />
-      <p className={`whitespace-nowrap text-sm font-medium leading-5 text-grey-950 ${sg}`}>{label}</p>
+      <p dir="auto" className={`whitespace-nowrap text-sm font-medium leading-5 text-grey-950 ${sg}`}>{label}</p>
       <Asset src="dimension-line.svg" className="h-1.5 flex-1 rotate-180 -scale-y-100" />
     </div>
   );
@@ -63,7 +63,7 @@ export function Dimension({ label }: { label: string }) {
 /** Margins: 24 dashed columns, tinted 45px margin bands on all four sides with X markers in the corners. */
 export function MarginsDiagram({ big, small }: { big: string[]; small: string[] }) {
   return (
-    <div className={frame}>
+    <div dir="ltr" className={frame}>
       {Array.from({ length: 24 }).map((_, i) => <div key={i} className={`h-full min-w-px flex-1 ${i < 23 ? "border-r border-dashed border-pampas-200" : ""}`} />)}
       <div className="absolute inset-x-0 top-0 h-11 bg-pampas-600/15" />
       <div className="absolute inset-x-0 bottom-0 h-11 bg-pampas-600/15" />
@@ -92,7 +92,7 @@ function SideBar({ side, children }: { side: "left" | "right"; children?: ReactN
 /** Columns: 6 tinted columns with 8px white gutters inside the white margin frame. */
 export function ColumnsDiagram({ big, small }: { big: string[]; small: string[] }) {
   return (
-    <div className={frame}>
+    <div dir="ltr" className={frame}>
       <div className="h-full w-[45px] shrink-0 border-r border-dashed border-pampas-200" />
       <div className="flex h-full min-w-px flex-1 items-center gap-2">
         {Array.from({ length: 6 }).map((_, i) => <div key={i} className="h-full min-w-px flex-1 border-r border-dashed border-pampas-200 bg-pampas-600/15" />)}
@@ -116,7 +116,7 @@ export function GuttersDiagram({ big, small }: { big: string[]; small: string[] 
   const gx = `absolute left-[3px] top-[14px] text-xs font-medium leading-4 text-grey-500 ${sg}`;
   const sx = `absolute bottom-[14px] text-xs font-medium leading-4 text-pampas-950 ${sg}`;
   return (
-    <div className={frame}>
+    <div dir="ltr" className={frame}>
       <div className="h-full w-[45px] shrink-0 border-r border-dashed border-pampas-200" />
       <div className="flex h-full min-w-px flex-1 items-center gap-4 bg-pampas-600/15">
         {Array.from({ length: 6 }).map((_, i) => <div key={i} className="h-full min-w-px flex-1 bg-white" />)}

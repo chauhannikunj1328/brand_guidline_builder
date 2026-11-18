@@ -8,12 +8,10 @@ import { Asset, Verdict } from "./Asset";
    in Figma; it applies the same tile language to the gaps between four columns (4 / 11 / 22px). */
 
 const samples = [
-  { label: "Too Narrow", ok: false, margin: 18, gutter: 4 },
-  { label: "Just Right", ok: true, margin: 22, gutter: 11 },
-  { label: "Too Wide", ok: false, margin: 28, gutter: 22 },
+  { ok: false, margin: 18, gutter: 4 },
+  { ok: true, margin: 22, gutter: 11 },
+  { ok: false, margin: 28, gutter: 22 },
 ];
-const tabs = ["Margins", "Gutters"] as const;
-type Tab = (typeof tabs)[number];
 
 /** One tile: a white frame with tinted margin bands (corners overlap darker) and pampas-300 guide rules.
     With `gutter`, the live area is split into four white columns separated by tinted gutters. */
@@ -25,7 +23,7 @@ function Tile({ m, gutter }: { m: number; gutter?: number }) {
     </div>
   );
   return (
-    <div className="relative h-[150px] w-full overflow-hidden border border-pampas-300 bg-white">
+    <div dir="ltr" className="relative h-[150px] w-full overflow-hidden border border-pampas-300 bg-white">
       <div className="absolute inset-x-0 top-0 bg-pampas-600/10" style={{ height: e }} />
       <div className="absolute inset-x-0 bottom-0 bg-pampas-600/10" style={{ height: e }} />
       <div className="absolute inset-y-0 left-0 bg-pampas-600/10" style={{ width: e }} />
@@ -43,26 +41,26 @@ function Tile({ m, gutter }: { m: number; gutter?: number }) {
   );
 }
 
-export default function OpticalGuide() {
-  const [tab, setTab] = useState<Tab>("Margins");
+export default function OpticalGuide({ heading, aria, tabs, labels }: { heading: string; aria: string; tabs: string[]; labels: string[] }) {
+  const [tab, setTab] = useState(0);
   return (
     <div className="flex flex-col gap-[60px]">
       <div className="flex flex-col gap-8">
-        <h2 className="t-h3 text-grey-950">Optical Guide</h2>
-        <div role="tablist" aria-label="Optical guide" className="flex gap-3">
-          {tabs.map((t) => (
-            <button key={t} type="button" role="tab" aria-selected={tab === t} onClick={() => setTab(t)}
-              className={`rounded-[80px] border px-5 py-1.5 text-base leading-6 transition-colors ${tab === t ? "border-pampas-700 text-pampas-700" : "border-grey-300 text-grey-400 hover:text-grey-600"}`}>
+        <h2 className="t-h3 text-grey-950">{heading}</h2>
+        <div role="tablist" aria-label={aria} className="flex gap-3">
+          {tabs.map((t, i) => (
+            <button key={i} type="button" role="tab" aria-selected={tab === i} onClick={() => setTab(i)}
+              className={`rounded-[80px] border px-5 py-1.5 text-base leading-6 transition-colors ${tab === i ? "border-pampas-700 text-pampas-700" : "border-grey-300 text-grey-400 hover:text-grey-600"}`}>
               {t}
             </button>
           ))}
         </div>
       </div>
-      <div role="tabpanel" aria-label={tab} className="grid gap-4 sm:grid-cols-3">
-        {samples.map((s) => (
-          <figure key={s.label} className="flex flex-col gap-3">
-            <Tile m={tab === "Margins" ? s.margin : 22} gutter={tab === "Gutters" ? s.gutter : undefined} />
-            <Verdict ok={s.ok}>{s.label}</Verdict>
+      <div role="tabpanel" aria-label={tabs[tab]} className="grid gap-4 sm:grid-cols-3">
+        {samples.map((s, i) => (
+          <figure key={i} className="flex flex-col gap-3">
+            <Tile m={tab === 0 ? s.margin : 22} gutter={tab === 1 ? s.gutter : undefined} />
+            <Verdict ok={s.ok}>{labels[i]}</Verdict>
           </figure>
         ))}
       </div>

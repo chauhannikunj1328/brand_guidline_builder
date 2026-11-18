@@ -1,0 +1,290 @@
+{
+  "title": "Brand OS",
+  "note": "Nota",
+  "rail": {
+    "frames": "Marcos",
+    "groundRules": "Reglas básicas",
+    "frameNotes": "Notas sobre los marcos",
+    "optical": "Guía óptica",
+    "behaviors": "Comportamientos del marco",
+    "window": "Ventana",
+    "windowTips": "Consejos para ventanas",
+    "tiles": "Mosaicos",
+    "tileTips": "Consejos para mosaicos",
+    "outlines": "Contornos",
+    "outlineTips": "Consejos para contornos",
+    "frameDonts": "Qué no hacer con los marcos",
+    "buttons": "Botones",
+    "styling": "Estilo",
+    "buttonTypes": "Tipos de botón",
+    "buttonDonts": "Qué no hacer"
+  },
+  "pills": [
+    "Añadir al carrito",
+    "Nuevo en {name}",
+    "Tendencia ahora"
+  ],
+  "frames": {
+    "heading": "Marcos",
+    "p1": "Nuestros marcos son contenedores flexibles y versátiles que imitan el aspecto y el comportamiento de los mosaicos digitales en una interfaz de usuario.",
+    "p2": "Ayudan a centrar la atención en un producto o titular clave, o a organizar varias imágenes en una sola composición."
+  },
+  "ground": {
+    "heading": "Reglas básicas para el uso de marcos",
+    "p1": "Nuestros marcos son herramientas potentes y flexibles que pueden usarse en exceso o de forma indebida con facilidad. ¡Un gran poder conlleva una gran responsabilidad!",
+    "p2": "Siempre que trabajes con marcos, recuerda tres puntos clave:",
+    "rules": [
+      {
+        "title": "Menos es más.",
+        "text": "Evita la tentación de abusar de los marcos. Mantén al mínimo el número de marcos por composición. Un solo marco bien ejecutado es más potente que tres que compiten entre sí."
+      },
+      {
+        "title": "No decores.",
+        "text": "Los marcos son herramientas funcionales que existen para dirigir la mirada del espectador a un punto focal concreto o para contar una historia visual con intención. No añadas marcos innecesarios como relleno estético."
+      },
+      {
+        "title": "Mantén el orden.",
+        "text": "La alineación y el espaciado entre marcos deben ser limpios, uniformes e intencionados. No abordes los marcos con mentalidad de collage."
+      }
+    ]
+  },
+  "notes": {
+    "heading": "Notas sobre los marcos",
+    "radius": {
+      "label": "Radio de esquina",
+      "text": [
+        "Para determinar el radio de esquina de un marco, divide su lado más largo entre 15. Así las esquinas se escalan de forma proporcional en todas las aplicaciones. Según el tamaño y las dimensiones del marco, puede ser necesario ajustar esta medida inicial por corrección óptica.",
+        "Cuando uses varios marcos en una misma composición, todos los radios de esquina deben coincidir con el radio promedio, no con el más pequeño ni con el más grande.",
+        "En las presentaciones estándar de 1920x1080, usamos siempre un radio de esquina predeterminado de 30 px."
+      ]
+    },
+    "outline": {
+      "label": "Grosor del contorno",
+      "text": [
+        "Para determinar el grosor correcto del contorno de un marco, divide su lado más largo entre 150. Según el tamaño y la proporción del marco, puede ser necesario ajustar esta cifra por corrección óptica.",
+        "En las presentaciones estándar de 1920x1080, usamos siempre un grosor de trazo predeterminado de 1 pt."
+      ]
+    }
+  },
+  "optical": {
+    "heading": "Guía óptica",
+    "radius": {
+      "tab": "Radio",
+      "text": "Tras establecer un radio de esquina con nuestra fórmula, comprueba su corrección óptica con los ejemplos que se muestran aquí. Si el radio es demasiado grande o demasiado pequeño, ajústalo según corresponda.",
+      "labels": [
+        "Demasiado pequeño",
+        "Perfecto",
+        "Demasiado grande"
+      ]
+    },
+    "outline": {
+      "tab": "Contorno",
+      "text": "Tras establecer un grosor de contorno con nuestra fórmula, comprueba su corrección óptica con los ejemplos que se muestran aquí. Si el contorno es demasiado fino o demasiado grueso, ajústalo según corresponda.",
+      "labels": [
+        "Demasiado fino",
+        "Perfecto",
+        "Demasiado grueso"
+      ]
+    }
+  },
+  "behaviors": {
+    "heading": "Comportamientos del marco",
+    "intro": "Nuestros marcos están diseñados para interactuar con la fotografía y el vídeo mediante tres comportamientos distintos:",
+    "items": [
+      {
+        "label": "Ventana",
+        "text": "contiene fotografía o vídeo."
+      },
+      {
+        "label": "Mosaicos",
+        "text": "ayudan a anclar productos aislados."
+      },
+      {
+        "label": "Contornos",
+        "text": "enfatizan un punto focal."
+      }
+    ]
+  },
+  "window": {
+    "heading": "Ventana",
+    "text": [
+      "Usamos ventanas para contener fotografía y vídeo. Se pueden usar como máximo tres ventanas por composición estática para que el mensaje sea conciso y evitar la saturación. Las imágenes deben reunirse en torno a un tema o mensaje común.",
+      "Alinea nuestras ventanas con orden a la retícula. Siempre que sea posible, deben ocupar toda la altura o anchura entre los márgenes."
+    ],
+    "steps": [
+      "Deja siempre un espacio libre igual al margen entre los marcos y el contenido que los rodea.",
+      "Las ventanas pueden sangrar por uno o dos bordes para imitar un desplazamiento. Los bordes deben estar en lados opuestos.",
+      "Se pueden usar hasta tres ventanas en una misma composición estática, ni una más."
+    ]
+  },
+  "windowTips": {
+    "heading": "Consejos para ventanas",
+    "intro": "Al usar ventanas en una composición, sigue siempre estos consejos para una aplicación coherente:",
+    "items": [
+      {
+        "head": "Alineación",
+        "text": "Alinea las ventanas en bloques ordenados y limpios que ocupen todo el ancho o el alto de la composición."
+      },
+      {
+        "head": "",
+        "text": "No apliques marcos de forma desordenada, dispersa o desalineada."
+      },
+      {
+        "head": "Recorte",
+        "text": "Recorta las ventanas por bordes opuestos de la composición para imitar el desplazamiento o el deslizamiento."
+      },
+      {
+        "head": "",
+        "text": "No recortes las ventanas por bordes adyacentes de la composición."
+      }
+    ]
+  },
+  "tiles": {
+    "heading": "Mosaicos",
+    "text": [
+      "Los mosaicos imitan la estética y el comportamiento de una experiencia de compra digital. Se pueden usar hasta cinco mosaicos por pieza estática si están bien alineados y tienen un tamaño uniforme. En movimiento se pueden usar más.",
+      "Los mosaicos se aplican sobre fondos blancos para que resulten más digitales y permitan una gran variedad de colores."
+    ],
+    "steps": [
+      "Los mosaicos pueden flotar en el centro de la composición cuando se muestra un solo producto.",
+      "Se pueden usar hasta cinco mosaicos en una misma composición estática; mantenlos ordenados y de tamaño uniforme.",
+      "Un solo mosaico puede combinarse con una sola ventana, cuando proceda."
+    ]
+  },
+  "tileTips": {
+    "heading": "Consejos para mosaicos",
+    "intro": "Al usar mosaicos en una composición, sigue estos consejos para una aplicación coherente:",
+    "steps": [
+      "El nombre o el precio de un producto puede colocarse dentro de un mosaico, alineado a una esquina interior. Deja un margen generoso, aproximadamente igual al margen de la composición. El texto debe ser negro o blanco.",
+      "Los productos se fotografían de frente o desde arriba, apoyados sobre una superficie (o flotando sobre ella). Incluye siempre sombras naturales para dar anclaje y profundidad.",
+      "Un producto puede sobresalir del borde de su mosaico, cuando proceda. Los productos deben ocupar el mismo espacio visual, sea cual sea su tamaño real.",
+      "Elige los colores de los mosaicos para complementar los productos o para representar momentos estacionales concretos. Mantén un contraste suficiente entre el producto y su fondo."
+    ],
+    "alt": "Un mosaico de producto sobre fondo Pampas, con el título situado en una esquina interior",
+    "evergreen": {
+      "title": "Colores permanentes",
+      "text": "Estos son nuestros colores de mosaico preferidos, que se usan sin importar la temporada ni la categoría."
+    },
+    "seasonal": {
+      "title": "Colores de temporada",
+      "example": "Solo como ejemplo",
+      "text": "Para una fecha como el «Día de la Madre», elige los colores de los mosaicos de la paleta de temporada definida para esa ocasión."
+    }
+  },
+  "outlines": {
+    "heading": "Contornos",
+    "text": [
+      "Los contornos se usan sobre fotografía o vídeo de estilo de vida para centrar la atención en un producto o momento clave. Solo se puede usar un contorno por composición. No pueden aplicarse junto con otros marcos ni comportamientos de marco.",
+      "Los contornos son especialmente eficaces en movimiento, como muestran los ejemplos 2 y 3. A menudo se usan con precios, nombres de producto o botones."
+    ],
+    "steps": [
+      "Al alinear el texto con un contorno, deja siempre un espacio libre igual al margen.",
+      "Los contornos pueden colocarse con flexibilidad para destacar mejor el producto dentro de una escena.",
+      "Un contorno puede interactuar con el sujeto en el que se centra, para aportar más profundidad y dinamismo."
+    ]
+  },
+  "outlineTips": {
+    "heading": "Consejos para contornos",
+    "intro": "Al usar contornos en una composición, sigue siempre estos consejos para una aplicación coherente:",
+    "items": [
+      {
+        "head": "Color",
+        "text": "Aplica los marcos en blanco o negro para que coincidan con el texto."
+      },
+      {
+        "head": "",
+        "text": "No apliques marcos en ningún otro color."
+      },
+      {
+        "head": "Interacción",
+        "text": "Deja que los marcos interactúen con los sujetos o productos."
+      },
+      {
+        "head": "",
+        "text": "No superpongas los marcos de forma torpe sobre sujetos o productos, y menos aún sobre rostros."
+      }
+    ]
+  },
+  "frameDonts": {
+    "heading": "Qué no hacer con los marcos",
+    "captions": [
+      "No apliques marcos dentro de otros marcos.",
+      "No hagas collages ni superpongas marcos.",
+      "No uses varios contornos por composición.",
+      "No mezcles todos nuestros estilos de marco.",
+      "No uses marcos sólidos como elementos decorativos detrás de textos o titulares.",
+      "No uses marcos sólidos detrás del producto en imágenes o vídeos de estilo de vida.",
+      "No uses contornos como elementos decorativos alrededor de textos o titulares.",
+      "No uses contornos en ningún color que no sea negro o blanco."
+    ]
+  },
+  "buttons": {
+    "heading": "Botones",
+    "p1": "Nuestros botones «Brand OS» son elementos gráficos que imitan el aspecto de una experiencia de compra digital en comunicaciones no digitales.",
+    "p2": "Al usar botones en piezas estáticas o en movimiento, nuestro diseño refleja una experiencia de compra digital y refuerza nuestro posicionamiento tecnológico."
+  },
+  "styling": {
+    "heading": "Estilo",
+    "p1": "Nuestros botones tienen forma de píldora con los extremos totalmente redondeados y se presentan en formato de contorno y sólido. El grosor del contorno debe coincidir ópticamente con el peso de nuestra tipografía (en {font} Regular) y con los símbolos incluidos (lupa, signo más, etc.).",
+    "p2": "Estas son nuestras combinaciones de color predeterminadas, que priorizan el Pampas para los botones sólidos. Sobre fondos Pampas pueden usarse botones Vanilla. Nuestra barra de búsqueda es el único botón que puede aparecer en blanco sólido, para reflejar señales de interfaz conocidas.",
+    "note": "Esta no es una lista exhaustiva de todos los botones posibles. Pueden crearse botones adicionales dentro de cada categoría, siempre que respeten estas reglas de estilo.",
+    "specAlts": [
+      "Los botones CTA solo llevan texto, se usan para frases breves o despedidas, y el texto va en minúsculas con inicial mayúscula. Ejemplo: Compra ahora.",
+      "Los botones de acción combinan texto y símbolos para contar la historia del producto, y el texto va en minúsculas con inicial mayúscula. Ejemplo: Añadir al carrito.",
+      "Los botones de búsqueda son blancos o de contorno e imitan una barra de búsqueda digital, con el texto en minúsculas. Ejemplo: Decoración del hogar.",
+      "Los botones de acento solo llevan símbolo y realzan el aspecto digital de nuestros marcos. Ejemplo: signo más."
+    ]
+  },
+  "buttonTypes": [
+    {
+      "label": "Botones CTA",
+      "text": "Los botones CTA pueden usarse en lugar de los CTA tipográficos habituales cuando se busca una estética más digital o cuando el objetivo es llevar a los espectadores a nuestro sitio web. Los botones CTA siempre usan minúsculas con inicial mayúscula.",
+      "steps": [
+        "El botón CTA puede colocarse en la esquina inferior derecha, con un tamaño igual a la altura de nuestro logotipo.",
+        "El botón CTA puede colocarse en la esquina inferior izquierda, debajo del titular.",
+        "Sobre fondos Pampas, el color del botón CTA sólido cambia a Vanilla."
+      ]
+    },
+    {
+      "label": "Botones de acción",
+      "text": "Los botones de acción se combinan con fotos para contar historias de producto. Pueden enumerar los nombres de productos concretos o hablar de beneficios más emocionales. Un botón de acción bien escrito puede funcionar por sí solo como titular. Usa minúsculas con inicial mayúscula, salvo que nombres un producto o una marca concretos.",
+      "steps": [
+        "Se pueden usar como máximo tres botones de acción por composición para destacar distintos productos o marcas.",
+        "Un único botón de acción puede centrarse en la composición, sobre todo sobre un fondo blanco.",
+        "Cuando se colocan sobre una foto, los botones de acción pueden disponerse de forma orgánica para adaptarse mejor a la imagen."
+      ]
+    },
+    {
+      "label": "Botones de búsqueda",
+      "text": "Los botones de búsqueda imitan la acción de buscar un producto en {name}.com. Usan minúsculas para simular que alguien escribe, salvo que nombren un producto o una marca concretos. Solo se puede usar un botón de búsqueda por composición.",
+      "steps": [
+        "Los botones de búsqueda solo aparecen en blanco sólido o con contorno, para imitar señales de interfaz conocidas.",
+        "Los botones de búsqueda pueden colocarse de forma orgánica sobre una imagen o centrarse en la composición.",
+        "Los botones de búsqueda pueden usarse junto con botones de acción. Limítate a uno de cada tipo."
+      ]
+    },
+    {
+      "label": "Botones de acento",
+      "text": "Los botones de acento se añaden a los marcos para reforzar la sensación de una experiencia de compra digital. Su tamaño depende del radio de sus marcos y se alojan en la esquina con un margen suave. Los ejemplos indican una acción de «Añadir al carrito».",
+      "steps": [
+        "Los botones de acento se colocan en la esquina de los mosaicos de producto o de los marcos con contorno.",
+        "Se puede usar un botón de acento por marco.",
+        "Cuando se usa en un marco con contorno, el grosor del botón de acento debe coincidir con el de su marco."
+      ]
+    }
+  ],
+  "buttonDonts": {
+    "heading": "Qué no hacer con los botones",
+    "captions": [
+      "No uses botones rectangulares.",
+      "No cambies el color de los botones de búsqueda sólidos a ningún color que no sea blanco.",
+      "No cambies el color de los botones de contorno a ningún color que no sea negro o blanco.",
+      "No pongas el texto de los botones en negrita ni en mayúsculas.",
+      "No uses botones en blanco sólido, salvo nuestros botones de búsqueda.",
+      "No combines un contorno y un símbolo de distinto grosor.",
+      "No hagas un botón de acento mayor que el radio de esquina de su marco.",
+      "No hagas un botón de acento menor que el radio de esquina de su marco.",
+      "No cambies el color de los botones de acento con contorno."
+    ]
+  }
+}
