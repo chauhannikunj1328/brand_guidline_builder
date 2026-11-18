@@ -20,8 +20,10 @@ Open http://localhost:3000. (Port is fixed in `package.json` so both editions ca
 | What | Where |
 | --- | --- |
 | Colours, radii, container width | `app/globals.css` → `:root` tokens |
-| Fonts | `app/layout.tsx` (`next/font/google` or `next/font/local`) |
-| Name, mark name, tagline, copy, menu, footer columns, palette metadata | `content/brand.config.ts` |
+| Fonts | `app/[lang]/layout.tsx` (`next/font/google` or `next/font/local`) |
+| Name, mark name, palette metadata, download links | `content/brand.config.ts` |
+| Menu and footer links (addresses) | `lib/i18n/nav.ts` |
+| Page text, menu and footer labels, in each language | `content/i18n/<lang>/*.json` |
 | Logo mark / wordmark | `components/Logo.tsx` (replace the SVG paths) |
 
 ## Pages (1:1 with the reference brand center)
