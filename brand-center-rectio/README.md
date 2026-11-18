@@ -20,8 +20,10 @@ Open http://localhost:3000. (Port is fixed in `package.json` so both editions ca
 | What | Where |
 | --- | --- |
 | Colours, radii, container width | `app/globals.css` → `:root` tokens |
-| Fonts | `app/layout.tsx` (`next/font/google` or `next/font/local`) |
-| Name, mark name, tagline, copy, menu, footer columns, palette metadata | `content/brand.config.ts` |
+| Fonts | `app/[lang]/layout.tsx` (`next/font/google` or `next/font/local`) |
+| Name, mark name, palette metadata, download links | `content/brand.config.ts` |
+| Menu and footer links (addresses) | `lib/i18n/nav.ts` |
+| Page text, menu and footer labels, in each language | `content/i18n/<lang>/*.json` |
 | Logo mark / wordmark | `components/Logo.tsx` (replace the SVG paths) |
 
 ## Pages (1:1 with the reference brand center)
@@ -72,3 +74,19 @@ content/             brand.config.ts   ← edit this
 lib/pageLinks.tsx    prev/next visual cards
 public/downloads/    asset package
 ```
+
+## Languages
+
+English is the main language. Spanish and Arabic are being added page by page.
+
+| Language | Address | Direction |
+| --- | --- | --- |
+| English | `/color` | left to right |
+| Español | `/es/color` | left to right |
+| العربية | `/ar/color` | right to left |
+
+- Pages live in `app/[lang]`. `proxy.ts` serves English at the plain address and redirects `/en/...` to it.
+- Text is in `content/i18n/<lang>/*.json`. English is the source: Spanish and Arabic must have the same keys (the type check enforces it).
+- A page only gets a Spanish or Arabic address once it is listed in `TRANSLATED` in `lib/i18n/config.ts`. Until then every link and the language menu keep visitors on the English page.
+- Use `LocalizedLink` (not `next/link`) for internal links, and logical CSS (`ps-`, `pe-`, `start-`, `end-`, `border-s`) instead of `pl-`, `pr-`, `left-`, `right-` so layouts flip for Arabic.
+- Spanish and Arabic text is written by Claude and needs review by a native speaker. Terms to keep consistent: `content/i18n/GLOSSARY.md`.

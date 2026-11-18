@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import LocalizedLink from "@/components/i18n/LocalizedLink";
+import { useI18n } from "@/components/i18n/I18nProvider";
 import { useEffect, useState } from "react";
 import { Mark } from "@/components/Logo";
 import { MenuIcon } from "@/components/ui/icons";
@@ -19,6 +20,7 @@ const isGroup = (e: RailEntry): e is RailGroup => "group" in e;
    Grouped rails (Typography, Layout): white, 14px Space Grotesk title, 16px group titles, indented 14px anchors. */
 export default function SideRail({ title, items }: { title: string; items: RailEntry[] }) {
   const { setOpen } = useMenu();
+  const { t } = useI18n();
   const grouped = items.some(isGroup);
   const ids = items.flatMap((e) => (isGroup(e) ? [...(e.id ? [e.id] : []), ...e.items.map((i) => i.id)] : [e.id]));
   const [active, setActive] = useState(ids[0] ?? "");
@@ -41,24 +43,24 @@ export default function SideRail({ title, items }: { title: string; items: RailE
   );
 
   return (
-    <aside className={`hidden w-[var(--rail-w)] shrink-0 border-r border-grey-200 lg:block ${grouped ? "bg-white" : "bg-grey-50"}`}>
+    <aside className={`hidden w-[var(--rail-w)] shrink-0 border-e border-grey-200 lg:block ${grouped ? "bg-white" : "bg-grey-50"}`}>
       <div className={`sticky top-0 flex max-h-screen flex-col overflow-y-auto px-10 py-[38px] ${grouped ? "gap-6" : "gap-4"}`}>
         <div className="flex items-center justify-between">
-          <Link href="/" aria-label="Rectio home" className="flex size-11 items-center justify-center text-black"><Mark className="size-[86%]" /></Link>
-          <button type="button" aria-label="Open menu" onClick={() => setOpen(true)} className="flex size-10 items-center justify-center rounded-lg border border-pampas-200 text-grey-950">
+          <LocalizedLink href="/" aria-label={t.aria.home} className="flex size-11 items-center justify-center text-black"><Mark className="size-[86%]" /></LocalizedLink>
+          <button type="button" aria-label={t.aria.openMenu} onClick={() => setOpen(true)} className="flex size-10 items-center justify-center rounded-lg border border-pampas-200 text-grey-950">
             <MenuIcon />
           </button>
         </div>
         {grouped ? (
           <div className="flex flex-col gap-5">
             <h2 className="font-[family-name:var(--font-secondary)] text-sm leading-5 text-grey-700">{title}</h2>
-            <nav aria-label="Page sections">
+            <nav aria-label={t.aria.pageSections}>
               <ul className="flex flex-col gap-2">
                 {items.map((e) =>
                   isGroup(e) ? (
                     <li key={e.group} className="flex flex-col gap-2">
                       {e.id ? <a href={`#${e.id}`} className="text-base font-medium leading-6 text-grey-950">{e.group}</a> : <span className="text-base font-medium leading-6 text-grey-950">{e.group}</span>}
-                      <ul className="flex flex-col gap-1 pl-3.5 text-sm leading-5">
+                      <ul className="flex flex-col gap-1 ps-3.5 text-sm leading-5">
                         {e.items.map((i) => <li key={i.id}>{link(i, "text-grey-500")}</li>)}
                       </ul>
                     </li>
@@ -72,7 +74,7 @@ export default function SideRail({ title, items }: { title: string; items: RailE
         ) : (
           <>
             <h2 className="text-lg leading-6 text-grey-800">{title}</h2>
-            <nav aria-label="Page sections">
+            <nav aria-label={t.aria.pageSections}>
               <ul className="space-y-2.5 font-[family-name:var(--font-secondary)] text-sm leading-5">
                 {items.map((e) => !isGroup(e) && <li key={e.id}>{link(e, "text-grey-500")}</li>)}
               </ul>

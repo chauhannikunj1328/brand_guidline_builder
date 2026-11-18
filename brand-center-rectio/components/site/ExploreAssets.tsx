@@ -1,6 +1,8 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
-import { brand } from "@/content/brand.config";
+import { lang as rootLang } from "next/root-params";
+import { hasLocale } from "@/lib/i18n/config";
+import { getShell, type Shell } from "@/lib/i18n/dictionaries";
+import LocalizedLink from "@/components/i18n/LocalizedLink";
 import { FullLogo, Mark, Wordmark } from "@/components/Logo";
 import { AddIcon } from "@/components/ui/icons";
 
@@ -8,26 +10,26 @@ import { AddIcon } from "@/components/ui/icons";
 type Key = "foundation" | "voice" | "spark" | "wordmark" | "color" | "type" | "layout" | "brand-os" | "lockups";
 
 const light = "border-[1.5px] border-grey-300 bg-pampas-50 text-black";
-const cards: Record<Key, { label: string; href: string; tone: string; body: ReactNode }> = {
+const getCards = (t: Shell): Record<Key, { label: string; href: string; tone: string; body: ReactNode }> => ({
   // Foundation and Lockups have no Figma card: these follow the same card style.
   foundation: {
-    label: "Foundation", href: "/brand-foundation", tone: "bg-pampas-200 text-black",
+    label: t.explore.foundation, href: "/brand-foundation", tone: "bg-pampas-200 text-black",
     body: <Mark className="absolute left-1/2 top-1/2 size-[151px] -translate-x-1/2 -translate-y-1/2 text-pampas-800" />,
   },
   lockups: {
-    label: "Lockups", href: "/lockups", tone: light,
+    label: t.explore.lockups, href: "/lockups", tone: light,
     body: <FullLogo size={72} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-pampas-600" />,
   },
   spark: {
-    label: brand.markShort, href: "/logo", tone: "bg-primary text-white",
+    label: t.explore.spark, href: "/logo", tone: "bg-primary text-white",
     body: <Mark className="absolute left-1/2 top-1/2 size-[151px] -translate-x-1/2 -translate-y-1/2 text-white" />,
   },
   wordmark: {
-    label: "Wordmark", href: "/wordmark", tone: light,
+    label: t.explore.wordmark, href: "/wordmark", tone: light,
     body: <Wordmark className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[4.75rem] text-pampas-600" />,
   },
   color: {
-    label: "Color", href: "/color", tone: "border-[1.5px] border-grey-400 bg-white text-white",
+    label: t.explore.color, href: "/color", tone: "border-[1.5px] border-grey-400 bg-white text-white",
     body: (
       <div className="absolute inset-0 isolate flex flex-col">
         <div className="relative z-[4] -mb-4 h-[55%] shrink-0 rounded-b-[20px] bg-primary" />
@@ -38,11 +40,11 @@ const cards: Record<Key, { label: string; href: string; tone: string; body: Reac
     ),
   },
   type: {
-    label: "Type", href: "/typography", tone: light,
-    body: <p className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center text-[2.5rem] leading-[48px] text-grey-950">{brand.taglineLines[0]}<br />{brand.taglineLines[1]}</p>,
+    label: t.explore.type, href: "/typography", tone: light,
+    body: <p className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center text-[2.5rem] leading-[48px] text-grey-950">{t.brand.taglineLines[0]}<br />{t.brand.taglineLines[1]}</p>,
   },
   layout: {
-    label: "Layout", href: "/layout", tone: "bg-primary text-white",
+    label: t.explore.layout, href: "/layout", tone: "bg-primary text-white",
     body: (
       <div className="absolute inset-0 overflow-hidden">
         {/* Stripes keep the Figma 74px rhythm, so the wide two-card version simply shows more of them. */}
@@ -52,28 +54,31 @@ const cards: Record<Key, { label: string; href: string; tone: string; body: Reac
     ),
   },
   "brand-os": {
-    label: "Brand OS", href: "/brand-os", tone: light,
+    label: t.explore.brandOs, href: "/brand-os", tone: light,
     body: (
       <span className="absolute left-1/2 top-1/2 inline-flex -translate-x-1/2 -translate-y-1/2 items-center gap-3 whitespace-nowrap rounded-[14px] bg-primary p-5 text-[1.625rem] font-medium leading-[34px] text-white">
-        Add to Cart <AddIcon className="size-10" />
+        {t.explore.addToCart} <AddIcon className="size-10" />
       </span>
     ),
   },
   voice: {
-    label: "Voice", href: "/brand-voice", tone: "bg-primary text-white",
+    label: t.explore.voice, href: "/brand-voice", tone: "bg-primary text-white",
     body: <span aria-hidden className="absolute left-[190px] top-[60px] -translate-x-1/2 text-[29.5rem] leading-[480px] text-pampas-200">&ldquo;Re</span>,
   },
-};
+});
 
 const ALL: Key[] = ["spark", "wordmark", "color", "type", "layout", "brand-os", "voice"];
 /* Reading order, as in the menu. Each inner page ends with the next two pages; the end wraps round to the start. */
 const ORDER: Key[] = ["foundation", "voice", "spark", "wordmark", "color", "type", "layout", "brand-os", "lockups"];
 
 /** Home shows every card under a heading. With `current`, shows the next two pages. Trademarks is outside the order, so it starts from the first page. */
-export default function ExploreAssets({ current }: { current?: Key | "trademarks" }) {
+export default async function ExploreAssets({ current }: { current?: Key | "trademarks" }) {
+  const lang = await rootLang();
+  const t = await getShell(hasLocale(lang) ? lang : "en");
+  const cards = getCards(t);
   const at = ORDER.indexOf(current as Key);
   const keys = current ? [ORDER[(at + 1) % ORDER.length], ORDER[(at + 2) % ORDER.length]] : ALL;
-  const title = current ? null : "Explore our Assets";
+  const title = current ? null : t.explore.heading;
   return (
     <section className="border-t border-grey-200 bg-grey-50 px-5 py-16 lg:px-[100px] lg:py-20">
       {title && <h2 className="t-h2 mb-12 text-grey-950">{title}</h2>}
@@ -81,10 +86,10 @@ export default function ExploreAssets({ current }: { current?: Key | "trademarks
         {keys.map((k) => {
           const c = cards[k];
           return (
-            <Link key={k} href={c.href} className={`relative h-[420px] overflow-hidden p-[30px] transition-transform hover:-translate-y-1 lg:h-[510px] rounded-[var(--radius-card)] ${c.tone}`}>
+            <LocalizedLink key={k} href={c.href} className={`relative h-[420px] overflow-hidden p-[30px] transition-transform hover:-translate-y-1 lg:h-[510px] rounded-[var(--radius-card)] ${c.tone}`}>
               {c.body}
               <span className="relative text-[2rem] font-medium leading-10">{c.label}</span>
-            </Link>
+            </LocalizedLink>
           );
         })}
       </div>

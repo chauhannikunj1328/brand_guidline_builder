@@ -90,6 +90,13 @@
   --font-secondary: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Fonts. Next sets --font-geist, --font-space and (Arabic pages only) --font-arabic on <html>; these two are what the type
+   classes read. Arabic text uses IBM Plex Sans Arabic and falls back to Geist for Latin letters such as "Rectio". */
+:root { --font-primary: var(--font-geist); --font-grotesk: var(--font-space); }
+html[lang="ar"] { --font-primary: var(--font-arabic), var(--font-geist); --font-grotesk: var(--font-arabic), var(--font-geist); }
+/* Letter-spacing breaks the joins between Arabic letters. */
+html[dir="rtl"] * { letter-spacing: 0 !important; }
+
 html { scroll-behavior: smooth; }
 body {
   background: var(--brand-surface);
