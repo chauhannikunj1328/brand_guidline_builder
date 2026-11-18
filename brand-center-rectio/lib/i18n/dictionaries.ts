@@ -9,6 +9,9 @@ import enWordmark from "@/content/i18n/en/wordmark.json";
 import enColor from "@/content/i18n/en/color.json";
 import enLockups from "@/content/i18n/en/lockups.json";
 import enTypography from "@/content/i18n/en/typography.json";
+import enTrademarks from "@/content/i18n/en/trademarks.json";
+import enLayout from "@/content/i18n/en/layout.json";
+import enBrandOs from "@/content/i18n/en/brandOs.json";
 
 /* English is the source: every other language must have exactly the same keys (checked by the type annotations below). */
 export type Shell = typeof en;
@@ -21,6 +24,9 @@ export type WordmarkText = typeof enWordmark;
 export type ColorText = typeof enColor;
 export type LockupsText = typeof enLockups;
 export type TypographyText = typeof enTypography;
+export type TrademarksText = typeof enTrademarks;
+export type LayoutText = typeof enLayout;
+export type BrandOsText = typeof enBrandOs;
 
 const shell: Record<Locale, () => Promise<Shell>> = {
   en: async () => en,
@@ -84,6 +90,25 @@ export const getVoiceText = (lang: Locale) => voice[lang]();
 export const getWordmarkText = (lang: Locale) => wordmark[lang]();
 export const getColorText = (lang: Locale) => color[lang]();
 export const getLockupsText = (lang: Locale) => lockups[lang]();
+
+const trademarks: Record<Locale, () => Promise<TrademarksText>> = {
+  en: async () => enTrademarks,
+  es: () => import("@/content/i18n/es/trademarks.json").then((m) => m.default satisfies TrademarksText),
+  ar: () => import("@/content/i18n/ar/trademarks.json").then((m) => m.default satisfies TrademarksText),
+};
+const layout: Record<Locale, () => Promise<LayoutText>> = {
+  en: async () => enLayout,
+  es: () => import("@/content/i18n/es/layout.json").then((m) => m.default satisfies LayoutText),
+  ar: () => import("@/content/i18n/ar/layout.json").then((m) => m.default satisfies LayoutText),
+};
+const brandOs: Record<Locale, () => Promise<BrandOsText>> = {
+  en: async () => enBrandOs,
+  es: () => import("@/content/i18n/es/brandOs.json").then((m) => m.default satisfies BrandOsText),
+  ar: () => import("@/content/i18n/ar/brandOs.json").then((m) => m.default satisfies BrandOsText),
+};
+export const getBrandOsText = (lang: Locale) => brandOs[lang]();
+export const getTrademarksText = (lang: Locale) => trademarks[lang]();
+export const getLayoutText = (lang: Locale) => layout[lang]();
 export const getTypographyText = (lang: Locale) => typography[lang]();
 
 /** Fills {placeholders} in a translated string. Values can be React nodes; each is isolated for mixed-direction text. */
