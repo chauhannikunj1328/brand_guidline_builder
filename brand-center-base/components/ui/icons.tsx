@@ -8,10 +8,9 @@ const stroke = { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin:
 export function MenuIcon({ className = "size-6" }: P) {
   return (
     <span className={`flex items-center justify-center ${className}`} aria-hidden="true">
-      <svg viewBox="0 0 17.375 15.375" fill="none" className="h-[58%] w-[67%]">
-        <path d="M0.6875 0.6875H16.6875" {...stroke} strokeWidth="1.375" />
-        <path d="M0.6875 7.6875H16.6875" {...stroke} strokeWidth="1.375" />
-        <path d="M0.6875 14.6875H16.6875" {...stroke} strokeWidth="1.375" />
+      {/* 24px grid, 2px round strokes (06-iconography: Lucide-style menu). */}
+      <svg viewBox="0 0 24 24" fill="none" className="size-full">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     </span>
   );

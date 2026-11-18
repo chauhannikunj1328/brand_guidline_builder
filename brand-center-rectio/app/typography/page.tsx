@@ -96,6 +96,7 @@ export default function Page() {
       title="Typography"
       rail={rail}
       footerLabel="Download the assets"
+      download={brand.downloads.typography}
       hero={
         <PageHero title="Typography">
           {/* Endless strip: two copies of the alphabet, so -50% lands on an identical frame. Slower than the default because the set is long. */}

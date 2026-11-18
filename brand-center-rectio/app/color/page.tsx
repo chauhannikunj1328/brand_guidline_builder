@@ -83,6 +83,7 @@ export default function Page() {
       title="Color"
       rail={rail}
       footerLabel="Download the assets"
+      download={brand.downloads.color}
       hero={
         <PageHero title="Color">
           {/* Endless strip: six copies of the set, so the track fills ultra-wide screens and -50% lands on an identical frame. */}
@@ -97,7 +98,7 @@ export default function Page() {
     >
       <section id="introduction" className="scroll-mt-6 bg-white px-5 py-16 lg:p-[70px]">
         <p className="max-w-[863px] text-[2.5rem] leading-[48px] text-grey-950">Our color palette provides distinctiveness and differentiation through the consistent use of {brand.name}’s most iconic and recognizable colors: Pampas and White.</p>
-        <div className="mt-8"><Button href={brand.downloads.all} download>Download the assets</Button></div>
+        <div className="mt-8"><Button href={brand.downloads.color} download>Download the assets</Button></div>
       </section>
 
       {/* Primary Palette */}

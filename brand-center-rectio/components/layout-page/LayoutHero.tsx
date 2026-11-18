@@ -78,10 +78,10 @@ export default function LayoutHero() {
   return (
     <section className="relative overflow-hidden pb-14 pt-20 lg:h-[1075px] lg:pb-0 lg:pt-[270px]">
       {/* Forest backdrop (Figma BG): the shared watercolour + feathered mask, placed 4px below the hero top. */}
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="forest-mask absolute left-[calc(50%-900px)] top-[60px] h-[1079px] w-[1755px] origin-top scale-[0.42] lg:top-1 lg:scale-100">
-          <Image src="/brand/hero-forest-1.png" alt="" fill priority sizes="1755px" className="object-cover" />
-          <Image src="/brand/hero-forest-2.png" alt="" fill priority sizes="1755px" className="object-cover" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 [container-type:size]">
+        <div className="forest-mask absolute [--forest-top:0px]">
+          <Image src="/brand/hero-forest-1.png" alt="" fill priority sizes="max(1755px, 100vw)" className="object-cover" />
+          <Image src="/brand/hero-forest-2.png" alt="" fill priority sizes="max(1755px, 100vw)" className="object-cover" />
         </div>
         <div className="absolute inset-0 bg-pampas-100 opacity-40" />
       </div>

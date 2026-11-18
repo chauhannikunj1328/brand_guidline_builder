@@ -6,12 +6,12 @@ import { Mark } from "@/components/Logo";
    feathered shape (hero-mask.svg), then a 40% Pampas-100 wash. Geometry matches the 1440px frame. */
 export function ForestBackground({ tall = false }: { tall?: boolean }) {
   return (
-    <div aria-hidden className="pointer-events-none absolute inset-0">
+    <div aria-hidden className="pointer-events-none absolute inset-0 [container-type:size]">
       <div
-        className={`forest-mask absolute top-[-60px] h-[1079px] w-[1755px] origin-top scale-[0.42] lg:scale-100 left-[calc(50%-877.5px)] ${tall ? "lg:left-[calc(50%-900px)] lg:top-[-40px]" : "lg:top-[-179px]"}`}
+        className={`forest-mask absolute [--forest-top:-60px] ${tall ? "lg:[--forest-top:-40px]" : "lg:[--forest-top:-179px]"}`}
       >
-        <Image src="/brand/hero-forest-1.png" alt="" fill priority sizes="1755px" className="object-cover" />
-        <Image src="/brand/hero-forest-2.png" alt="" fill priority sizes="1755px" className="object-cover" />
+        <Image src="/brand/hero-forest-1.png" alt="" fill priority sizes="max(1755px, 100vw)" className="object-cover" />
+        <Image src="/brand/hero-forest-2.png" alt="" fill priority sizes="max(1755px, 100vw)" className="object-cover" />
       </div>
       <div className="absolute inset-0 bg-pampas-100 opacity-40" />
     </div>

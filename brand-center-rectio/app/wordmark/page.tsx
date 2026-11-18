@@ -63,6 +63,7 @@ export default function Page() {
       title="Wordmark"
       rail={rail}
       footerLabel="Download the assets"
+      download={brand.downloads.wordmark}
       hero={
         <HeroFrame className="justify-center pt-20">
           <div className="flex flex-col items-center gap-16 lg:gap-[90px]">
@@ -80,7 +81,7 @@ export default function Page() {
           <p>Our wordmark is {brand.name}’s secondary logo, a custom piece of lettering that carries our name with confidence.</p>
           <p>It’s a distinct and ownable piece of the {brand.name} identity, made modern for today’s world.</p>
         </div>
-        <div className="mt-8"><Button href={brand.downloads.all} download>Download the assets</Button></div>
+        <div className="mt-8"><Button href={brand.downloads.wordmark} download>Download the assets</Button></div>
       </section>
 
       {/* Overview */}
