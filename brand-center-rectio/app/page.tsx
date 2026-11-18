@@ -30,7 +30,10 @@ export default function HomePage() {
                 <h2 className="t-h2">{l1} {l2}</h2>
                 <p className="mx-auto max-w-[600px] text-lg leading-6">{brand.statement.body}</p>
               </div>
-              <Button href="/brand-foundation" arrow>Brand Foundation</Button>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <Button href="/brand-foundation" arrow>Brand Foundation</Button>
+                <Button href={brand.downloads.all} variant="outline" download>Download all assets</Button>
+              </div>
             </div>
           </div>
         </section>

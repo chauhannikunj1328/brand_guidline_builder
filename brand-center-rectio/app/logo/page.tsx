@@ -55,7 +55,6 @@ export default function Page() {
       title={brand.markName}
       rail={rail}
       footerLabel="Download the assets"
-      download={brand.downloads.spark}
       hero={<SparkHero title={brand.markName} />}
       intro={
         <IntroSection>

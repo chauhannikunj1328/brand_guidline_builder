@@ -63,7 +63,6 @@ export default function Page() {
       title="Wordmark"
       rail={rail}
       footerLabel="Download the assets"
-      download={brand.downloads.wordmark}
       hero={
         <HeroFrame className="justify-center pt-20">
           <div className="flex flex-col items-center gap-16 lg:gap-[90px]">

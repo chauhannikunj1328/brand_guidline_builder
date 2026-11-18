@@ -9,7 +9,7 @@ export default function PageShell({ title, rail, hero, intro, footerLabel, downl
     <>
       {hero}
       {intro}
-      <div className="lg:flex">
+      <div className="border-t border-grey-200 lg:flex">
         <SideRail title={title} items={rail} />
         <main className="min-w-0 flex-1">{children}</main>
       </div>

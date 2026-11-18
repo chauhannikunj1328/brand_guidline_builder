@@ -83,7 +83,6 @@ export default function Page() {
       title="Color"
       rail={rail}
       footerLabel="Download the assets"
-      download={brand.downloads.color}
       hero={
         <PageHero title="Color">
           {/* Endless strip: six copies of the set, so the track fills ultra-wide screens and -50% lands on an identical frame. */}

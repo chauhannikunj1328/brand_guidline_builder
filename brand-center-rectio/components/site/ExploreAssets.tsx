@@ -75,7 +75,7 @@ export default function ExploreAssets({ current }: { current?: Key | "trademarks
   const keys = current ? [ORDER[(at + 1) % ORDER.length], ORDER[(at + 2) % ORDER.length]] : ALL;
   const title = current ? null : "Explore our Assets";
   return (
-    <section className="bg-grey-50 px-5 py-16 lg:px-[100px] lg:py-20">
+    <section className="border-t border-grey-200 bg-grey-50 px-5 py-16 lg:px-[100px] lg:py-20">
       {title && <h2 className="t-h2 mb-12 text-grey-950">{title}</h2>}
       <div className={`grid gap-6 sm:grid-cols-2 ${keys.length === 2 ? "" : "lg:grid-cols-3"}`}>
         {keys.map((k) => {
