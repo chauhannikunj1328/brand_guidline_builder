@@ -29,16 +29,6 @@ export const brand = {
     white:   { name: "White",   hex: "#FFFFFF", cmyk: "C0 M0 Y0 K0",  rgb: "R255 G255 B255", pms: "HSL 0 0 100" },
   },
 
-  hero: {
-    headline: "Welcome to your new Rectio",
-    intro: "Our new identity is inspired by our history and built for our future.",
-    body: "It all starts here. This guide is your go-to resource for understanding and applying our assets, helping you be a good steward of the Rectio brand.",
-    contactLabel: "Questions?",
-  },
-  statement: {
-    body: "Our look may have changed, but our purpose hasn't. We're still driven to help people do more with less, every single day.",
-  },
-
   /** Download zips, built by `npm run assets` into public/downloads. One per page, like the reference brand center. */
   downloads: {
     all: "/downloads/brand-assets.zip",
@@ -50,43 +40,4 @@ export const brand = {
     vendorLockups: "/downloads/vendor-lockups.zip",
     label: "Download the assets",
   },
-
-  /** Menu structure (matches the overlay: 4 primary items, one with sub-pages) */
-  menu: [
-    { label: "Brand Foundation", href: "/brand-foundation" },
-    { label: "Brand Voice", href: "/brand-voice" },
-    {
-      label: "Brand Identity",
-      children: [
-        { label: "The Spark", href: "/logo" },
-        { label: "Wordmark", href: "/wordmark" },
-        { label: "Color", href: "/color" },
-        { label: "Typography", href: "/typography" },
-        { label: "Layout", href: "/layout" },
-        { label: "Brand OS", href: "/brand-os" },
-        { label: "Lockups", href: "/lockups" },
-      ],
-    },
-    { label: "Contact", href: "/contact" },
-  ],
-  trademarks: { label: "Trademarks", href: "/trademarks" },
-
-  /** Footer columns (3 columns as on the reference) */
-  footerNav: [
-    [
-      { label: "Brand Foundation", href: "/brand-foundation" },
-      { label: "Brand Voice", href: "/brand-voice" },
-    ],
-    [
-      { label: "Spark", href: "/logo" },
-      { label: "Wordmark", href: "/wordmark" },
-      { label: "Color", href: "/color" },
-    ],
-    [
-      { label: "Typography", href: "/typography" },
-      { label: "Layout", href: "/layout" },
-      { label: "Brand OS", href: "/brand-os" },
-      { label: "Lockups", href: "/lockups" },
-    ],
-  ],
 } as const;

@@ -72,3 +72,19 @@ content/             brand.config.ts   ← edit this
 lib/pageLinks.tsx    prev/next visual cards
 public/downloads/    asset package
 ```
+
+## Languages
+
+English is the main language. Spanish and Arabic are being added page by page.
+
+| Language | Address | Direction |
+| --- | --- | --- |
+| English | `/color` | left to right |
+| Español | `/es/color` | left to right |
+| العربية | `/ar/color` | right to left |
+
+- Pages live in `app/[lang]`. `proxy.ts` serves English at the plain address and redirects `/en/...` to it.
+- Text is in `content/i18n/<lang>/*.json`. English is the source: Spanish and Arabic must have the same keys (the type check enforces it).
+- A page only gets a Spanish or Arabic address once it is listed in `TRANSLATED` in `lib/i18n/config.ts`. Until then every link and the language menu keep visitors on the English page.
+- Use `LocalizedLink` (not `next/link`) for internal links, and logical CSS (`ps-`, `pe-`, `start-`, `end-`, `border-s`) instead of `pl-`, `pr-`, `left-`, `right-` so layouts flip for Arabic.
+- Spanish and Arabic text is written by Claude and needs review by a native speaker. Terms to keep consistent: `content/i18n/GLOSSARY.md`.

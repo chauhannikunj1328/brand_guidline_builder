@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Mark, Wordmark } from "@/components/Logo";
 import { ArrowRightIcon, XCircleIcon, CheckCircleIcon } from "./icons";
+import LocalizedLink from "@/components/i18n/LocalizedLink";
 
 /* ------------------------------------------------------------------
    Layout primitives that mirror the reference site's building blocks.
@@ -96,10 +97,10 @@ export function Button({ href, children, variant = "primary", size = "md", downl
   }[variant];
   const s = size === "sm" ? "p-2.5 text-sm leading-5" : "p-3 text-base leading-6";
   return (
-    <a href={href} download={download || undefined} className={`inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors ${v} ${s}`}>
+    <LocalizedLink href={href} download={download || undefined} className={`inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors ${v} ${s}`}>
       {children}
-      {arrow && <ArrowRightIcon />}
-    </a>
+      {arrow && <ArrowRightIcon className="size-6 rtl:-scale-x-100" />}
+    </LocalizedLink>
   );
 }
 

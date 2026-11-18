@@ -1,0 +1,43 @@
+{
+  "meta": { "description": "Guías, recursos y herramientas para aplicar la marca Rectio de forma coherente en todos los lugares donde aparece." },
+  "brand": { "taglineLines": ["Hazlo simple.", "Hazlo tuyo."] },
+  "aria": {
+    "home": "Inicio de Rectio",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "footer": "Pie de página",
+    "pageSections": "Secciones de la página",
+    "language": "Idioma"
+  },
+  "language": { "soon": "Próximamente", "unavailable": "Esta página aún no está disponible en ese idioma" },
+  "nav": {
+    "foundation": "Fundamentos de marca",
+    "voice": "Voz de marca",
+    "identity": "Identidad de marca",
+    "spark": "La Chispa",
+    "sparkShort": "Chispa",
+    "wordmark": "Logotipo",
+    "color": "Color",
+    "typography": "Tipografía",
+    "layout": "Maquetación",
+    "brandOs": "Brand OS",
+    "lockups": "Combinaciones de logotipo",
+    "contact": "Contacto",
+    "trademarks": "Marcas registradas"
+  },
+  "footer": { "download": "Descargar los recursos" },
+  "explore": {
+    "heading": "Explora nuestros recursos",
+    "foundation": "Fundamentos",
+    "voice": "Voz",
+    "spark": "Chispa",
+    "wordmark": "Logotipo",
+    "color": "Color",
+    "type": "Tipografía",
+    "layout": "Maquetación",
+    "brandOs": "Brand OS",
+    "lockups": "Combinaciones",
+    "addToCart": "Añadir al carrito"
+  },
+  "notFound": { "title": "Página no encontrada", "back": "Volver al inicio" }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": { "description": "Guidelines, assets and tools for applying the Rectio brand consistently everywhere it shows up." },
+  "brand": { "taglineLines": ["Make it simple.", "Make it yours."] },
+  "aria": {
+    "home": "Rectio home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "footer": "Footer",
+    "pageSections": "Page sections",
+    "language": "Language"
+  },
+  "language": { "soon": "Soon", "unavailable": "This page isn't available in that language yet" },
+  "nav": {
+    "foundation": "Brand Foundation",
+    "voice": "Brand Voice",
+    "identity": "Brand Identity",
+    "spark": "The Spark",
+    "sparkShort": "Spark",
+    "wordmark": "Wordmark",
+    "color": "Color",
+    "typography": "Typography",
+    "layout": "Layout",
+    "brandOs": "Brand OS",
+    "lockups": "Lockups",
+    "contact": "Contact",
+    "trademarks": "Trademarks"
+  },
+  "footer": { "download": "Download the assets" },
+  "explore": {
+    "heading": "Explore our Assets",
+    "foundation": "Foundation",
+    "voice": "Voice",
+    "spark": "Spark",
+    "wordmark": "Wordmark",
+    "color": "Color",
+    "type": "Type",
+    "layout": "Layout",
+    "brandOs": "Brand OS",
+    "lockups": "Lockups",
+    "addToCart": "Add to Cart"
+  },
+  "notFound": { "title": "Page not found", "back": "Back to home" }
+}
