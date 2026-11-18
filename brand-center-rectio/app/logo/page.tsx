@@ -62,7 +62,7 @@ export default function Page() {
             <p className="font-medium">The Spark is our primary logo.</p>
             <p>It’s an iconic visual shorthand for {brand.name} that’s bold at any scale and represents our brand clearly anywhere it shows up.</p>
           </div>
-          <div className="mt-8"><Button href={brand.downloads.all} download>Download the assets</Button></div>
+          <div className="mt-8"><Button href={brand.downloads.spark} download>Download the assets</Button></div>
         </IntroSection>
       }
       after={<ExploreAssets current="spark" />}
@@ -91,7 +91,7 @@ export default function Page() {
           <h2 className="t-section text-black">Primary Color Usage</h2>
           <p className="max-w-[560px] text-base leading-6 text-grey-600">Our Spark should mainly appear in White on a Pampas background or in Pampas on White. In small-scale uses, Dark Pampas can be used on Light Pampas for max contrast and legibility.</p>
         </div>
-        <div className="mt-6"><Button href={brand.downloads.all} download>Download assets</Button></div>
+        <div className="mt-6"><Button href={brand.downloads.spark} download>Download assets</Button></div>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {colorCards.map((c) => (
             <div key={c.hex} className={`relative flex h-[306px] flex-col justify-end rounded-xl px-4 pb-4 pt-8 ${c.bg}`}>

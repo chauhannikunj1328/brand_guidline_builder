@@ -24,8 +24,8 @@ export default function Page() {
             <p className="mx-auto max-w-[440px] font-[family-name:var(--font-secondary)] text-base leading-6 text-grey-700">Each asset pack contains a PDF guide with usage tips and individual lockup files.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-6">
-            <Button href={brand.downloads.all} download>Brand Lockups</Button>
-            <Button href={brand.downloads.all} download>Vendor Lockups</Button>
+            <Button href={brand.downloads.brandLockups} download>Brand Lockups</Button>
+            <Button href={brand.downloads.vendorLockups} download>Vendor Lockups</Button>
           </div>
         </div>
       </section>

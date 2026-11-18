@@ -10,6 +10,9 @@ brand-assets/rectio/
     png/            same names, @1x @2x @3x (e.g. rectio-mark-primary-pampas@2x.png)
     app-icons/      ios-1024.png · android-foreground.png · android-background.png · favicon.ico · apple-touch-icon.png
   fonts/            Geist-Variable · GeistMono-Variable (.woff2, .ttf) · SpaceGrotesk-Latin · SpaceGrotesk-LatinExt (.woff2)
+                    IBMPlexSansArabic-Regular · IBMPlexSansArabic-Medium (.ttf, Arabic)
+  lockups/          Brand Lock Ups & Guidelines/ (Tagline · Campaign · Only at Rectio, each Raster/ + Vector/SVG|PDF, plus the guide PDF)
+                    VTA Logos & Guidelines/ (vendor lockups, Digital/<Language> <Orientation> Digital/, plus the guide PDF)
   licenses/         ofl-geist.txt · ofl-space-grotesk.txt (SIL Open Font License, keep with the fonts)
   icons/            svg/ (24-grid, currentColor)
   imagery/          photo/ · illustration/  (see 06)

@@ -15,8 +15,8 @@ export const brand = {
   fontHeadline: "Space Grotesk",
   fontMono: "Geist Mono",
   fontUI: "Geist",
-  contactTeam: "artonest creative design studio",
-  contactEmail: "artonest.design@gmail.com",
+  contactTeam: "Nikunj Chauhan",
+  contactEmail: "work.nikunj1328@gmail.com",
   siteLabel: "rectio.com",
 
   /* Figma variables: Primary Color/Pampas, BlackColors, Grey Colors, SuccessColors. */
@@ -39,7 +39,17 @@ export const brand = {
     body: "Our look may have changed, but our purpose hasn't. We're still driven to help people do more with less, every single day.",
   },
 
-  downloads: { all: "/downloads/brand-assets.zip", label: "Download the assets" },
+  /** Download zips, built by `npm run assets` into public/downloads. One per page, like the reference brand center. */
+  downloads: {
+    all: "/downloads/brand-assets.zip",
+    spark: "/downloads/spark.zip",
+    wordmark: "/downloads/wordmark.zip",
+    color: "/downloads/color.zip",
+    typography: "/downloads/typography.zip",
+    brandLockups: "/downloads/brand-lockups.zip",
+    vendorLockups: "/downloads/vendor-lockups.zip",
+    label: "Download the assets",
+  },
 
   /** Menu structure (matches the overlay: 4 primary items, one with sub-pages) */
   menu: [
@@ -55,7 +65,6 @@ export const brand = {
         { label: "Layout", href: "/layout" },
         { label: "Brand OS", href: "/brand-os" },
         { label: "Lockups", href: "/lockups" },
-        { label: "Internal Resources", href: "/internal-resources" },
       ],
     },
     { label: "Contact", href: "/contact" },
@@ -72,7 +81,6 @@ export const brand = {
       { label: "Spark", href: "/logo" },
       { label: "Wordmark", href: "/wordmark" },
       { label: "Color", href: "/color" },
-      { label: "Internal Resources", href: "/internal-resources" },
     ],
     [
       { label: "Typography", href: "/typography" },

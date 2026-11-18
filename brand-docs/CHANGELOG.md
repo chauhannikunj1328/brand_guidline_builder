@@ -2,6 +2,16 @@
 
 All notable changes to the Rectio brand. Versions follow `tokens.json`.
 
+## [2.2.0] — 2026-11-18
+### Added
+- Brand lockup pack: Tagline, Campaign and "Only at Rectio" lockups as SVG, PNG and PDF, with a usage guide.
+- Vendor lockup pack: "Available at Rectio" and six more phrases in English, Spanish and Arabic, horizontal and vertical, with a usage guide.
+- IBM Plex Sans Arabic as the Arabic typeface, with its license.
+- Per-page download zips in the brand center, including the two lockup packs.
+
+### Removed
+- Internal Resources page from the brand center.
+
 ## [2.1.0] — 2026-11-06
 ### Added
 - Font files for Geist, Geist Mono and Space Grotesk, with their licenses, in the assets and the download zip.

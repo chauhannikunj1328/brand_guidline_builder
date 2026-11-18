@@ -5,7 +5,7 @@ import { Button } from "@/components/ui";
 
 /* Figma "Footer": black, logo + "Download the assets" left, three link columns + trademark row right.
    The first link in each footerNav column is that column's heading. */
-export default function Footer({ downloadLabel = "Download the assets" }: { downloadLabel?: string }) {
+export default function Footer({ downloadLabel = "Download the assets", downloadHref = brand.downloads.all }: { downloadLabel?: string; downloadHref?: string }) {
   return (
     <footer className="bg-black text-white">
       <div className="flex flex-col gap-14 px-5 py-16 lg:flex-row lg:justify-between lg:px-[100px] lg:py-20">
@@ -14,7 +14,7 @@ export default function Footer({ downloadLabel = "Download the assets" }: { down
             <FullLogo size={50} />
             <h2 className="text-[2rem] font-medium leading-10">{downloadLabel}</h2>
           </div>
-          <div><Button href={brand.downloads.all} download>{brand.downloads.label}</Button></div>
+          <div><Button href={downloadHref} download>{brand.downloads.label}</Button></div>
         </div>
 
         <div className="flex flex-col justify-center gap-10 lg:w-[670px]">

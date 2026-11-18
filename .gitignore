@@ -8,8 +8,8 @@ out/
 next-env.d.ts
 
 # generated bundles — rebuild with `npm run assets`
+# (*/public/downloads/*.zip are committed: the hosted site serves them, so commit them after `npm run assets`)
 brand-assets/*/dist/
-*/public/downloads/brand-assets.zip
 brand-docs-template.zip
 
 # env / secrets
@@ -22,3 +22,6 @@ brand-docs-template.zip
 .vercel/
 .claude/settings.local.json
 npm-debug.log*
+
+# third-party reference material (Walmart brand files): kept local, never committed
+Walmart/

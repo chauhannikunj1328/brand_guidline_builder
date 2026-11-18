@@ -4,17 +4,17 @@ import Footer from "./Footer";
 
 /* Inner page layout from the Figma pages:
    hero → intro (full width) → [276px sticky rail | content] → `after` (asset cards / pagination) → footer. */
-export default function PageShell({ title, rail, hero, intro, footerLabel, after, children }: { title: string; rail: RailEntry[]; hero?: ReactNode; intro?: ReactNode; footerLabel?: string; after?: ReactNode; children: ReactNode }) {
+export default function PageShell({ title, rail, hero, intro, footerLabel, download, after, children }: { title: string; rail: RailEntry[]; hero?: ReactNode; intro?: ReactNode; footerLabel?: string; download?: string; after?: ReactNode; children: ReactNode }) {
   return (
     <>
       {hero}
       {intro}
-      <div className="lg:flex">
+      <div className="border-t border-grey-200 lg:flex">
         <SideRail title={title} items={rail} />
         <main className="min-w-0 flex-1">{children}</main>
       </div>
       {after}
-      <Footer downloadLabel={footerLabel} />
+      <Footer downloadLabel={footerLabel} downloadHref={download} />
     </>
   );
 }

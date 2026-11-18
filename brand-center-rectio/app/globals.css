@@ -135,16 +135,30 @@ h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
 .t-xs { font-size: 0.75rem; line-height: 1.33; }
 .t-caption { font-family: var(--font-secondary); font-size: 0.75rem; line-height: 1.33; }
 
-/* Hero forest mask (Figma "Mask group"): feathered blob; on small screens also fade the bottom edge. */
+/* Hero forest (Figma "Mask group"): the 1755 × 1079 frame, sized to cover the whole hero, both width and height,
+   so no edge shows on any screen. Its parent is a size container (cqw/cqh = hero width/height) and --forest-top is the
+   Figma offset. Small screens start from 42% (737px wide) with the bottom faded; desktop from full size. Mask size and
+   position are the Figma values as percentages, so they scale with the frame. */
 .forest-mask {
+  top: var(--forest-top, 0px);
+  width: max(737px, 100cqw, calc((100cqh - var(--forest-top, 0px)) * 1755 / 1079));
+  height: auto;
+  aspect-ratio: 1755 / 1079;
+  left: 50%;
+  translate: -50% 0;
   mask-image: url(/brand/hero-mask.svg), linear-gradient(to bottom, #000 70%, transparent 92%);
-  mask-size: 1927px 1378px, 100% 100%;
-  mask-position: -100px 47px, 0 0;
+  mask-size: 109.8006% 127.7108%, 100% 100%;
+  mask-position: 58.1395% -15.7191%, 0 0;
   mask-repeat: no-repeat;
   mask-composite: intersect;
 }
 @media (min-width: 1024px) {
-  .forest-mask { mask-image: url(/brand/hero-mask.svg); mask-size: 1927px 1378px; mask-position: -100px 47px; }
+  .forest-mask {
+    width: max(1755px, 100cqw, calc((100cqh - var(--forest-top, 0px)) * 1755 / 1079));
+    mask-image: url(/brand/hero-mask.svg);
+    mask-size: 109.8006% 127.7108%;
+    mask-position: 58.1395% -15.7191%;
+  }
 }
 
 /* Endless horizontal strip. Pauses on hover and stays still for people who ask for reduced motion. */

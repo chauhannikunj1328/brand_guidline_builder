@@ -91,7 +91,7 @@ export function Button({ href, children, variant = "primary", size = "md", downl
   const v = {
     primary: "bg-pampas-700 text-white hover:bg-pampas-800",
     mid: "bg-mid text-ink",
-    outline: "border border-current text-ink",
+    outline: "border border-pampas-700 text-pampas-800 hover:bg-pampas-700 hover:text-white",
     "white-outline": "border border-pampas-200 text-pampas-50",
   }[variant];
   const s = size === "sm" ? "p-2.5 text-sm leading-5" : "p-3 text-base leading-6";
