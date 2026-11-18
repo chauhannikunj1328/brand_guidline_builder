@@ -1,0 +1,91 @@
+{
+  "rail": {
+    "introduction": "Introduction",
+    "notes": "Spark Notes",
+    "color": "Primary Color Usage",
+    "sizing": "Sizing",
+    "appIcon": "App Icon",
+    "donts": "Spark Don’ts"
+  },
+  "intro": {
+    "p1": "The Spark is our primary logo.",
+    "p2": "It’s an iconic visual shorthand for Rectio that’s bold at any scale and represents our brand clearly anywhere it shows up.",
+    "download": "Download the assets"
+  },
+  "overview": {
+    "heading": "Spark Overview",
+    "p1": "The Spark is our most iconic symbol and the quickest shorthand for the Rectio brand, radiating energy and optimism wherever it appears.",
+    "p2": "The Spark can appear alone as a representation of Rectio or with our wordmark in the same composition, but they should never be placed right next to each other.",
+    "p3": "See Layout page ‘Applying Logos’ for placement guidance."
+  },
+  "notes": {
+    "heading": "Spark Notes",
+    "tabs": [
+      {
+        "label": "Evolution",
+        "text": "The original Spark has been refreshed and redrawn with organic curves that feel approachable and less rigid."
+      },
+      {
+        "label": "Construction",
+        "text": "The Spark is built from two simple forms. A circle of sparklets brings a sense of infinity, and a diamond at its center brings precision. Together they make our Logo Mark."
+      },
+      {
+        "label": "Clear Space",
+        "text": "Keep a minimum clear space equal to half the height of the Spark on all sides. Nothing else should enter this zone, so the Spark always stands out clearly."
+      }
+    ],
+    "parts": [
+      "Circle Infinity",
+      "Diamond Precision",
+      "Logo Mark"
+    ]
+  },
+  "color": {
+    "heading": "Primary Color Usage",
+    "text": "Our Spark should mainly appear in White on a Pampas background or in Pampas on White. In small-scale uses, Dark Pampas can be used on Light Pampas for max contrast and legibility.",
+    "download": "Download assets",
+    "cards": [
+      [
+        "Rectio White",
+        "on Pampas"
+      ],
+      [
+        "Rectio Pampas",
+        "on White"
+      ],
+      [
+        "Rectio Dark Pampas",
+        "on Light Pampas"
+      ]
+    ]
+  },
+  "sizing": {
+    "heading": "Minimum Sizing",
+    "text": "To ensure legibility, we don’t use our Spark at sizes smaller than 16 pixels high in digital applications or 0.25 inches high in print.",
+    "print": "Print Minimum Size - 0.25 Inch",
+    "digital": "Digital Minimum Size - 16 px",
+    "note": "Note",
+    "noteText": "Sparks here are not shown to scale. Refer to pixel and inch measurements for proper sizing.",
+    "capPrint": "Print Minimum Size: 0.25 Inches",
+    "capDigital": "Digital Minimum Size - 16 px"
+  },
+  "appIcon": {
+    "heading": "Logo Icon",
+    "text": "In our app, the Spark always appears in White on a Pampas background with our usual clearspace.",
+    "alt": "The Spark as an app icon on a laptop screen"
+  },
+  "donts": {
+    "heading": "Spark Don’ts",
+    "captions": [
+      "Don’t use the Spark in unapproved colors.",
+      "Don’t use multiple colors on the Spark.",
+      "Don’t tilt, rotate or skew the Spark.",
+      "Don’t crop off the edges of the Spark.",
+      "Don’t use individual sparklets for any purpose.",
+      "Don’t create a pattern out of the Spark.",
+      "Don’t apply our waterfall to the Spark.",
+      "Don’t use a partially transparent Spark.",
+      "Don’t separate or remove pieces of the Spark."
+    ]
+  }
+}

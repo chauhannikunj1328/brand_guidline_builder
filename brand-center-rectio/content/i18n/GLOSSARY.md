@@ -28,4 +28,5 @@ Keep these terms the same in every page so the site reads as one voice. English 
 
 ## Adding a page
 1. Add the page's text under `content/i18n/<lang>/<page>.json` for all three languages and load it in `lib/i18n/dictionaries.ts`.
-2. Add the page's path to `TRANSLATED` in `lib/i18n/config.ts`. Until then the language switcher and links keep visitors on the English page.
+2. Run `npm run i18n:review` to refresh the review sheet (`REVIEW.md`) for the native-speaker check.
+3. Add the page's path to `TRANSLATED` in `lib/i18n/config.ts`. Until then the language switcher and links keep visitors on the English page.

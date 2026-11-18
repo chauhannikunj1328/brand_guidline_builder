@@ -1,0 +1,159 @@
+{
+  "title": "Brand Voice",
+  "rail": {
+    "group": "Voice Principles",
+    "overview": "Overview",
+    "conversational": "Conversational",
+    "captivating": "Captivating",
+    "confident": "Confident",
+    "cheatSheet": "Cheat Sheet",
+    "bestPractices": "Best Practices"
+  },
+  "principlesSection": {
+    "heading": "Voice Principles",
+    "p1": "Our Voice Principles inform how we speak to customers, from the content on their social feeds to their experience in a local Rectio store.",
+    "p2": "These principles are a direct translation of our core Brand Principles, specifically tailored for verbal and written expression."
+  },
+  "overview": {
+    "heading": "Overview",
+    "p1": "These principles guide the execution of our brand voice across all communications. These principles apply to customer-facing marketing comms, but it's also how we should be writing decks, pitches, etc. Every single Associate is a steward of our voice!",
+    "p2": "Our Voice Principles may be dialed up or down to best suit your specific communication needs. Sometimes, you’ll need to emphasize one principle more heavily than another, while other times you’ll have copy that leverages all three principles equally. Flexible usage is encouraged, as long as you can point to one or more Voice Principle in your copy."
+  },
+  "principleLabel": "Principle",
+  "do": "Do",
+  "dont": "Don't",
+  "examples": "Examples",
+  "principles": [
+    {
+      "from": "Grassroots",
+      "name": "Conversational",
+      "brand": "We never forget our humble beginnings; we're relatable, down-to-earth and part of the community.",
+      "short": "Our voice is just as down-to-earth as our customers and associates. We want to be the realest voice in our category.",
+      "cheat": "Our voice is just as down-to-earth as our customers and associates. We’re the realest voice in our category.",
+      "text": [
+        "Our voice is just as down-to-earth as our customers and associates. We want to be the realest voice in our category, so we need to avoid confusing our customers with marketing speak.",
+        "Our tone is familiar and straightforward while using friendly, dressed-down language. We maintain a positive and optimistic perspective on everyday life, from parties to chores and everything in between."
+      ],
+      "do": "Aim for the easy read. Use simple word choices, clear sentence structures, and well-known turns of phrase.",
+      "dont": "Complicate things with industry jargon, uncommon phrasing or complex words. When in doubt, ask yourself: would you say this in an everyday conversation?"
+    },
+    {
+      "from": "Agile",
+      "name": "Captivating",
+      "brand": "Agility is our x-factor. We are constantly improving, endlessly testing, always adapting.",
+      "short": "We must always engage the reader, so our voice needs to be dynamic and energizing.",
+      "cheat": "We must always engage the reader, so our voice needs to be dynamic and energizing.",
+      "text": [
+        "We have to engage the reader, so our voice needs to be dynamic and energizing. Our tone combines levity with an irresistible magnetism that appeals to readers. Whatever the subject, we talk about it in a current, relevant way with infectious energy. We choose words that are memorable and interesting while still feeling casual and conversational.",
+        "Never shy away from moments that are relatable, entertaining, and timely."
+      ],
+      "do": "Use wordplay, subtle rhymes, and punchy sentence structures. Have fun with your writing and make it engaging and vibrant.",
+      "dont": "Tell jokes. Our humor and fun come from a place of relatability, centering the customer and their experiences so we never become cheesy or contrived."
+    },
+    {
+      "from": "Pioneering",
+      "name": "Confident",
+      "brand": "Since the beginning, we’ve blazed a path and never settled because that’s what it takes to make life better and easier.",
+      "short": "Because Rectio is a leader, our voice should be decisive and inspiring.",
+      "cheat": "Because Rectio is a leader, our voice should be decisive and inspiring.",
+      "text": [
+        "Because Rectio is a leader, our voice is decisive and inspiring. We speak with a positivity that’s impactful and reassuring. When we write confidently, our customers feel they can be confident too. Our words help them make it simple and make it theirs, so we don't speak in ambiguity—we’re declarative and direct, inspiring people to act."
+      ],
+      "do": "Be specific and direct. Showing expertise when discussing moments or products helps your copy connect with customers. Tie everyday complications and quick solves to product use cases.",
+      "dont": "Be vague. Vagueness clouds the intent of your copy and will feel passive, bland, and boring."
+    }
+  ],
+  "cheat": {
+    "title": [
+      "Voice Principles",
+      "Cheat Sheet"
+    ],
+    "purpose": "Brand Purpose",
+    "purposeNote": "Guides the enterprise.",
+    "brand": "Brand Principles",
+    "brandNote": "Guide our brand expression.",
+    "voice": "Voice Principles",
+    "voiceNote": "Derived from our Brand Principles these are specifically tailored for easy implementation through language."
+  },
+  "best": {
+    "heading": "Best Practices",
+    "p1": "At Rectio, it’s important that we speak with a consistent, unified voice.",
+    "p2": "The following section includes best practices and guidance to help maintain our verbal style so we always sound authentically Rectio.",
+    "items": [
+      {
+        "title": "On Clarity",
+        "points": [
+          "Clarity is crucial in conveying information.",
+          "Ensure your intent cannot be misunderstood."
+        ],
+        "text": [
+          "Our brand voice is Conversational, Captivating, and Confident, but there’s a fourth C that’s vital to everything we write: Clarity.",
+          "We never lose sight of how large our audience is and that our primary objective in every communication is to convey information to that audience. The brief is always top of mind, so ask yourself: Does my copy translate the brief so clearly that the intent can’t be misunderstood? The best copy incorporates shades of all our Voice Principles, but first and foremost, all copy should be clear."
+        ]
+      },
+      {
+        "title": "On Value",
+        "points": [
+          "Find new ways to say repeated phrases.",
+          "Consider how value affects the reader."
+        ],
+        "text": [
+          "When storytelling with value, push yourself to find new ways to say commonly repeated phrases like “faves,” “finds,” “essentials” or “must-haves.” While these words work in a pinch, we always want to beat them.",
+          "Also consider how value affects the reader. Will less expensive bathing suits mean more vacation options to pack? Will a lower price on sweatpants mean a cozier winter? Find the relationship between the item and the customer beyond the price."
+        ]
+      },
+      {
+        "title": "On Humor",
+        "points": [
+          "Be observational and relatable.",
+          "Don't tell jokes outside our social channels."
+        ],
+        "text": [
+          "Rectio embraces the humor in everyday life rather than telling jokes.* We love the little things that make life great, and we relate to the moments that can be groan-worthy. Our humor comes from that relatability—when we get a smile from our readers and they think “Ha, Rectio gets me.”",
+          "*Jokes are the lifeblood of social media, and we’re in on the joke. Our relevance on those platforms depends on it, so we make jokes, share memes, and engage with our followers in ways that differ from our interactions in other channels."
+        ]
+      },
+      {
+        "title": "On Puns",
+        "points": [
+          "Do not use puns."
+        ],
+        "text": [
+          "We resist using puns. While we admit they’re a fun and helpful shortcut, they’re also the lowest-hanging fruit. We believe there is always a deeper truth or more entertaining story to be told behind each pun.",
+          "There will be exceptions over time (such as headlines inspired by dad-worthy puns for Father’s Day) but please keep our general “no puns” rule in mind when writing as Rectio."
+        ]
+      },
+      {
+        "title": "On Being Current",
+        "points": [
+          "Learn through social listening.",
+          "Be relatable-at-scale.",
+          "Use contemporary language."
+        ],
+        "text": [
+          "We stay current with culture through social listening. Discovering new turns of phrase, shared cultural references and sentence structures is as easy as scrolling through social media.",
+          "Ultimately, however, we need to temper our language to be relatable-at-scale. Our writing shouldn’t be on the cutting edge of slang or internet speak, but should employ contemporary language that is used or understood by the majority of our customers and helps Rectio feel modern and fresh."
+        ]
+      },
+      {
+        "title": "On Emojis",
+        "points": [],
+        "text": [
+          "Emojis are a powerful tool in our CRM and social media platforms. We use them when they add to—and don't distract from—the story we’re telling. Inclusivity is always top of mind, so use this general rule of thumb.",
+          "Smileys convey general emotion and are only available in the yellow skin tone. Use these emojis as you like.",
+          "Body part emojis reflect specific human movements and are available in multiple skin tones. Always use a set of 3 versions of the same emoji to convey the full range of our customers’ identities."
+        ]
+      }
+    ],
+    "emojis": [
+      "Use smileys to convey general emotion.",
+      "Use body part emojis in sets of three to reflect our diverse customers."
+    ]
+  },
+  "closing": [
+    "We’re always Conversational, Captivating, and Confident, but our writing will lean into—or away from—a principle depending on what we’re writing and who we’re writing for.",
+    "Consider every customer. Demographics and backgrounds matter, so make sure your words are clear and resonate with the majority.",
+    "Write how you talk. Literally.",
+    "We are the realest voice in our category. Live it. Breathe it. Own it."
+  ]
+}
