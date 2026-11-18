@@ -1,0 +1,290 @@
+{
+  "title": "Brand OS",
+  "note": "Note",
+  "rail": {
+    "frames": "Frames",
+    "groundRules": "Ground Rules",
+    "frameNotes": "Frame Notes",
+    "optical": "Optical Guide",
+    "behaviors": "Frame Behaviors",
+    "window": "Window",
+    "windowTips": "Window Tips",
+    "tiles": "Tiles",
+    "tileTips": "Tile Tips",
+    "outlines": "Outlines",
+    "outlineTips": "Outline Tips",
+    "frameDonts": "Frame Don’ts",
+    "buttons": "Buttons",
+    "styling": "Styling",
+    "buttonTypes": "Button Types",
+    "buttonDonts": "Don’ts"
+  },
+  "pills": [
+    "Add to Cart",
+    "New at {name}",
+    "Now Trending"
+  ],
+  "frames": {
+    "heading": "Frames",
+    "p1": "Our frames are flexible and versatile containers that mimic the look and behavior of digital tiles in a user interface.",
+    "p2": "They help focus attention on a key product or headline, or to organize multiple images into a single layout."
+  },
+  "ground": {
+    "heading": "Ground Rules for Frame Usage",
+    "p1": "Our frames are powerful, flexible tools that can easily be overused and abused. With great power comes great responsibility!",
+    "p2": "Whenever you’re working with frames, please remember three key points:",
+    "rules": [
+      {
+        "title": "Less is more.",
+        "text": "Avoid the impulse to overuse frames. Keep the number of frames per layout to a minimum. One skillfully executed frame is more powerful than three competing ones."
+      },
+      {
+        "title": "Don’t decorate.",
+        "text": "Frames are functional tools that exist to direct the viewers’ eye to a particular focal area or to thoughtfully tell a visual story. Don’t add unnecessary frames as aesthetic fillers."
+      },
+      {
+        "title": "Keep it clean.",
+        "text": "Alignment and spacing between frames should be neat, uniform, and intentional. Do not approach frames with a collage mentality."
+      }
+    ]
+  },
+  "notes": {
+    "heading": "Frame Notes",
+    "radius": {
+      "label": "Corner Radius",
+      "text": [
+        "To determine the corner radius of a frame, divide its longest side by 15. This allows corners to scale proportionately across applications. Depending on the size and dimensions of your frame, this initial measurement may need to be adjusted for optical correctness.",
+        "When using multiple frames in a single layout, all corner radii should match the average radius measurement — not the smallest, not the largest.",
+        "For standard 1920x1080 presentations, we always use a predetermined corner radius of 30px."
+      ]
+    },
+    "outline": {
+      "label": "Outline Weight",
+      "text": [
+        "To determine the correct outline weight for a frame, divide its longest side by 150. Depending on the size and proportion of your frame, this number may need to be adjusted for optical correctness.",
+        "For standard 1920x1080 presentations, we always use a predetermined stroke weight of 1pt."
+      ]
+    }
+  },
+  "optical": {
+    "heading": "Optical Guide",
+    "radius": {
+      "tab": "Radius",
+      "text": "After establishing a corner radius using our formula, check for optical correctness using the examples shown here. If your radius is too large or too small, adjust accordingly.",
+      "labels": [
+        "Too Small",
+        "Just Right",
+        "Too Large"
+      ]
+    },
+    "outline": {
+      "tab": "Outline",
+      "text": "After establishing an outline weight using our formula, check for optical correctness using the examples shown here. If your outline is too thin or too thick, adjust accordingly.",
+      "labels": [
+        "Too Thin",
+        "Just Right",
+        "Too Thick"
+      ]
+    }
+  },
+  "behaviors": {
+    "heading": "Frame Behaviors",
+    "intro": "Our frames are designed to interact with photography and footage by embodying three distinct behaviors:",
+    "items": [
+      {
+        "label": "Window",
+        "text": "holds photography or footage."
+      },
+      {
+        "label": "Tiles",
+        "text": "helps ground isolated products."
+      },
+      {
+        "label": "Outlines",
+        "text": "emphasize a focal point."
+      }
+    ]
+  },
+  "window": {
+    "heading": "Window",
+    "text": [
+      "We use windows to hold photography and footage. A max of three windows can be used per static layout to keep our message concise and avoid overcrowding. Images should be assembled with a common theme or message.",
+      "Align our windows neatly to our grid. Wherever possible, they should stretch the full height or width between our margins."
+    ],
+    "steps": [
+      "Always leave clear space equal to our margin between frames and surrounding content.",
+      "Windows may bleed off one or two edges to mimic a scrolling motion. Edges must be on opposite sides.",
+      "Up to three windows may be used in a single static layout—no more."
+    ]
+  },
+  "windowTips": {
+    "heading": "Window Tips",
+    "intro": "When using windows in layout, always follow these tips for consistent application:",
+    "items": [
+      {
+        "head": "Alignment",
+        "text": "Do align windows into neat, tidy blocks that occupy the full width or height of a layout."
+      },
+      {
+        "head": "",
+        "text": "Don’t apply frames in a way that feels haphazard, scattered, or misaligned."
+      },
+      {
+        "head": "Cropping",
+        "text": "Do crop windows off opposite edges of a layout to mimic scrolling or swiping."
+      },
+      {
+        "head": "",
+        "text": "Don’t crop windows off adjacent layout edges."
+      }
+    ]
+  },
+  "tiles": {
+    "heading": "Tiles",
+    "text": [
+      "Tiles mimic the aesthetic and behavior of a digital shopping experience. Up to five tiles can be used per static asset if they are neatly aligned and uniform in size. More tiles can be used in motion.",
+      "Tiles are applied over White backgrounds, to feel more digitally-native while allowing for a wide variety of tile colors."
+    ],
+    "steps": [
+      "Tiles may float in the center of a layout when featuring a single product.",
+      "Up to five tiles may be used in a single static layout—keep them tidy and uniform in size.",
+      "A single tile may be combined with a single window, where appropriate."
+    ]
+  },
+  "tileTips": {
+    "heading": "Tiles Tips",
+    "intro": "When using tiles in layout, follow these tips for consistent application:",
+    "steps": [
+      "A product name or price can be set inside a tile, aligned to an interior corner. Leave generous padding, roughly equal to the margin of the layout. Text must be in Black or White.",
+      "Products are shot straight-on or overhead, resting on (or floating above) a surface. Always include natural shadows for grounding and depth.",
+      "A product may extend past the edge of its tile, where appropriate. Products should occupy the same visual space, regardless of actual size.",
+      "Choose tile colors to complement products or to represent specific seasonal moments. Maintain sufficient contrast between a product and its background."
+    ],
+    "alt": "A product tile on a Pampas background, with the title set in an interior corner",
+    "evergreen": {
+      "title": "Evergreen Colors",
+      "text": "These are our preferred tile colors, used regardless of season or category."
+    },
+    "seasonal": {
+      "title": "Seasonal Colors",
+      "example": "Example Only",
+      "text": "For a moment like “Mother’s Day”, choose tile colors from that occasion’s specified seasonal palette."
+    }
+  },
+  "outlines": {
+    "heading": "Outlines",
+    "text": [
+      "Outlines are used over lifestyle photography or footage to focus attention on a key product or moment. Only one outline may be used per layout. They can’t be applied with other frames or frame behaviors.",
+      "Outlines are particularly effective in motion, as shown in examples 2 and 3. They are often used with price lockups, product names, or buttons."
+    ],
+    "steps": [
+      "When aligning text to an outline, always leave clear space equal to our margin.",
+      "Outlines may be flexibly positioned to best highlight product within a scene.",
+      "An outline may interact with the subject of its focus, for added depth and dynamism."
+    ]
+  },
+  "outlineTips": {
+    "heading": "Outline Tips",
+    "intro": "When using outlines in layout, always follow these tips for consistent application:",
+    "items": [
+      {
+        "head": "Color",
+        "text": "Do apply frames in White or Black to match text."
+      },
+      {
+        "head": "",
+        "text": "Don’t apply frames in any other colors."
+      },
+      {
+        "head": "Interaction",
+        "text": "Do allow frames to interact with subjects or products."
+      },
+      {
+        "head": "",
+        "text": "Don’t awkwardly overlap subjects or products, especially faces."
+      }
+    ]
+  },
+  "frameDonts": {
+    "heading": "Frame Don’ts",
+    "captions": [
+      "Don’t apply frames within other frames.",
+      "Don’t collage or overlap frames.",
+      "Don’t use multiple outlines per layout.",
+      "Don’t mix all of our frame styles together.",
+      "Don’t use solid frames as decorative elements behind text or headlines.",
+      "Don’t use solid frames behind product in lifestyle imagery or footage.",
+      "Don’t use outlines as decorative elements around text or headlines.",
+      "Don’t use outlines in any color other than Black or White."
+    ]
+  },
+  "buttons": {
+    "heading": "Buttons",
+    "p1": "Our “Brand OS” buttons are graphic elements that mimic the look of a digital shopping experience in non-digital comms.",
+    "p2": "By using buttons in static or motion assets, our design reflects a digital-first shopping experience and reinforces our tech-forward positioning."
+  },
+  "styling": {
+    "heading": "Styling",
+    "p1": "Our buttons are pill-shaped with fully rounded ends, appearing in both outlined and solid formats. Outline weight should optically match the weight of our type (set in {font} Regular) and any symbols included (magnifying glass, plus sign, etc).",
+    "p2": "These are our default colorways, which prioritize Pampas for solid buttons. Over Pampas backgrounds, Vanilla buttons can be used. Our search bar is the only button that may appear in solid white to reflect familiar UI cues.",
+    "note": "This is not an exhaustive list of all possible buttons. Additional buttons can be created within each category, provided they follow these styling rules.",
+    "specAlts": [
+      "CTA buttons are text-only, used for short statements or signoffs, with text in sentence case. Example: Shop now.",
+      "Action buttons combine text and symbols to aid in product storytelling, with text in sentence case. Example: Add to cart.",
+      "Search buttons are white or outlined and mimic a digital search bar, with text in lowercase. Example: Home decor.",
+      "Accent buttons are symbol-only and enhance the digital appearance of our frames. Example: plus sign."
+    ]
+  },
+  "buttonTypes": [
+    {
+      "label": "CTA Buttons",
+      "text": "CTA buttons may be used in place of standard typeset CTAs when a more digital aesthetic or when our goal is to drive viewers to our website. CTA buttons always use sentence case capitalization.",
+      "steps": [
+        "CTA button may be placed in the lower right corner, sized to match the height of our wordmark.",
+        "CTA button may be placed in the lower left corner beneath our headline.",
+        "When using Pampas backgrounds, our solid CTA button color switches to Vanilla."
+      ]
+    },
+    {
+      "label": "Action Buttons",
+      "text": "Action buttons pair with photos to tell product stories. They may list the names of individual products or speak to more emotional product benefits. A well-written action button may stand alone as a headline. Use sentence case capitalization, unless naming a specific product or brand.",
+      "steps": [
+        "A maximum of three action buttons may be used per layout to highlight different products or brands.",
+        "A single action button may be centered within a layout, especially over a white background.",
+        "When placed over a photo, action buttons may be arranged organically to best suit the image."
+      ]
+    },
+    {
+      "label": "Search Buttons",
+      "text": "Search buttons mimic the action of searching for a product on {name}.com. They use lowercase capitalization to simulate a user typing, unless naming a specific product or brand. Only one search button may be used per layout.",
+      "steps": [
+        "Search buttons only appear in solid white or outlined formats to mimic familiar UI cues.",
+        "Search buttons may be organically placed over an image or centered within layout.",
+        "Search buttons may be used in combination with action buttons. Limit yourself to one of each."
+      ]
+    },
+    {
+      "label": "Accent Buttons",
+      "text": "Accent buttons are added to frames to enhance the feeling of a digital shopping experience. They’re sized according to the radius of their frames, nestling into the corner with a smooth margin. The examples here indicate an “Add to Cart” action.",
+      "steps": [
+        "Accent buttons are placed in the corner of product tiles or outlined frames.",
+        "One accent button may be used per frame.",
+        "When used in an outlined frame, the weight of an accent button should match the weight of its frame."
+      ]
+    }
+  ],
+  "buttonDonts": {
+    "heading": "Button Don’ts",
+    "captions": [
+      "Don’t use rectangular buttons.",
+      "Don’t recolor solid search buttons to any colors other than white.",
+      "Don’t recolor outlined buttons to any colors other than Black or white.",
+      "Don’t set button text in bold or all-caps.",
+      "Don’t use buttons in solid white aside from our search buttons.",
+      "Don’t mismatch weight of outline and symbol.",
+      "Don’t make an accent button larger than its frame’s corner radius.",
+      "Don’t make an accent button smaller than its frame’s corner radius.",
+      "Don’t recolor outlined accent buttons."
+    ]
+  }
+}

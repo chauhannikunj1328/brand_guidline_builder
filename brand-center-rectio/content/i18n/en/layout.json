@@ -1,0 +1,138 @@
+{
+  "title": "Layout",
+  "do": "Do",
+  "dont": "Don’t",
+  "note": "Note",
+  "remember": "Remember",
+  "rail": {
+    "grids": "Grids",
+    "margins": "Margins",
+    "columns": "Columns",
+    "gutters": "Gutters",
+    "optical": "Optical Guide",
+    "applying": "Applying Logos",
+    "proportions": "Proportions",
+    "scale": "Scale",
+    "placement": "Placement",
+    "donts": "Don’ts"
+  },
+  "grids": {
+    "heading": "Grids",
+    "p1": "Our grid is how we assemble our brand elements into a whole.",
+    "p2": "Whether we’re making a detailed multi-page presentation or a simple email, we always use the grid as our starting point."
+  },
+  "table": {
+    "docType": "Document Type",
+    "dimensions": "Dimensions",
+    "rows": [
+      "16:9 Powerpoints or Video",
+      "Square Social Post",
+      "Printed/PDF Report",
+      "Leaderboard Display*",
+      "Skyscraper Display*"
+    ]
+  },
+  "margins": {
+    "heading": "Margins",
+    "note": "The margins listed here for Leaderboard Display and Skyscraper Display have been reduced for optical correctness.*",
+    "p": "Margins establish a consistent foundation, ensuring content remains legible, uniform, and tidy. Our standard margin width is determined by dividing the document's longest side into 24 equal segments, with the width of one segment becoming our margin. See the table for some sample document sizes and margins.",
+    "big": [
+      "Our margin is equal to the",
+      "longest side of a document",
+      "divided by 24."
+    ],
+    "small": [
+      "In the case of very wide or very tall layouts,",
+      "your margins may need to be reduced slightly",
+      "to maintain appropriate space for content."
+    ],
+    "dimension": "24 X"
+  },
+  "columns": {
+    "heading": "Columns",
+    "p1": "We divide the interior space into vertical columns to help organize our content. Columns are drawn in increments of two, based on the document’s width. Wider applications will need more columns, while narrow applications will need fewer.",
+    "p2": "Also consider the type of content that will occupy the space—complex information will require more columns to establish a clear hierarchy. See the table here for some common document sizes and sample column counts.",
+    "big": [
+      "Columns are drawn in",
+      "increments of 2, up to a",
+      "maximum of 12."
+    ],
+    "small": [
+      "Narrow applications will typically use",
+      "2 to 4 columns, while wide layouts",
+      "will use between 6 and 12."
+    ],
+    "dimension": "6 COLUMNS"
+  },
+  "gutters": {
+    "heading": "Gutters",
+    "p1": "Gutters are the clear spaces between columns that separate text, images, and graphics. They make our communications tidy, organized, and legible.",
+    "p2": "The width of our gutters is determined in relation to our margin. Gutters should be between 50% and 100% of our margin width, depending on the size of the application. A 50% gutter is sufficient for most needs, but may be too thin for very wide layouts. Use your best judgment for spacing.",
+    "big": [
+      "Our gutter width is",
+      "between 50% and 100%",
+      "of our margin."
+    ],
+    "small": [
+      "Wider applications may require larger gutters",
+      "for optical correctness. When in doubt, start",
+      "at 50% and increase as needed."
+    ]
+  },
+  "optical": {
+    "aria": "Optical guide",
+    "tabs": [
+      "Margins",
+      "Gutters"
+    ],
+    "labels": [
+      "Too Narrow",
+      "Just Right",
+      "Too Wide"
+    ]
+  },
+  "logos": {
+    "heading": "Applying Logos",
+    "p1": "After establishing a grid, our logos may be used.",
+    "p2": "Our wordmark and Spark are now decoupled from one another for more design flexibility. This section outlines the rules that govern their sizing and placement.",
+    "proportions": {
+      "heading": "Proportions",
+      "p1": "When our wordmark and Spark are used together in a layout, they always maintain the size relationship shown here. The four inner segments of our Spark should match the height of our wordmark, making the Spark approximately 1.7x our wordmark’s height.",
+      "p2": "This size relationship is fixed: the wordmark and Spark must always scale up or down as a set—never independently. Remember—our Spark and wordmark are separate logos. We do not lock them up together.",
+      "aria": "Spark and wordmark proportions"
+    },
+    "scale": {
+      "heading": "Scale",
+      "p1": "The height for our wordmark in layout is equal to the width of our margin. The height for our Spark is then 1.7x the margin height, according to the proportions above.",
+      "p2": "Use this as a baseline measurement—logo sizes can require optical adjustment, particularly on very wide or very tall layouts.",
+      "rememberText": "When resizing the wordmark, our Spark must also increase or decrease accordingly to maintain correct proportions.",
+      "caption": "Our standard wordmark height is equal to our margin. Our Spark height is 1.7x this measurement."
+    },
+    "placement": {
+      "heading": "Placement",
+      "p": "Our wordmark and Spark are always located on opposite sides of a layout. Where possible, we place the wordmark in the lower left corner and the Spark in the upper right. If this isn’t possible, you can use one of our secondary placements. To help you remember these placements, keep in mind two simple rules:",
+      "rules": [
+        "1. Wordmark can't be at the top of a composition.",
+        "2. Wordmark can't be right-aligned."
+      ],
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "captions": [
+        "Left-aligned Diagonal",
+        "Left-aligned Vertical",
+        "Baseline horizontal",
+        "Centered vertical"
+      ]
+    },
+    "donts": {
+      "heading": "Don'ts",
+      "p": "When applying our logos, we always avoid the following misuses.",
+      "captions": [
+        "Don't align our wordmark to the right edge of a layout.",
+        "Don't align our wordmark to the top margin.",
+        "Don't alter the size relationship between our wordmark and Spark.",
+        "Don't create a lockup with our wordmark and Spark."
+      ]
+    }
+  }
+}

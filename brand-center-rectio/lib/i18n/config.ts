@@ -16,8 +16,8 @@ export const hasLocale = (value: string): value is Locale => (LOCALES as readonl
 
 /** Pages (as plain English paths) that exist in each non-default language. */
 export const TRANSLATED: Record<Exclude<Locale, "en">, readonly string[]> = {
-  es: ["/", "/contact", "/brand-foundation", "/brand-voice", "/logo", "/wordmark", "/color", "/typography", "/lockups"],
-  ar: ["/", "/contact", "/brand-foundation", "/brand-voice", "/logo", "/wordmark", "/color", "/typography", "/lockups"],
+  es: ["/", "/contact", "/brand-foundation", "/brand-voice", "/logo", "/wordmark", "/color", "/typography", "/lockups", "/layout", "/trademarks", "/brand-os"],
+  ar: ["/", "/contact", "/brand-foundation", "/brand-voice", "/logo", "/wordmark", "/color", "/typography", "/lockups", "/layout", "/trademarks", "/brand-os"],
 };
 
 export const normalizePath = (path: string) => (path.length > 1 ? path.replace(/\/+$/, "") : path) || "/";

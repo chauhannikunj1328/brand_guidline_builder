@@ -74,7 +74,7 @@ function Cards() {
   );
 }
 
-export default function LayoutHero() {
+export default function LayoutHero({ title }: { title: string }) {
   return (
     <section className="relative overflow-hidden pb-14 pt-20 lg:h-[1075px] lg:pb-0 lg:pt-[270px]">
       {/* Forest backdrop (Figma BG): the shared watercolour + feathered mask, placed 4px below the hero top. */}
@@ -85,11 +85,11 @@ export default function LayoutHero() {
         </div>
         <div className="absolute inset-0 bg-pampas-100 opacity-40" />
       </div>
-      <h1 className="t-h2 relative px-5 text-center text-grey-600">Layout</h1>
+      <h1 className="t-h2 relative px-5 text-center text-grey-600">{title}</h1>
       <div className="relative mt-12 h-[248px] lg:mt-[100px] lg:h-[450px]">
         {/* Endless strip: four copies of the cards, so the track fills ultra-wide screens and -50% lands on an identical frame.
             Scale sits on a wrapper because the track's own transform is animated. */}
-        <div className="w-max origin-top-left scale-[0.55] lg:scale-100">
+        <div aria-hidden dir="ltr" className="w-max origin-top-left scale-[0.55] lg:scale-100">
           <div className="marquee-track flex w-max">
             {[0, 1, 2, 3].map((n) => <div key={n} aria-hidden={n > 0} className="shrink-0 pr-4"><Cards /></div>)}
           </div>

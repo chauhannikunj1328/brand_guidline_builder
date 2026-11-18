@@ -1,0 +1,138 @@
+{
+  "title": "Maquetación",
+  "do": "Haz",
+  "dont": "No hagas",
+  "note": "Nota",
+  "remember": "Recuerda",
+  "rail": {
+    "grids": "Retículas",
+    "margins": "Márgenes",
+    "columns": "Columnas",
+    "gutters": "Medianiles",
+    "optical": "Guía óptica",
+    "applying": "Aplicación de logotipos",
+    "proportions": "Proporciones",
+    "scale": "Escala",
+    "placement": "Colocación",
+    "donts": "Qué no hacer"
+  },
+  "grids": {
+    "heading": "Retículas",
+    "p1": "Nuestra retícula es la forma en que ensamblamos nuestros elementos de marca en un todo.",
+    "p2": "Ya sea que hagamos una presentación detallada de varias páginas o un correo electrónico sencillo, siempre usamos la retícula como punto de partida."
+  },
+  "table": {
+    "docType": "Tipo de documento",
+    "dimensions": "Dimensiones",
+    "rows": [
+      "Presentaciones o vídeo 16:9",
+      "Publicación cuadrada para redes sociales",
+      "Informe impreso o en PDF",
+      "Banner horizontal (leaderboard)*",
+      "Banner vertical (skyscraper)*"
+    ]
+  },
+  "margins": {
+    "heading": "Márgenes",
+    "note": "Los márgenes indicados aquí para el banner horizontal y el banner vertical se han reducido por corrección óptica.*",
+    "p": "Los márgenes establecen una base coherente y garantizan que el contenido sea legible, uniforme y ordenado. Nuestro ancho de margen estándar se determina dividiendo el lado más largo del documento en 24 segmentos iguales; el ancho de un segmento pasa a ser nuestro margen. Consulta la tabla para ver algunos tamaños de documento y márgenes de ejemplo.",
+    "big": [
+      "Nuestro margen es igual al",
+      "lado más largo de un documento",
+      "dividido entre 24."
+    ],
+    "small": [
+      "En composiciones muy anchas o muy altas,",
+      "puede ser necesario reducir ligeramente los márgenes",
+      "para mantener un espacio adecuado para el contenido."
+    ],
+    "dimension": "24 X"
+  },
+  "columns": {
+    "heading": "Columnas",
+    "p1": "Dividimos el espacio interior en columnas verticales para ayudar a organizar nuestro contenido. Las columnas se trazan en incrementos de dos, según el ancho del documento. Las aplicaciones más anchas necesitarán más columnas y las estrechas, menos.",
+    "p2": "Ten en cuenta también el tipo de contenido que ocupará el espacio: la información compleja requerirá más columnas para establecer una jerarquía clara. Consulta la tabla para ver algunos tamaños de documento habituales y ejemplos de número de columnas.",
+    "big": [
+      "Las columnas se trazan en",
+      "incrementos de 2, hasta un",
+      "máximo de 12."
+    ],
+    "small": [
+      "Las aplicaciones estrechas suelen usar",
+      "de 2 a 4 columnas, mientras que las",
+      "composiciones anchas usan de 6 a 12."
+    ],
+    "dimension": "6 COLUMNAS"
+  },
+  "gutters": {
+    "heading": "Medianiles",
+    "p1": "Los medianiles son los espacios libres entre columnas que separan texto, imágenes y gráficos. Hacen que nuestras comunicaciones sean ordenadas, organizadas y legibles.",
+    "p2": "El ancho de nuestros medianiles se determina en relación con el margen. Los medianiles deben medir entre el 50 % y el 100 % del ancho del margen, según el tamaño de la aplicación. Un medianil del 50 % basta para la mayoría de los casos, pero puede ser demasiado estrecho en composiciones muy anchas. Usa tu mejor criterio para el espaciado.",
+    "big": [
+      "El ancho de nuestro medianil está",
+      "entre el 50 % y el 100 %",
+      "de nuestro margen."
+    ],
+    "small": [
+      "Las aplicaciones más anchas pueden requerir medianiles mayores",
+      "por corrección óptica. Ante la duda, empieza",
+      "en el 50 % y auméntalo según sea necesario."
+    ]
+  },
+  "optical": {
+    "aria": "Guía óptica",
+    "tabs": [
+      "Márgenes",
+      "Medianiles"
+    ],
+    "labels": [
+      "Demasiado estrecho",
+      "Perfecto",
+      "Demasiado ancho"
+    ]
+  },
+  "logos": {
+    "heading": "Aplicación de logotipos",
+    "p1": "Una vez establecida la retícula, pueden usarse nuestros logotipos.",
+    "p2": "Nuestro logotipo y la Chispa ahora están desvinculados para ofrecer más flexibilidad de diseño. Esta sección describe las reglas que rigen su tamaño y colocación.",
+    "proportions": {
+      "heading": "Proporciones",
+      "p1": "Cuando el logotipo y la Chispa se usan juntos en una composición, siempre mantienen la relación de tamaño que se muestra aquí. Los cuatro segmentos interiores de la Chispa deben igualar la altura del logotipo, de modo que la Chispa mide aproximadamente 1,7 veces la altura del logotipo.",
+      "p2": "Esta relación de tamaño es fija: el logotipo y la Chispa deben ampliarse o reducirse siempre como un conjunto, nunca por separado. Recuerda: la Chispa y el logotipo son logos distintos. No los combinamos en una misma pieza.",
+      "aria": "Proporciones de la Chispa y el logotipo"
+    },
+    "scale": {
+      "heading": "Escala",
+      "p1": "La altura del logotipo en la composición es igual al ancho del margen. La altura de la Chispa es entonces 1,7 veces la altura del margen, según las proporciones anteriores.",
+      "p2": "Usa esto como medida de referencia: los tamaños de los logos pueden requerir un ajuste óptico, sobre todo en composiciones muy anchas o muy altas.",
+      "rememberText": "Al cambiar el tamaño del logotipo, la Chispa también debe aumentar o disminuir en consecuencia para mantener las proporciones correctas.",
+      "caption": "La altura estándar de nuestro logotipo es igual a nuestro margen. La altura de la Chispa es 1,7 veces esta medida."
+    },
+    "placement": {
+      "heading": "Colocación",
+      "p": "Nuestro logotipo y la Chispa siempre se sitúan en lados opuestos de la composición. Siempre que sea posible, colocamos el logotipo en la esquina inferior izquierda y la Chispa en la superior derecha. Si no es posible, puedes usar una de nuestras colocaciones secundarias. Para recordarlas, ten en cuenta dos reglas sencillas:",
+      "rules": [
+        "1. El logotipo no puede estar en la parte superior de una composición.",
+        "2. El logotipo no puede estar alineado a la derecha."
+      ],
+      "primary": "Principal",
+      "secondary": "Secundaria",
+      "captions": [
+        "Diagonal alineada a la izquierda",
+        "Vertical alineada a la izquierda",
+        "Horizontal sobre la línea base",
+        "Vertical centrada"
+      ]
+    },
+    "donts": {
+      "heading": "Qué no hacer",
+      "p": "Al aplicar nuestros logos, evitamos siempre los siguientes usos incorrectos.",
+      "captions": [
+        "No alinees nuestro logotipo al borde derecho de una composición.",
+        "No alinees nuestro logotipo al margen superior.",
+        "No alteres la relación de tamaño entre nuestro logotipo y la Chispa.",
+        "No crees una combinación con nuestro logotipo y la Chispa."
+      ]
+    }
+  }
+}

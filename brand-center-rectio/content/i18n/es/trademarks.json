@@ -1,0 +1,217 @@
+{
+  "title": "Marcas registradas",
+  "rail": [
+    "Directrices generales",
+    "Marcas denominativas",
+    "Logos y diseños",
+    "Avisos y leyendas de marca y de derechos de autor",
+    "Publicidad de proveedores",
+    "Posicionamiento en búsquedas y segmentación de contenido",
+    "Solicitar permiso de uso"
+  ],
+  "intro": {
+    "p1": "Las marcas de Rectio son activos de valor incalculable que representan la confianza de los clientes y el prestigio de la marca.",
+    "p2": "Rectio tiene el derecho exclusivo de usar —y de autorizar el uso de— estos nombres, logos y otros signos distintivos que identifican sus bienes, servicios y actividades comerciales."
+  },
+  "dontLabel": "Prohibido",
+  "markers": "abcdefghijklmnopqrstuvwxyz",
+  "sections": [
+    {
+      "id": "general-guidelines",
+      "title": "Directrices generales",
+      "intro": "Estas directrices aclaran el uso correcto de las marcas registradas de Rectio. Rectio se reserva el derecho de tomar cualquier medida (incluida la modificación de estas directrices) para proteger su propiedad intelectual si resulta necesario. Algunas de las marcas de Rectio, incluidos sus logos, solo pueden usarse con el permiso previo por escrito de Rectio.",
+      "items": [
+        {
+          "dont": true,
+          "text": "Mostrar las marcas de Rectio en cualquier contexto que sugiera falsamente una relación entre:",
+          "sub": [
+            "Rectio y otra entidad;",
+            "Otra entidad y los bienes, servicios o actividades comerciales de Rectio; o",
+            "Rectio y los bienes, servicios, actividades comerciales, puntos de vista u opiniones de otra entidad."
+          ]
+        },
+        {
+          "dont": true,
+          "text": "Usar las marcas de Rectio de un modo que implique afiliación, conexión, asociación, patrocinio, aprobación, certificación o respaldo, cuando no exista tal relación."
+        },
+        {
+          "dont": true,
+          "text": "Usar las marcas de Rectio salvo de forma menos destacada que su propio nombre comercial o sus propias marcas."
+        },
+        {
+          "dont": true,
+          "text": "Usar cualquier marca de Rectio en formas modificadas, incluidos los usos que:",
+          "sub": [
+            "Traduzcan o transliteren palabras de las marcas;",
+            "Sustituyan palabras u otras descripciones por imágenes;",
+            "Combinen las marcas con su nombre o con sus marcas;",
+            "Añadan palabras, símbolos, números, espacios, signos de puntuación, dispositivos, diseños, imágenes u otro elemento a cualquier marca;",
+            "Abrevien o eliminen palabras, símbolos, números, espacios, signos de puntuación, dispositivos, diseños, imágenes u otro elemento de cualquier marca;",
+            "Pongan en plural palabras en singular o en singular palabras en plural;",
+            "Inserten las marcas en un lema o eslogan; o",
+            "Escriban incorrectamente palabras de las marcas."
+          ]
+        },
+        {
+          "dont": true,
+          "text": "Usar las marcas de Rectio dentro de, o como componente de:",
+          "sub": [
+            "Un nombre de dominio, subdominio, dominio de nivel superior o URL;",
+            "Una dirección de correo electrónico;",
+            "Un número de teléfono;",
+            "El nombre de una app o el título de un software;",
+            "Un nombre comercial, nombre de empresa, nombre ficticio o supuesto, o razón social;",
+            "El nombre de una cuenta, un identificador o un nombre de perfil en cualquier servicio;",
+            "El nombre de cualquier producto, servicio u otra actividad comercial;",
+            "El nombre de cualquier grupo de fans, grupo de usuarios, comunidad tecnológica o cualquier otra organización; o",
+            "El título de cualquier libro, película, revista, sitio web, medio interactivo u otro contenido expresivo."
+          ]
+        },
+        {
+          "dont": true,
+          "text": "Mostrar las marcas de Rectio salvo de manera positiva, y usarlas para representar o mencionar de forma negativa a Rectio o a cualquier tercero, sus productos, sus servicios o sus actividades comerciales."
+        },
+        {
+          "dont": true,
+          "text": "Asociar las marcas de Rectio con —o usarlas cerca de— cualquier contenido o actividad vulgar, obsceno, profano, indecente, sexualmente explícito, inmoral, escandaloso, difamatorio, despectivo o de algún otro modo censurable."
+        },
+        {
+          "dont": true,
+          "text": "Usar cualquier marca u otra designación que pueda confundirse con las marcas que posee Rectio."
+        }
+      ]
+    },
+    {
+      "id": "wordmarks",
+      "title": "Marcas denominativas",
+      "intro": "Algunas marcas de Rectio constan solo de palabras y no presentan ninguna estilización particular, como una fuente, un tipo de letra o un color específicos (en conjunto, «Marcas denominativas» y cada una, una «Marca denominativa»).",
+      "items": [
+        {
+          "dont": false,
+          "text": "Las Marcas denominativas de Rectio pueden usarse con el consentimiento previo por escrito de Rectio y conforme a estas Directrices, en la medida en que dicho uso no pueda inducir a confusión y sea necesario para transmitir información veraz, por ejemplo para:",
+          "sub": [
+            "Indicar la ubicación de un negocio o evento independiente dentro de un local de Rectio o cerca de él;",
+            "Indicar que un producto, servicio o solución es interoperable o compatible con un producto, servicio o solución ofrecido por Rectio;",
+            "Referirse de forma exacta y directa a Rectio, a sus negocios y a sus productos, servicios o actividades comerciales; o",
+            "En los títulos de publicaciones de noticias y otros contenidos factuales sobre Rectio, sus negocios y sus productos, servicios o actividades comerciales."
+          ]
+        },
+        {
+          "dont": true,
+          "text": "Usar las Marcas denominativas de Rectio en el contexto de otro texto, por ejemplo en textos publicitarios, salvo que se muestren de un modo que las distinga de ese texto, presentándolas en:",
+          "sub": [
+            "Formato de título (es decir, con mayúscula inicial en cada palabra);",
+            "TODO EN MAYÚSCULAS;",
+            "Negrita;",
+            "Subrayado;",
+            "Cursiva; o",
+            "Algún otro estilo visualmente distintivo."
+          ]
+        },
+        {
+          "dont": false,
+          "text": "Las Marcas denominativas de Rectio deben usarse en el texto únicamente como adjetivos acompañados de un sustantivo genérico adecuado que se refiera al producto o servicio correspondiente, salvo cuando sea apropiado usar una Marca denominativa como sustantivo para referirse a la propia empresa."
+        },
+        {
+          "dont": true,
+          "text": "Usar cualquier marca de Rectio como verbo, como adverbio o de un modo que sugiera que tiene un significado común, descriptivo o genérico."
+        }
+      ]
+    },
+    {
+      "id": "logos-designs",
+      "title": "Logos y diseños",
+      "intro": "Algunas marcas de Rectio presentan estilización (incluidos un tipo de letra o un color concretos) o incluyen un dispositivo, un diseño u otra imagen (en conjunto, «Logos» y cada uno, un «Logo»). Rectio puede ser titular de derechos de marca y de derechos de autor sobre sus Logos. Estos Logos solo pueden usarse conforme a las siguientes directrices.",
+      "items": [
+        {
+          "dont": true,
+          "text": "Usar los Logos de Rectio sin el consentimiento previo por escrito de Rectio."
+        },
+        {
+          "dont": true,
+          "text": "Usar los Logos sobre un color de fondo en el que se confundan, total o parcialmente."
+        },
+        {
+          "dont": true,
+          "text": "Usar los Logos dentro de un texto o en medio de una frase o una oración."
+        },
+        {
+          "dont": true,
+          "text": "Modificar, distorsionar, girar, animar o alterar los Logos de Rectio de cualquier manera; solo deben usarse en la forma, orientación y colores suministrados por Rectio. Se puede cambiar el tamaño total de los Logos, siempre que se mantengan todas las proporciones."
+        },
+        {
+          "dont": true,
+          "text": "Incorporar los Logos de Rectio en cualquier textura, patrón repetido o motivo."
+        },
+        {
+          "dont": true,
+          "text": "Usar los Logos de Rectio, incluido sin limitación su diseño de la Chispa, como una letra o como signo de puntuación en cualquier palabra o frase."
+        },
+        {
+          "dont": true,
+          "text": "Mostrar los Logos de Rectio de modo que se superpongan con formas, imágenes, fotografías u otras marcas."
+        }
+      ]
+    },
+    {
+      "id": "notices",
+      "title": "Avisos y leyendas de marca y de derechos de autor",
+      "intro": "Debe utilizarse siempre un aviso de marca (el símbolo «TM»), un aviso de marca de servicio (el símbolo «SM») o un aviso de registro (el símbolo «R» encerrado en un círculo), según corresponda, en el primer uso, o en el más destacado, de cada marca de Rectio.",
+      "items": [
+        {
+          "dont": true,
+          "text": "Usar un aviso de registro (el símbolo «R» encerrado en un círculo) con una marca que no esté registrada en la oficina de marcas correspondiente o que no esté registrada para los bienes o servicios en cuestión."
+        },
+        {
+          "dont": true,
+          "text": "Usar un aviso de marca de servicio (el símbolo «SM») con una marca cuando el uso en cuestión no esté relacionado con servicios."
+        },
+        {
+          "dont": true,
+          "text": "Usar avisos de marca con marcas de Rectio destinadas a un público fuera del país de registro, distribuidas a través de un sitio web o una publicación originados fuera de ese país, o mostradas de un modo que no sea coherente con la ley local."
+        },
+        {
+          "dont": false,
+          "text": "Debe incluirse siempre una nota al pie que indique que las marcas de Rectio utilizadas, enumeradas por orden alfabético, son «marcas de Rectio Inc. y sus filiales», o incluir esa información en otro aviso."
+        },
+        {
+          "dont": false,
+          "text": "Debe incluirse siempre una nota al pie que indique que los Logos de Rectio son «© 2xxx Rectio Inc.» (donde el año «2xxx» será el que indique Rectio), o incluir esa información en otro aviso."
+        }
+      ]
+    },
+    {
+      "id": "vendor-advertising",
+      "title": "Publicidad de proveedores",
+      "intro": "Rectio estudia las solicitudes para usar determinados Logos como «etiquetas de proveedor», que se refieren a la disponibilidad de productos o servicios de Rectio, en anuncios de terceros mediante su proceso de Publicidad con etiqueta de proveedor. Los detalles de este proceso se explican en la sección «Publicidad de proveedores» de esta guía.",
+      "items": [
+        {
+          "dont": true,
+          "text": "Usar cualquier Logo de Rectio en anuncios sin aprobación previa por escrito."
+        }
+      ]
+    },
+    {
+      "id": "search-placement",
+      "title": "Posicionamiento en búsquedas y segmentación de contenido",
+      "intro": "Rectio estudia las solicitudes para usar sus marcas en relación con el servicio publicitario Google AdWords, o con cualquier otro servicio de posicionamiento en búsquedas, segmentación de contenido u otra colocación publicitaria, mediante su proceso de Publicidad con etiqueta de proveedor. Los detalles de este proceso se explican en la sección «Publicidad de proveedores» de esta guía.",
+      "items": [
+        {
+          "dont": true,
+          "text": "Usar cualquier marca de Rectio en cualquier servicio de posicionamiento en búsquedas, segmentación de contenido u otra colocación publicitaria sin aprobación previa por escrito."
+        }
+      ]
+    },
+    {
+      "id": "permission",
+      "title": "Solicitar permiso de uso",
+      "intro": "Rectio estudia las solicitudes para usar sus marcas en relación con el servicio publicitario Google AdWords, o con cualquier otro servicio de posicionamiento en búsquedas, segmentación de contenido u otra colocación publicitaria, mediante su proceso de Publicidad con etiqueta de proveedor. Los detalles de este proceso se explican en la sección «Publicidad de proveedores» de esta guía.",
+      "items": [
+        {
+          "dont": false,
+          "text": "Las solicitudes para usar marcas de Rectio de un modo que no contemple este formulario deben dirigirse a un contacto comercial adecuado de Rectio."
+        }
+      ]
+    }
+  ]
+}
