@@ -13,7 +13,8 @@
     "dev:rectio": "npm run dev --prefix brand-center-rectio",
     "dev:base": "npm run dev --prefix brand-center-base",
     "setup": "npm install && npm install --prefix brand-center-rectio && npm install --prefix brand-center-base",
-    "status": "node scripts/status.mjs"
+    "status": "node scripts/status.mjs",
+    "i18n:review": "node scripts/i18n-review.mjs"
   },
   "engines": {
     "node": ">=20"

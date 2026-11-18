@@ -1,0 +1,91 @@
+{
+  "rail": {
+    "introduction": "Introducción",
+    "notes": "Notas sobre la Chispa",
+    "color": "Uso del color principal",
+    "sizing": "Tamaños",
+    "appIcon": "Icono de la app",
+    "donts": "Qué no hacer con la Chispa"
+  },
+  "intro": {
+    "p1": "La Chispa es nuestro logotipo principal.",
+    "p2": "Es un atajo visual icónico de Rectio, potente a cualquier escala, que representa nuestra marca con claridad allí donde aparezca.",
+    "download": "Descargar los recursos"
+  },
+  "overview": {
+    "heading": "La Chispa en detalle",
+    "p1": "La Chispa es nuestro símbolo más icónico y la forma más rápida de evocar la marca Rectio: irradia energía y optimismo allí donde aparece.",
+    "p2": "La Chispa puede aparecer sola como representación de Rectio o junto al logotipo en la misma composición, pero nunca deben colocarse uno justo al lado del otro.",
+    "p3": "Consulta «Aplicación de logotipos» en la página Maquetación para ver cómo colocarla."
+  },
+  "notes": {
+    "heading": "Notas sobre la Chispa",
+    "tabs": [
+      {
+        "label": "Evolución",
+        "text": "La Chispa original se ha renovado y redibujado con curvas orgánicas que resultan más cercanas y menos rígidas."
+      },
+      {
+        "label": "Construcción",
+        "text": "La Chispa se construye con dos formas sencillas. Un círculo de chispitas aporta sensación de infinito y un rombo en el centro aporta precisión. Juntos forman nuestro símbolo."
+      },
+      {
+        "label": "Espacio libre",
+        "text": "Mantén un espacio libre mínimo igual a la mitad de la altura de la Chispa en todos los lados. Nada más debe entrar en esta zona, para que la Chispa siempre destaque con claridad."
+      }
+    ],
+    "parts": [
+      "Círculo infinito",
+      "Rombo de precisión",
+      "Símbolo"
+    ]
+  },
+  "color": {
+    "heading": "Uso del color principal",
+    "text": "Nuestra Chispa debe aparecer principalmente en blanco sobre un fondo Pampas o en Pampas sobre blanco. En usos a pequeña escala, puede usarse Pampas oscuro sobre Pampas claro para lograr el máximo contraste y legibilidad.",
+    "download": "Descargar recursos",
+    "cards": [
+      [
+        "Rectio blanco",
+        "sobre Pampas"
+      ],
+      [
+        "Rectio Pampas",
+        "sobre blanco"
+      ],
+      [
+        "Rectio Pampas oscuro",
+        "sobre Pampas claro"
+      ]
+    ]
+  },
+  "sizing": {
+    "heading": "Tamaño mínimo",
+    "text": "Para garantizar la legibilidad, no usamos la Chispa con una altura menor de 16 píxeles en aplicaciones digitales ni de 0,25 pulgadas en impresión.",
+    "print": "Tamaño mínimo en impresión: 0,25 pulgadas",
+    "digital": "Tamaño mínimo digital: 16 px",
+    "note": "Nota",
+    "noteText": "Las Chispas de aquí no están a escala. Consulta las medidas en píxeles y pulgadas para dimensionarla correctamente.",
+    "capPrint": "Tamaño mínimo en impresión: 0,25 pulgadas",
+    "capDigital": "Tamaño mínimo digital: 16 px"
+  },
+  "appIcon": {
+    "heading": "Icono del logotipo",
+    "text": "En nuestra app, la Chispa aparece siempre en blanco sobre un fondo Pampas, con nuestro espacio libre habitual.",
+    "alt": "La Chispa como icono de app en la pantalla de un portátil"
+  },
+  "donts": {
+    "heading": "Qué no hacer con la Chispa",
+    "captions": [
+      "No uses la Chispa en colores no aprobados.",
+      "No uses varios colores en la Chispa.",
+      "No inclines, gires ni deformes la Chispa.",
+      "No recortes los bordes de la Chispa.",
+      "No uses chispitas sueltas para ningún fin.",
+      "No crees un patrón con la Chispa.",
+      "No apliques nuestra cascada de colores a la Chispa.",
+      "No uses una Chispa parcialmente transparente.",
+      "No separes ni quites piezas de la Chispa."
+    ]
+  }
+}

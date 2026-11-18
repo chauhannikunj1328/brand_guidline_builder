@@ -1,0 +1,46 @@
+{
+  "title": "Brand Foundation",
+  "rail": {
+    "group": "Brand Foundation",
+    "purpose": "Brand Purpose",
+    "positioning": "Company Positioning",
+    "principles": "Brand Principles",
+    "cheatSheet": "Cheat Sheet"
+  },
+  "intro": "This section is the bedrock of our brand, outlining our purpose, positioning, and principles. It guides us in all the ways Rectio comes to life: how we look, what we stand for, and how we act in the world.",
+  "purpose": {
+    "heading": "Brand Purpose",
+    "subtitle": "Guides the enterprise",
+    "p1": "Our brand purpose comes from a simple belief: the things people rely on every day should be easy to use and easy to make their own.",
+    "p2": "This purpose guides our daily actions and behaviors to best serve our customers, associates, and communities. It is the driving force behind everything we do."
+  },
+  "positioning": {
+    "heading": "Company Positioning",
+    "lead": "We are a <b>people-led, tech-powered,</b> company dedicated to helping people <b>make it simple and make it yours.</b>"
+  },
+  "principles": [
+    {
+      "title": "Grassroots",
+      "text": "We never forget our humble beginnings; we’re relatable, down-to-earth, and part of the community.",
+      "short": "We never forget our humble beginnings; we’re relatable, down-to-earth and part of the community."
+    },
+    {
+      "title": "Agile",
+      "text": "Agility is our x-factor. We are constantly improving, endlessly testing, always adapting.",
+      "short": "Agility is our x-factor. We are constantly improving, endlessly testing, always adapting."
+    },
+    {
+      "title": "Pioneering",
+      "text": "Since the beginning, we’ve blazed a path and never settled, because that’s what it takes to make life better and easier.",
+      "short": "Since the beginning, we’ve blazed a path and never settled because that’s what it takes to make life better and easier."
+    }
+  ],
+  "cheat": {
+    "title": [
+      "Brand Foundation",
+      "Cheat Sheet"
+    ],
+    "purposeNote": "Guides the enterprise.",
+    "principlesNote": "Guide our brand expression."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "title": "Voz de marca",
+  "rail": {
+    "group": "Principios de voz",
+    "overview": "Resumen",
+    "conversational": "Conversacional",
+    "captivating": "Cautivador",
+    "confident": "Seguro",
+    "cheatSheet": "Guía rápida",
+    "bestPractices": "Buenas prácticas"
+  },
+  "principlesSection": {
+    "heading": "Principios de voz",
+    "p1": "Nuestros principios de voz determinan cómo hablamos a los clientes, desde el contenido de sus redes sociales hasta su experiencia en una tienda Rectio cercana.",
+    "p2": "Estos principios son una traducción directa de nuestros principios de marca, adaptados específicamente a la expresión oral y escrita."
+  },
+  "overview": {
+    "heading": "Resumen",
+    "p1": "Estos principios guían la aplicación de la voz de nuestra marca en todas las comunicaciones. Se aplican a las comunicaciones de marketing dirigidas a los clientes, pero también a cómo debemos redactar presentaciones, propuestas y demás. ¡Cada colaborador es guardián de nuestra voz!",
+    "p2": "Nuestros principios de voz pueden intensificarse o suavizarse según lo que necesite tu comunicación. A veces tendrás que dar más peso a un principio que a otro; otras veces tu texto aprovechará los tres por igual. Se anima a un uso flexible, siempre que puedas señalar uno o más principios de voz en tu texto."
+  },
+  "principleLabel": "Principio",
+  "do": "Haz",
+  "dont": "No hagas",
+  "examples": "Ejemplos",
+  "principles": [
+    {
+      "from": "Cercanos",
+      "name": "Conversacional",
+      "brand": "Nunca olvidamos nuestros humildes comienzos: somos cercanos, sencillos y parte de la comunidad.",
+      "short": "Nuestra voz es tan natural como nuestros clientes y colaboradores. Queremos ser la voz más auténtica de nuestra categoría.",
+      "cheat": "Nuestra voz es tan natural como nuestros clientes y colaboradores. Somos la voz más auténtica de nuestra categoría.",
+      "text": [
+        "Nuestra voz es tan natural como nuestros clientes y colaboradores. Queremos ser la voz más auténtica de nuestra categoría, así que debemos evitar confundir a los clientes con lenguaje de marketing.",
+        "Nuestro tono es familiar y directo, con un lenguaje amable y sin formalismos. Mantenemos una perspectiva positiva y optimista de la vida cotidiana, desde las fiestas hasta las tareas del hogar y todo lo que hay en medio."
+      ],
+      "do": "Busca una lectura fácil. Usa palabras sencillas, estructuras de frase claras y expresiones conocidas.",
+      "dont": "Compliques las cosas con jerga del sector, expresiones poco comunes o palabras complejas. Ante la duda, pregúntate: ¿lo dirías en una conversación de todos los días?"
+    },
+    {
+      "from": "Ágiles",
+      "name": "Cautivador",
+      "brand": "La agilidad es nuestro factor X. Mejoramos constantemente, probamos sin descanso y nos adaptamos siempre.",
+      "short": "Siempre debemos atraer al lector, así que nuestra voz tiene que ser dinámica y energizante.",
+      "cheat": "Siempre debemos atraer al lector, así que nuestra voz tiene que ser dinámica y energizante.",
+      "text": [
+        "Tenemos que atraer al lector, así que nuestra voz debe ser dinámica y energizante. Nuestro tono combina ligereza con un magnetismo irresistible que conecta con quien nos lee. Sea cual sea el tema, hablamos de él de forma actual y relevante, con una energía contagiosa. Elegimos palabras memorables e interesantes que, aun así, suenan informales y conversacionales.",
+        "Nunca rehúyas los momentos con los que la gente se identifica, que entretienen y que llegan en el momento oportuno."
+      ],
+      "do": "Usa juegos de palabras, rimas sutiles y frases contundentes. Disfruta al escribir y hazlo atractivo y lleno de vida.",
+      "dont": "Cuentes chistes. Nuestro humor y nuestra diversión nacen de la cercanía: ponen al cliente y sus experiencias en el centro, para que nunca resultemos cursis ni forzados."
+    },
+    {
+      "from": "Pioneros",
+      "name": "Seguro",
+      "brand": "Desde el principio hemos abierto camino y nunca nos conformamos, porque eso es lo que hace falta para que la vida sea mejor y más fácil.",
+      "short": "Como Rectio es un líder, nuestra voz debe ser decidida e inspiradora.",
+      "cheat": "Como Rectio es un líder, nuestra voz debe ser decidida e inspiradora.",
+      "text": [
+        "Como Rectio es un líder, nuestra voz es decidida e inspiradora. Hablamos con una positividad que impacta y tranquiliza. Cuando escribimos con seguridad, nuestros clientes sienten que ellos también pueden tenerla. Nuestras palabras les ayudan a hacerlo simple y hacerlo suyo, así que no hablamos con ambigüedad: somos claros y directos, e inspiramos a actuar."
+      ],
+      "do": "Sé específico y directo. Mostrar conocimiento al hablar de momentos o productos ayuda a que tu texto conecte con los clientes. Relaciona las complicaciones cotidianas y las soluciones rápidas con casos de uso del producto.",
+      "dont": "Seas vago. La vaguedad enturbia la intención de tu texto y lo hace sentir pasivo, soso y aburrido."
+    }
+  ],
+  "cheat": {
+    "title": [
+      "Principios de voz",
+      "Guía rápida"
+    ],
+    "purpose": "Propósito de marca",
+    "purposeNote": "Guía a toda la empresa.",
+    "brand": "Principios de marca",
+    "brandNote": "Guían la expresión de nuestra marca.",
+    "voice": "Principios de voz",
+    "voiceNote": "Derivados de nuestros principios de marca, están pensados para aplicarse fácilmente a través del lenguaje."
+  },
+  "best": {
+    "heading": "Buenas prácticas",
+    "p1": "En Rectio es importante que hablemos con una voz coherente y unificada.",
+    "p2": "La siguiente sección reúne buenas prácticas y orientaciones para mantener nuestro estilo verbal y sonar siempre auténticamente a Rectio.",
+    "items": [
+      {
+        "title": "Sobre la claridad",
+        "points": [
+          "La claridad es esencial para transmitir información.",
+          "Asegúrate de que tu intención no pueda malinterpretarse."
+        ],
+        "text": [
+          "La voz de nuestra marca es Conversacional, Cautivadora y Segura, pero hay una cuarta C vital en todo lo que escribimos: Claridad.",
+          "Nunca perdemos de vista lo grande que es nuestra audiencia ni que nuestro objetivo principal en cada comunicación es transmitirle información. El briefing siempre está presente, así que pregúntate: ¿mi texto traduce el briefing con tanta claridad que la intención no puede malinterpretarse? El mejor texto incorpora matices de todos nuestros principios de voz, pero ante todo, todo texto debe ser claro."
+        ]
+      },
+      {
+        "title": "Sobre el valor",
+        "points": [
+          "Busca formas nuevas de decir frases repetidas.",
+          "Piensa en cómo afecta el valor al lector."
+        ],
+        "text": [
+          "Al contar historias con valor, esfuérzate por encontrar formas nuevas de decir frases muy repetidas como «favoritos», «hallazgos», «imprescindibles» o «básicos». Aunque estas palabras sirven en un apuro, siempre queremos superarlas.",
+          "Piensa también en cómo afecta el valor al lector. ¿Un bañador más económico significa más opciones de vacaciones que meter en la maleta? ¿Un precio más bajo en pantalones de chándal significa un invierno más acogedor? Encuentra la relación entre el producto y el cliente más allá del precio."
+        ]
+      },
+      {
+        "title": "Sobre el humor",
+        "points": [
+          "Sé observador y cercano.",
+          "No cuentes chistes fuera de nuestras redes sociales."
+        ],
+        "text": [
+          "Rectio abraza el humor de la vida cotidiana en lugar de contar chistes.* Nos encantan las pequeñas cosas que hacen genial la vida, y nos identificamos con esos momentos que pueden arrancar un suspiro. Nuestro humor nace de esa cercanía: cuando sacamos una sonrisa a quien nos lee y piensa «Ja, Rectio me entiende».",
+          "*Los chistes son el alma de las redes sociales, y nosotros participamos del juego. Nuestra relevancia en esas plataformas depende de ello, así que hacemos bromas, compartimos memes e interactuamos con nuestros seguidores de maneras distintas a las de otros canales."
+        ]
+      },
+      {
+        "title": "Sobre los juegos de palabras",
+        "points": [
+          "No uses juegos de palabras."
+        ],
+        "text": [
+          "Evitamos los juegos de palabras. Aunque admitimos que son un atajo divertido y útil, también son lo más fácil. Creemos que detrás de cada juego de palabras siempre hay una verdad más profunda o una historia más entretenida por contar.",
+          "Habrá excepciones con el tiempo (como titulares inspirados en juegos de palabras dignos de un padre para el Día del Padre), pero ten presente nuestra norma general de «sin juegos de palabras» al escribir como Rectio."
+        ]
+      },
+      {
+        "title": "Sobre estar al día",
+        "points": [
+          "Aprende escuchando las redes sociales.",
+          "Sé cercano a gran escala.",
+          "Usa un lenguaje contemporáneo."
+        ],
+        "text": [
+          "Nos mantenemos al día con la cultura escuchando las redes sociales. Descubrir giros nuevos, referencias culturales compartidas y estructuras de frase es tan fácil como deslizar por tus redes.",
+          "Con todo, debemos moderar nuestro lenguaje para ser cercanos a gran escala. Nuestra escritura no debe estar a la vanguardia de la jerga ni del lenguaje de internet, sino emplear un lenguaje contemporáneo que use o entienda la mayoría de nuestros clientes y que ayude a que Rectio se sienta moderna y fresca."
+        ]
+      },
+      {
+        "title": "Sobre los emojis",
+        "points": [],
+        "text": [
+          "Los emojis son una herramienta poderosa en nuestro CRM y en las redes sociales. Los usamos cuando suman a la historia que contamos, y no cuando la distraen. La inclusión siempre es prioritaria, así que sigue esta regla general.",
+          "Las caras expresan emociones generales y solo existen en tono de piel amarillo. Usa estos emojis como quieras.",
+          "Los emojis de partes del cuerpo reflejan movimientos humanos concretos y existen en varios tonos de piel. Usa siempre un conjunto de 3 versiones del mismo emoji para reflejar toda la diversidad de nuestros clientes."
+        ]
+      }
+    ],
+    "emojis": [
+      "Usa caras para transmitir emociones generales.",
+      "Usa emojis de partes del cuerpo en conjuntos de tres para reflejar a nuestros diversos clientes."
+    ]
+  },
+  "closing": [
+    "Siempre somos Conversacionales, Cautivadores y Seguros, pero nuestra escritura se inclinará hacia un principio, o se alejará de él, según lo que escribamos y para quién.",
+    "Piensa en cada cliente. Los perfiles demográficos y los contextos importan, así que asegúrate de que tus palabras sean claras y conecten con la mayoría.",
+    "Escribe como hablas. Literalmente.",
+    "Somos la voz más auténtica de nuestra categoría. Vívelo. Respíralo. Hazlo tuyo."
+  ]
+}

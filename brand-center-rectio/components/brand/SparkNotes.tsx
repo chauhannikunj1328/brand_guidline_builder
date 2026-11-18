@@ -6,21 +6,8 @@ import { Mark } from "@/components/Logo";
 import { AddIcon, EqualIcon } from "@/components/ui/icons";
 
 /* Figma "Spark Notes" card: Pampas panel with Evolution / Construction / Clear Space tabs.
-   All three Figma frames share the same artwork and formula row; only the copy changes. */
-const TABS: { label: string; text: string }[] = [
-  {
-    label: "Evolution",
-    text: "The original Spark has been refreshed and redrawn with organic curves that feel approachable and less rigid.",
-  },
-  {
-    label: "Construction",
-    text: "The Spark is built from two simple forms. A circle of sparklets brings a sense of infinity, and a diamond at its center brings precision. Together they make our Logo Mark.",
-  },
-  {
-    label: "Clear Space",
-    text: "Keep a minimum clear space equal to half the height of the Spark on all sides. Nothing else should enter this zone, so the Spark always stands out clearly.",
-  },
-];
+   All three Figma frames share the same artwork and formula row; only the copy changes (it comes from the language file). */
+export type SparkNotesText = { heading: string; tabs: { label: string; text: string }[]; parts: string[] };
 
 function Part({ label, children }: { label: string; children: ReactNode }) {
   return (
@@ -31,8 +18,9 @@ function Part({ label, children }: { label: string; children: ReactNode }) {
   );
 }
 
-export default function SparkNotes() {
+export default function SparkNotes({ text }: { text: SparkNotesText }) {
   const [i, setI] = useState(0);
+  const TABS = text.tabs;
   const tab = TABS[i];
   return (
     <div className="flex flex-col gap-10 overflow-hidden rounded-[var(--radius-card)] bg-pampas-700 p-6 text-white lg:p-10">
@@ -51,7 +39,7 @@ export default function SparkNotes() {
       </div>
       <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
         <div className="flex max-w-[338px] flex-col gap-4">
-          <h3 className="t-section text-white">Spark Notes</h3>
+          <h3 className="t-section text-white">{text.heading}</h3>
           <div className="space-y-3">
             <p className="text-lg font-medium leading-[26px]">{tab.label}</p>
             <p className="text-base leading-6 text-grey-100">{tab.text}</p>
@@ -59,12 +47,12 @@ export default function SparkNotes() {
         </div>
         <div className="flex flex-col items-center gap-[30px]">
           <span className="flex size-[260px] items-center justify-center lg:size-[342px]"><Mark className="size-[86%] text-white" /></span>
-          <div className="flex items-end gap-3 text-pampas-100">
-            <Part label="Circle Infinity"><Image src="/brand/spark-circle-infinity.svg" alt="" width={64} height={64} /></Part>
+          <div dir="ltr" className="flex items-end gap-3 text-pampas-100">
+            <Part label={text.parts[0]}><Image src="/brand/spark-circle-infinity.svg" alt="" width={64} height={64} /></Part>
             <AddIcon className="mb-8 size-8" />
-            <Part label="Diamond Precision"><span className="block size-12 rotate-45 rounded-lg bg-white" /></Part>
+            <Part label={text.parts[1]}><span className="block size-12 rotate-45 rounded-lg bg-white" /></Part>
             <EqualIcon className="mb-8" />
-            <Part label="Logo Mark"><Mark className="size-16 text-white" /></Part>
+            <Part label={text.parts[2]}><Mark className="size-16 text-white" /></Part>
           </div>
         </div>
       </div>

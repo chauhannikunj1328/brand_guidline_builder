@@ -94,12 +94,12 @@ export const colorDonts: Tile[] = [
 ];
 
 /** Section with a 48px Space Grotesk heading and a 3-column grid of don't tiles. */
-export function DontsSection({ id, title, tiles }: { id: string; title: string; tiles: Tile[] }) {
+export function DontsSection({ id, title, tiles, captions }: { id: string; title: string; tiles: Tile[]; captions?: readonly string[] }) {
   return (
     <section id={id} className="scroll-mt-6 bg-white px-5 py-16 lg:p-[70px]">
       <h2 className="t-section text-black">{title}</h2>
       <div className="mt-10 grid gap-x-6 gap-y-[30px] sm:grid-cols-2 lg:grid-cols-3">
-        {tiles.map((t, i) => <DontCard key={i} bg={t.bg ?? "bg-white"} caption={t.caption}>{t.body}</DontCard>)}
+        {tiles.map((t, i) => <DontCard key={i} bg={t.bg ?? "bg-white"} caption={captions?.[i] ?? t.caption}>{t.body}</DontCard>)}
       </div>
     </section>
   );

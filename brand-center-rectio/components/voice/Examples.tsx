@@ -135,11 +135,12 @@ export const principle3Examples: ReactNode[] = [
 ];
 
 /** The "Examples" heading and 3-up grid. */
-export function Examples({ items }: { items: ReactNode[] }) {
+export function Examples({ items, heading = "Examples" }: { items: ReactNode[]; heading?: string }) {
   return (
     <div className="space-y-6">
-      <h3 className="text-[2rem] font-medium leading-10 text-grey-950">Examples</h3>
-      <div className="grid gap-4 md:grid-cols-3">
+      <h3 className="text-[2rem] font-medium leading-10 text-grey-950">{heading}</h3>
+      {/* The sample ads are English mock-ups, so they stay English and left to right in every language. */}
+      <div dir="ltr" lang="en" className="grid gap-4 md:grid-cols-3">
         {items.map((it, i) => (
           <figure key={i} className="flex flex-col gap-3">
             <div className="flex-1">{it}</div>

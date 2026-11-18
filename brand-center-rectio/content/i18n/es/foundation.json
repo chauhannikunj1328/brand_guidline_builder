@@ -1,0 +1,46 @@
+{
+  "title": "Fundamentos de marca",
+  "rail": {
+    "group": "Fundamentos de marca",
+    "purpose": "Propósito de marca",
+    "positioning": "Posicionamiento de la empresa",
+    "principles": "Principios de marca",
+    "cheatSheet": "Guía rápida"
+  },
+  "intro": "Esta sección es la base de nuestra marca: define nuestro propósito, posicionamiento y principios. Nos guía en todas las formas en que Rectio cobra vida: cómo nos vemos, qué defendemos y cómo actuamos en el mundo.",
+  "purpose": {
+    "heading": "Propósito de marca",
+    "subtitle": "Guía a toda la empresa",
+    "p1": "Nuestro propósito de marca nace de una creencia sencilla: lo que las personas usan cada día debe ser fácil de usar y fácil de hacer propio.",
+    "p2": "Este propósito guía nuestras acciones y comportamientos diarios para servir mejor a nuestros clientes, colaboradores y comunidades. Es la fuerza que impulsa todo lo que hacemos."
+  },
+  "positioning": {
+    "heading": "Posicionamiento de la empresa",
+    "lead": "Somos una empresa <b>impulsada por las personas y potenciada por la tecnología</b>, dedicada a ayudar a las personas a <b>hacerlo simple y hacerlo suyo.</b>"
+  },
+  "principles": [
+    {
+      "title": "Cercanos",
+      "text": "Nunca olvidamos nuestros humildes comienzos: somos cercanos, sencillos y parte de la comunidad.",
+      "short": "Nunca olvidamos nuestros humildes comienzos: somos cercanos, sencillos y parte de la comunidad."
+    },
+    {
+      "title": "Ágiles",
+      "text": "La agilidad es nuestro factor X. Mejoramos constantemente, probamos sin descanso y nos adaptamos siempre.",
+      "short": "La agilidad es nuestro factor X. Mejoramos constantemente, probamos sin descanso y nos adaptamos siempre."
+    },
+    {
+      "title": "Pioneros",
+      "text": "Desde el principio hemos abierto camino y nunca nos conformamos, porque eso es lo que hace falta para que la vida sea mejor y más fácil.",
+      "short": "Desde el principio hemos abierto camino y nunca nos conformamos, porque eso es lo que hace falta para que la vida sea mejor y más fácil."
+    }
+  ],
+  "cheat": {
+    "title": [
+      "Fundamentos de marca",
+      "Guía rápida"
+    ],
+    "purposeNote": "Guía a toda la empresa.",
+    "principlesNote": "Guían la expresión de nuestra marca."
+  }
+}
