@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CopyIcon } from "./icons";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 export type Swatch = { name: string; hex: string; rgb: string; hsl: string; hsb: string };
 
@@ -9,6 +10,7 @@ export type Swatch = { name: string; hex: string; rgb: string; hsl: string; hsb:
    Clicking copies the HEX value. `className` sets background, border and text colour. */
 export default function SwatchCard({ s, className }: { s: Swatch; className: string }) {
   const [copied, setCopied] = useState(false);
+  const { t } = useI18n();
   const copy = async () => {
     try { await navigator.clipboard.writeText(s.hex); setCopied(true); setTimeout(() => setCopied(false), 1200); } catch {}
   };
@@ -22,8 +24,8 @@ export default function SwatchCard({ s, className }: { s: Swatch; className: str
           <div><dt className="inline">HSL - </dt><dd className="inline">{s.hsl}</dd></div>
           <div><dt className="inline">HSB - </dt><dd className="inline">{s.hsb}</dd></div>
         </dl>
-        <button type="button" onClick={copy} aria-label={`Copy ${s.hex}`} className="shrink-0 text-xs">
-          {copied ? "Copied" : <CopyIcon />}
+        <button type="button" onClick={copy} aria-label={t.copy.label.replace("{hex}", s.hex)} className="shrink-0 text-xs">
+          {copied ? t.copy.copied : <CopyIcon />}
         </button>
       </div>
     </div>

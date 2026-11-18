@@ -1,0 +1,64 @@
+{
+  "title": "Wordmark",
+  "srTitle": "Rectio Wordmark",
+  "rail": {
+    "introduction": "Introduction",
+    "clearspace": "Clearspace",
+    "color": "Primary Color Usage",
+    "sizing": "Sizing",
+    "donts": "Wordmark Don’ts"
+  },
+  "intro": {
+    "p1": "Our wordmark is Rectio’s secondary logo, a custom piece of lettering that carries our name with confidence.",
+    "p2": "It’s a distinct and ownable piece of the Rectio identity, made modern for today’s world.",
+    "download": "Download the assets"
+  },
+  "overview": {
+    "heading": "Overview",
+    "p1": "While our Spark can be used as a standalone logo, our wordmark can’t be used without our Spark present in the same application. In layouts with limited space, like an extremely narrow banner ad, we don’t need to include the wordmark.",
+    "p2": "Our wordmark is a custom piece of artwork, not just the word “Rectio” typed in a font. Use it as shown here; never alter or recreate it.",
+    "note": "Note",
+    "noteText": "The wordmark is a fixed piece of artwork. Always use the supplied file; never retype it in Geist or Space Grotesk."
+  },
+  "clearspace": {
+    "heading": "Clearspace",
+    "p1": "The clearspace of our wordmark is equal to half the height of the letter “R”.",
+    "p2": "This space helps maintain legibility and impact, and keeps it clear of any visual clutter."
+  },
+  "color": {
+    "heading": "Primary Color Usage",
+    "p1": "Our wordmark primarily appears in Pampas on White backgrounds, or in White on Pampas backgrounds.",
+    "p2": "These are our most iconic colorways and should be used wherever possible.",
+    "cards": [
+      "Pampas on White",
+      "White on Pampas"
+    ]
+  },
+  "sizing": {
+    "heading": "Minimum Sizing",
+    "p1": "Our wordmark exists in two sizes at different scales. Our standard wordmark is the default version and should be used most.",
+    "p2": "Our small-use wordmark is a unique piece of art that has been optimized for legibility and fidelity at small scales. They’re not interchangeable. Don’t substitute it for the main wordmark. It should always be used with great care. If in doubt, go the standard wordmark route!",
+    "items": [
+      "1. Standard Minimum Size 0.25 inch or 24px",
+      "2. Small-Use Minimum Size 0.15 inch or 14px"
+    ],
+    "note": "Note",
+    "noteText": "Wordmarks here are not shown to scale. Refer to pixel and inch measurements for proper sizing.",
+    "standard": "Standard",
+    "smallUse": "Small Use"
+  },
+  "donts": {
+    "heading": "Wordmark Don’ts",
+    "captions": [
+      "Don’t use the wordmark in unapproved colors.",
+      "Don’t use multiple colors on the wordmark.",
+      "Don’t tilt, rotate or skew the wordmark.",
+      "Don’t crop off pieces of the wordmark.",
+      "Don’t rotate our wordmark.",
+      "Don’t outline the wordmark.",
+      "Don’t lock up the Spark to the left of the wordmark.",
+      "Don’t lock up the Spark above the wordmark.",
+      "Don’t lock up the Spark to the right of the wordmark."
+    ]
+  }
+}

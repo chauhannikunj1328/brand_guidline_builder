@@ -1,0 +1,64 @@
+{
+  "title": "Logotipo",
+  "srTitle": "Logotipo de Rectio",
+  "rail": {
+    "introduction": "Introducción",
+    "clearspace": "Espacio libre",
+    "color": "Uso del color principal",
+    "sizing": "Tamaños",
+    "donts": "Qué no hacer con el logotipo"
+  },
+  "intro": {
+    "p1": "Nuestro logotipo es el logo secundario de Rectio, una pieza de lettering a medida que lleva nuestro nombre con seguridad.",
+    "p2": "Es una pieza distintiva y propia de la identidad de Rectio, modernizada para el mundo actual.",
+    "download": "Descargar los recursos"
+  },
+  "overview": {
+    "heading": "Resumen",
+    "p1": "Aunque la Chispa puede usarse como logo independiente, el logotipo no puede usarse sin la Chispa en la misma aplicación. En composiciones con poco espacio, como un banner extremadamente estrecho, no hace falta incluir el logotipo.",
+    "p2": "Nuestro logotipo es una obra gráfica a medida, no solo la palabra «Rectio» escrita con una tipografía. Úsalo tal como se muestra aquí; nunca lo modifiques ni lo recrees.",
+    "note": "Nota",
+    "noteText": "El logotipo es una obra gráfica fija. Usa siempre el archivo suministrado; nunca lo vuelvas a escribir con Geist o Space Grotesk."
+  },
+  "clearspace": {
+    "heading": "Espacio libre",
+    "p1": "El espacio libre de nuestro logotipo es igual a la mitad de la altura de la letra «R».",
+    "p2": "Este espacio ayuda a mantener la legibilidad y el impacto, y lo protege de cualquier elemento que lo sature visualmente."
+  },
+  "color": {
+    "heading": "Uso del color principal",
+    "p1": "Nuestro logotipo aparece principalmente en Pampas sobre fondos blancos, o en blanco sobre fondos Pampas.",
+    "p2": "Estas son nuestras combinaciones de color más icónicas y deben usarse siempre que sea posible.",
+    "cards": [
+      "Pampas sobre blanco",
+      "Blanco sobre Pampas"
+    ]
+  },
+  "sizing": {
+    "heading": "Tamaño mínimo",
+    "p1": "Nuestro logotipo existe en dos tamaños a distintas escalas. El logotipo estándar es la versión por defecto y la que más debe usarse.",
+    "p2": "Nuestro logotipo de uso reducido es una pieza única optimizada para ofrecer legibilidad y fidelidad a escalas pequeñas. No son intercambiables. No lo sustituyas por el logotipo principal. Debe usarse siempre con mucho cuidado. Ante la duda, ¡elige el logotipo estándar!",
+    "items": [
+      "1. Tamaño mínimo estándar: 0,25 pulgadas o 24 px",
+      "2. Tamaño mínimo de uso reducido: 0,15 pulgadas o 14 px"
+    ],
+    "note": "Nota",
+    "noteText": "Los logotipos de aquí no están a escala. Consulta las medidas en píxeles y pulgadas para dimensionarlos correctamente.",
+    "standard": "Estándar",
+    "smallUse": "Uso reducido"
+  },
+  "donts": {
+    "heading": "Qué no hacer con el logotipo",
+    "captions": [
+      "No uses el logotipo en colores no aprobados.",
+      "No uses varios colores en el logotipo.",
+      "No inclines, gires ni deformes el logotipo.",
+      "No recortes partes del logotipo.",
+      "No gires nuestro logotipo.",
+      "No pongas contorno al logotipo.",
+      "No coloques la Chispa a la izquierda del logotipo formando una combinación.",
+      "No coloques la Chispa encima del logotipo formando una combinación.",
+      "No coloques la Chispa a la derecha del logotipo formando una combinación."
+    ]
+  }
+}

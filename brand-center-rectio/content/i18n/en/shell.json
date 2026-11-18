@@ -1,6 +1,13 @@
 {
-  "meta": { "description": "Guidelines, assets and tools for applying the Rectio brand consistently everywhere it shows up." },
-  "brand": { "taglineLines": ["Make it simple.", "Make it yours."] },
+  "meta": {
+    "description": "Guidelines, assets and tools for applying the Rectio brand consistently everywhere it shows up."
+  },
+  "brand": {
+    "taglineLines": [
+      "Make it simple.",
+      "Make it yours."
+    ]
+  },
   "aria": {
     "home": "Rectio home",
     "openMenu": "Open menu",
@@ -9,7 +16,10 @@
     "pageSections": "Page sections",
     "language": "Language"
   },
-  "language": { "soon": "Soon", "unavailable": "This page isn't available in that language yet" },
+  "language": {
+    "soon": "Soon",
+    "unavailable": "This page isn't available in that language yet"
+  },
   "nav": {
     "foundation": "Brand Foundation",
     "voice": "Brand Voice",
@@ -25,7 +35,9 @@
     "contact": "Contact",
     "trademarks": "Trademarks"
   },
-  "footer": { "download": "Download the assets" },
+  "footer": {
+    "download": "Download the assets"
+  },
   "explore": {
     "heading": "Explore our Assets",
     "foundation": "Foundation",
@@ -39,5 +51,12 @@
     "lockups": "Lockups",
     "addToCart": "Add to Cart"
   },
-  "notFound": { "title": "Page not found", "back": "Back to home" }
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  },
+  "copy": {
+    "copied": "Copied",
+    "label": "Copy {hex}"
+  }
 }
