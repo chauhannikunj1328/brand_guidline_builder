@@ -1,18 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import type { TypographyText } from "@/lib/i18n/dictionaries";
 
 /* Figma "Typesetting Notes" (Typography page): pill tabs, heading, notes left (388px), live samples right with
    cap-height / baseline guide rules. Sample sizes are in container units (Figma px at the 572px column) and guide offsets in em, so both scale together.
    Only Hierarchy is designed in Figma; Scale lists the type ramp from the Figma text styles and Tracking the
    tracking those styles use. */
-const hierarchy = [
-  { title: "Extra Large Headline", text: ["Extra large headlines don’t appear in all standard documents, appearing in places like presentation covers, divider slides or physical signage.", "Extra large headlines are set in Space Grotesk Light."] },
-  { title: "Headline", text: ["Space Grotesk Medium is used for all external-facing headlines, set in title case for everyday documents or sentence case for comms."] },
-  { title: "Subhead", text: ["Space Grotesk Medium is used for all standard subheads, set in title case for everyday documents or sentence case for comms."] },
-  { title: "Body copy", text: ["Use Geist Regular for body text, captions, and other detailed info."] },
-];
-
 /* size: Figma px at 1440. lh/mb: Figma line-height and negative bottom margin, in em. rules: guide-line tops, in em. */
 const samples = [
   { text: "XL Headline", cls: "font-[family-name:var(--font-secondary)] font-light", size: "min(17.83cqw,6.375rem)", lh: 110 / 102, mb: -6 / 102, rules: [18 / 102, 91 / 102], font: "Space Grotesk", weight: "Light", wcls: "font-light" },
@@ -34,8 +28,9 @@ const scale = [
   ["Caption 2", "10px / 16px", "Regular, Medium"],
 ];
 
-const TABS = ["Hierarchy", "Scale", "Tracking"] as const;
+const TABS = ["hierarchy", "scale", "tracking"] as const;
 type Tab = (typeof TABS)[number];
+type Notes = TypographyText["notes"];
 
 function Note({ title, text }: { title: string; text: string[] }) {
   return (
@@ -46,14 +41,14 @@ function Note({ title, text }: { title: string; text: string[] }) {
   );
 }
 
-function Hierarchy() {
+function Hierarchy({ t }: { t: Notes }) {
   return (
     <div className="flex flex-col gap-16 xl:flex-row">
       <div className="space-y-10 xl:w-[388px] xl:shrink-0">
-        <p className="text-xl leading-7 text-pampas-700">Hierarchy</p>
-        {hierarchy.map((h) => <Note key={h.title} {...h} />)}
+        <p className="text-xl leading-7 text-pampas-700">{t.tabs[0]}</p>
+        {t.hierarchy.map((h) => <Note key={h.title} {...h} />)}
       </div>
-      <div className="@container min-w-0 flex-1 space-y-[60px]">
+      <div dir="ltr" lang="en" className="@container min-w-0 flex-1 space-y-[60px]">
         {samples.map((s) => (
           <div key={s.text} className="relative" style={{ fontSize: s.size }}>
             <p className={`relative z-[1] whitespace-nowrap text-pampas-950 ${s.cls}`} style={{ lineHeight: s.lh, marginBottom: `${s.mb}em` }}>{s.text}</p>
@@ -66,13 +61,13 @@ function Hierarchy() {
   );
 }
 
-function Scale() {
+function Scale({ t }: { t: Notes }) {
   return (
     <div className="flex flex-col gap-16 xl:flex-row">
       <div className="xl:w-[388px] xl:shrink-0">
-        <Note title="Type scale" text={["Every level of our hierarchy maps to a fixed size and line height. Pick the closest level rather than setting a custom size, so layouts stay consistent across documents and screens."]} />
+        <Note title={t.scale.title} text={[t.scale.text]} />
       </div>
-      <div className="min-w-0 flex-1 divide-y divide-pampas-200 border-y border-pampas-200">
+      <div dir="ltr" lang="en" className="min-w-0 flex-1 divide-y divide-pampas-200 border-y border-pampas-200">
         {scale.map(([level, size, weights]) => (
           <div key={level} className="grid grid-cols-[1fr_auto] gap-x-6 gap-y-1 py-3 sm:grid-cols-[140px_140px_1fr]">
             <p className="text-lg font-medium leading-6 text-grey-950">{level}</p>
@@ -85,13 +80,13 @@ function Scale() {
   );
 }
 
-function Tracking() {
+function Tracking({ t }: { t: Notes }) {
   return (
     <div className="flex flex-col gap-16 xl:flex-row">
       <div className="xl:w-[388px] xl:shrink-0">
-        <Note title="Tracking" text={["All of our text styles are set with 0 tracking. Geist and Space Grotesk are spaced for both display and text sizes, so leave letter-spacing at its default."]} />
+        <Note title={t.tracking.title} text={[t.tracking.text]} />
       </div>
-      <div className="min-w-0 flex-1 space-y-6">
+      <div dir="ltr" lang="en" className="min-w-0 flex-1 space-y-6">
         <p className="font-[family-name:var(--font-secondary)] text-[clamp(2.5rem,4.4vw,3.947rem)] font-medium leading-[1.1] text-pampas-950">Tracking 0</p>
         <p className="text-2xl leading-8 text-grey-950"><span className="font-semibold">Letter-spacing</span> <span className="font-light">0 / default</span></p>
       </div>
@@ -99,29 +94,29 @@ function Tracking() {
   );
 }
 
-export default function TypesettingNotes() {
-  const [tab, setTab] = useState<Tab>("Hierarchy");
+export default function TypesettingNotes({ t }: { t: Notes }) {
+  const [tab, setTab] = useState<Tab>("hierarchy");
   return (
     <div className="flex flex-col gap-12 lg:gap-20">
-      <div role="tablist" aria-label="Typesetting notes" className="flex flex-wrap gap-4">
-        {TABS.map((t) => (
+      <div role="tablist" aria-label={t.aria} className="flex flex-wrap gap-4">
+        {TABS.map((name, k) => (
           <button
-            key={t}
+            key={name}
             type="button"
             role="tab"
-            id={`ts-tab-${t}`}
-            aria-selected={tab === t}
+            id={`ts-tab-${name}`}
+            aria-selected={tab === name}
             aria-controls="ts-panel"
-            onClick={() => setTab(t)}
-            className={`rounded-[80px] border px-6 py-2.5 text-xl leading-7 transition-colors sm:text-2xl sm:leading-8 ${tab === t ? "border-pampas-700 text-pampas-700" : "border-grey-300 text-grey-400 hover:text-grey-600"}`}
+            onClick={() => setTab(name)}
+            className={`rounded-[80px] border px-6 py-2.5 text-xl leading-7 transition-colors sm:text-2xl sm:leading-8 ${tab === name ? "border-pampas-700 text-pampas-700" : "border-grey-300 text-grey-400 hover:text-grey-600"}`}
           >
-            {t}
+            {t.tabs[k]}
           </button>
         ))}
       </div>
-      <h2 className="text-[2rem] font-medium leading-10 text-pampas-950 lg:text-[2.5rem] lg:leading-[48px]">Typesetting Notes</h2>
+      <h2 className="text-[2rem] font-medium leading-10 text-pampas-950 lg:text-[2.5rem] lg:leading-[48px]">{t.heading}</h2>
       <div id="ts-panel" role="tabpanel" aria-labelledby={`ts-tab-${tab}`}>
-        {tab === "Hierarchy" ? <Hierarchy /> : tab === "Scale" ? <Scale /> : <Tracking />}
+        {tab === "hierarchy" ? <Hierarchy t={t} /> : tab === "scale" ? <Scale t={t} /> : <Tracking t={t} />}
       </div>
     </div>
   );

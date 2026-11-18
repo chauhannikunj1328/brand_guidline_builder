@@ -1,0 +1,76 @@
+{
+  "title": "Color",
+  "rail": {
+    "introduction": "Color",
+    "palette": "Paleta principal",
+    "pairings": "Combinaciones de color",
+    "waterfall": "Cascada",
+    "accessibility": "Accesibilidad web",
+    "donts": "Qué no hacer"
+  },
+  "intro": {
+    "text": "Nuestra paleta de color aporta carácter y diferenciación mediante el uso coherente de los colores más icónicos y reconocibles de Rectio: Pampas y blanco.",
+    "download": "Descargar los recursos"
+  },
+  "palette": {
+    "heading": "Paleta principal",
+    "text": "Nuestra paleta principal se compone de los colores que se reconocen al instante como Rectio: Pampas, blanco y negro.",
+    "names": [
+      "Pampas",
+      "Blanco",
+      "Negro"
+    ]
+  },
+  "pairings": {
+    "heading": "Combinaciones de color",
+    "text": "Al combinar distintos elementos en una composición, usamos las combinaciones que se muestran aquí para lograr coherencia y legibilidad.",
+    "note": "Nota",
+    "noteText": "El texto en Pampas se reserva para aplicaciones de gran impacto y poco contenido, como pantallas finales de vídeo, rótulos superpuestos o señalización. No usamos Pampas en aplicaciones con textos pequeños, densos o detallados.",
+    "solid": {
+      "heading": "Fondo sólido",
+      "text": "Sobre fondos sólidos preferimos nuestras combinaciones de color icónicas y reconocibles. Deben usarse en la mayoría de las comunicaciones."
+    },
+    "photo": {
+      "heading": "Fotografía",
+      "text": "Sobre fotografías, usamos por defecto texto y logos en blanco. En fotos con fondos más claros, nuestro logotipo y nuestra Chispa en negro pueden ofrecer mejor contraste; usa tu mejor criterio para garantizar la legibilidad."
+    },
+    "waterfall": {
+      "heading": "Cascada",
+      "text": "En algunos casos aplicamos un tratamiento en cascada que organiza nuestra paleta Pampas (más el blanco) en un degradado. Este tratamiento puede usarse para establecer jerarquía al organizar información en gráficos, tablas o diagramas.",
+      "names": [
+        "Blanco",
+        "Pearl Bush",
+        "Vanilla",
+        "Pampas",
+        "Roman Coffee"
+      ]
+    }
+  },
+  "accessibility": {
+    "heading": "Accesibilidad web",
+    "p1": "Las Pautas de Accesibilidad para el Contenido Web (WCAG) son estándares que ayudan a que internet sea accesible para todas las personas, incluidas las que tienen discapacidad. En cuanto al color, indican el contraste visual necesario entre un texto y su fondo para mantener la legibilidad para quienes tienen discapacidad visual.",
+    "p2": "Al elegir colores para la web, procuramos cumplir las pautas WCAG 2.0 tanto para texto grande como para texto normal. El texto grande es de 14 pt (18,66 px) en negrita, o de 18 pt (24 px) en un peso más ligero. Cualquier texto menor se considera texto normal.",
+    "p3": "AA es nuestro mínimo y aspiramos a AAA, el nivel más alto, siempre que podamos. El blanco y el Pampas alcanzan juntos un contraste de 3,4:1, que solo cumple AA para texto grande. No uses ninguno de los dos para texto normal sobre el otro.",
+    "fully": "Cumple totalmente",
+    "partially": "Cumple parcialmente",
+    "large": [
+      "Texto",
+      "grande"
+    ],
+    "normal": "Texto normal"
+  },
+  "donts": {
+    "heading": "Qué no hacer con el color",
+    "captions": [
+      "No uses el logotipo en colores no aprobados.",
+      "No uses el logotipo con opacidad parcial.",
+      "No uses colores de poco contraste para el logotipo.",
+      "No uses colores de texto que dificulten la legibilidad.",
+      "No uses colores de texto que causen molestia visual.",
+      "No combines demasiados colores de texto en una composición.",
+      "No uses varios colores en la Chispa.",
+      "No apliques nuestra cascada de colores a la Chispa.",
+      "No inclines, gires ni deformes la Chispa."
+    ]
+  }
+}

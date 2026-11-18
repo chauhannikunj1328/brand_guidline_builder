@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import type { TypographyText } from "@/lib/i18n/dictionaries";
 
 /* Figma "Campaign Headlines" carousel (401×453 image card, weight caption, 4 square dots).
    Slides are the off-canvas frames next to the Typography page: Light / Regular / Medium / Bold. */
@@ -12,7 +13,7 @@ const slides = [
   { src: "/brand/typography/campaign-bold.png", lines: ["Looks", "on lock."], weight: "Bold", cls: "font-bold text-white" },
 ];
 
-export default function CampaignCarousel() {
+export default function CampaignCarousel({ t }: { t: TypographyText["campaign"] }) {
   const [i, setI] = useState(0);
   const go = (n: number) => setI((n + slides.length) % slides.length);
   const s = slides[i];
@@ -21,7 +22,7 @@ export default function CampaignCarousel() {
     <div
       role="region"
       aria-roledescription="carousel"
-      aria-label="Campaign headline weights"
+      aria-label={t.aria}
       tabIndex={0}
       onKeyDown={(e) => {
         if (e.key === "ArrowRight") go(i + 1);
@@ -32,8 +33,8 @@ export default function CampaignCarousel() {
       <button
         type="button"
         onClick={() => go(i + 1)}
-        aria-label={`${s.lines.join(" ")} — ${s.weight}. Show next example`}
-        className="relative flex aspect-[401/453] w-full flex-col items-start justify-start overflow-hidden text-left"
+        aria-label={`${s.lines.join(" ")} — ${s.weight}. ${t.next}`}
+        dir="ltr" lang="en" className="relative flex aspect-[401/453] w-full flex-col items-start justify-start overflow-hidden text-left"
       >
         {slides.map((sl, k) => (
           <Image
@@ -52,7 +53,7 @@ export default function CampaignCarousel() {
       <p aria-live="polite" className="text-sm leading-5 text-grey-500">{s.weight}</p>
       <div className="-my-[3px] flex">
         {slides.map((sl, k) => (
-          <button key={sl.weight} type="button" aria-label={`Show ${sl.weight} example`} aria-current={k === i} onClick={() => go(k)} className="p-[3px]">
+          <button key={sl.weight} type="button" aria-label={t.show.replace("{weight}", sl.weight)} aria-current={k === i} onClick={() => go(k)} className="p-[3px]">
             <span className={`block size-1.5 rounded-[2px] ${k === i ? "bg-pampas-700" : "bg-grey-300"}`} />
           </button>
         ))}

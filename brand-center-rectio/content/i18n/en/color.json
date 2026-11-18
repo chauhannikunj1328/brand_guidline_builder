@@ -1,0 +1,76 @@
+{
+  "title": "Color",
+  "rail": {
+    "introduction": "Color",
+    "palette": "Primary Palette",
+    "pairings": "Color Pairings",
+    "waterfall": "Waterfall",
+    "accessibility": "Web Accessibility",
+    "donts": "Don’ts"
+  },
+  "intro": {
+    "text": "Our color palette provides distinctiveness and differentiation through the consistent use of Rectio’s most iconic and recognizable colors: Pampas and White.",
+    "download": "Download the assets"
+  },
+  "palette": {
+    "heading": "Primary Palette",
+    "text": "Our primary palette is made of the colors that are most instantly recognizable as Rectio: Pampas, White, and Black.",
+    "names": [
+      "Pampas",
+      "White",
+      "Black"
+    ]
+  },
+  "pairings": {
+    "heading": "Color Pairings",
+    "text": "When combining different pieces in a layout, we use the combos shown here for consistency and legibility.",
+    "note": "Note",
+    "noteText": "Pampas type is reserved for high-impact, low-content applications such as video end cards, supers, or signage. We don’t use Pampas for applications with small, dense, or detailed copy.",
+    "solid": {
+      "heading": "Solid Background",
+      "text": "Over solid backgrounds, we prefer our iconic and recognizable colorways. These should be used for most communications."
+    },
+    "photo": {
+      "heading": "Photography",
+      "text": "Over photography, we default to using White type and White logos. On photos with lighter backgrounds, our Black wordmark and Spark may provide better contrast — please use your best judgment for legibility."
+    },
+    "waterfall": {
+      "heading": "Waterfall",
+      "text": "In some instances, we apply a waterfall treatment that organizes our Pampas palette (plus White) into a gradient. This treatment can be applied to help establish hierarchy when organizing information into charts, tables, or graphs.",
+      "names": [
+        "White",
+        "Pearl Bush",
+        "Vanilla",
+        "Pampas",
+        "Roman Coffee"
+      ]
+    }
+  },
+  "accessibility": {
+    "heading": "Web Accessibility",
+    "p1": "The Web Content Accessibility Guidelines (WCAG) are standards that help make the internet accessible to everyone, including people with disabilities. With color, they tell us the amount of visual contrast required between a piece of text and the background to maintain legibility for users with visual impairments.",
+    "p2": "When picking colors for web, we aim to comply with WCAG 2.0 standards for both large and normal text sizes. Large text is 14pt (18.66px) when set in a bold weight, or 18pt (24px) when set in a lighter weight. Any text beneath these sizes is considered normal text.",
+    "p3": "AA is our minimum, and we aim for AAA, the highest level, wherever we can. White and Pampas reach 3.4:1 together, which passes AA for large text only. Don’t use either one for normal text on the other.",
+    "fully": "Fully compliant",
+    "partially": "Partially compliant",
+    "large": [
+      "Large",
+      "Text"
+    ],
+    "normal": "Normal Text"
+  },
+  "donts": {
+    "heading": "Color Don’ts",
+    "captions": [
+      "Don’t use the wordmark in unapproved colors.",
+      "Don’t use the wordmark at partial opacity.",
+      "Don’t use low-contrast colors for the wordmark.",
+      "Don’t use text colors that inhibit legibility.",
+      "Don’t use text colors that cause visual discomfort.",
+      "Don’t combine too many type colors in a layout.",
+      "Don’t use multiple colors on the Spark.",
+      "Don’t apply our waterfall to the Spark.",
+      "Don’t tilt, rotate or skew the Spark."
+    ]
+  }
+}

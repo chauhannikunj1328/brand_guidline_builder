@@ -1,0 +1,180 @@
+{
+  "title": "Typography",
+  "do": "Do",
+  "dont": "Don’t",
+  "rail": {
+    "introduction": "Introduction",
+    "weights": "Weights",
+    "typesetting": "Typesetting",
+    "notes": "Typesetting Notes",
+    "color": "Standard Color",
+    "padding": "Padding",
+    "leading": "Leading",
+    "capitalization": "Capitalization",
+    "lineLengths": "Line Lengths",
+    "campaign": "Campaign Headlines"
+  },
+  "intro": {
+    "p1": "Geist is our primary typeface, chosen for its clarity and the quiet confidence it brings to everything Rectio says.",
+    "p2": "It includes a wide range of weights and styles to maximize the function and flexibility of our system."
+  },
+  "system": {
+    "heading": "Our type system",
+    "p1": "Geist and Space Grotesk are open-source typefaces chosen for Rectio. Utilitarian yet characterful, together they balance expression with function across all brand expressions.",
+    "p2": "Their shapes are sleek and modern while retaining some unique quirks and characteristics:",
+    "families": [
+      {
+        "label": "Primary Font Family",
+        "text": "Geist is a modern, neutral sans-serif typeface designed for clarity and readability across digital interfaces. Its clean forms, balanced proportions, and broad range of weights give Rectio a precise, contemporary, and highly adaptable typographic system."
+      },
+      {
+        "label": "Secondary Font Family",
+        "text": "Space Grotesk is a geometric sans-serif designed for clarity with a distinctive character. Its open forms and balanced proportions make it ideal for supporting headlines, highlights, and expressive brand communication."
+      }
+    ]
+  },
+  "typesetting": {
+    "heading": "Typesetting",
+    "p1": "Typesetting is the process of selecting and arranging our fonts with consistent sizing, spacing, and alignment principles.",
+    "p2": "This section outlines our standard typographic hierarchy and demonstrates use cases for each member of our font family."
+  },
+  "notes": {
+    "heading": "Typesetting Notes",
+    "aria": "Typesetting notes",
+    "tabs": [
+      "Hierarchy",
+      "Scale",
+      "Tracking"
+    ],
+    "hierarchy": [
+      {
+        "title": "Extra Large Headline",
+        "text": [
+          "Extra large headlines don’t appear in all standard documents, appearing in places like presentation covers, divider slides or physical signage.",
+          "Extra large headlines are set in Space Grotesk Light."
+        ]
+      },
+      {
+        "title": "Headline",
+        "text": [
+          "Space Grotesk Medium is used for all external-facing headlines, set in title case for everyday documents or sentence case for comms."
+        ]
+      },
+      {
+        "title": "Subhead",
+        "text": [
+          "Space Grotesk Medium is used for all standard subheads, set in title case for everyday documents or sentence case for comms."
+        ]
+      },
+      {
+        "title": "Body copy",
+        "text": [
+          "Use Geist Regular for body text, captions, and other detailed info."
+        ]
+      }
+    ],
+    "scale": {
+      "title": "Type scale",
+      "text": "Every level of our hierarchy maps to a fixed size and line height. Pick the closest level rather than setting a custom size, so layouts stay consistent across documents and screens."
+    },
+    "tracking": {
+      "title": "Tracking",
+      "text": "All of our text styles are set with 0 tracking. Geist and Space Grotesk are spaced for both display and text sizes, so leave letter-spacing at its default."
+    }
+  },
+  "color": {
+    "heading": "Standard Color",
+    "p1": "When applying color to type, keep it simple and functional. Our standard approach is to use Black or White across all levels. Limit yourself to a single type color per layout.",
+    "p2": "Always choose your type color to maximize contrast and legibility. For example, don’t use Pampas text over a Pampas background. Here are some approved type and background combinations:",
+    "approved": [
+      "White on Pampas 600",
+      "White on Grey 600",
+      "Black on White",
+      "White on Black"
+    ],
+    "roles": [
+      {
+        "label": "Headline",
+        "text": "On light backgrounds, set all text in Black."
+      },
+      {
+        "label": "Subhead",
+        "text": "Limit yourself to one text color per layout."
+      },
+      {
+        "label": "Body Copy",
+        "text": "Color use should match across headline, subheads, and body copy to help keep our layouts streamlined and clean."
+      }
+    ]
+  },
+  "padding": {
+    "heading": "Padding",
+    "p1": "As our type sizes shift between applications, the vertical padding should scale.",
+    "p2": "The minimum space following any headline should be 75% of the headline’s cap height. The minimum space following a subhead or body paragraph is equal to 100% of the subhead body copy’s cap height.",
+    "note": "Note",
+    "noteText": "This is a good rule of thumb for most applications. In layouts with limited space, padding between type can be condensed."
+  },
+  "leading": {
+    "heading": "Leading",
+    "text": "Use this formula to determine leading values based on type size. Leading ratios (L) are predetermined for each level of type hierarchy according to the table here. For example, if your subhead size is 100pts, your leading is 100 x 1.2, or 120pts.",
+    "items": [
+      {
+        "label": "1. Type Size:",
+        "text": "Expressed in pts"
+      },
+      {
+        "label": "2. Leading Ratio:",
+        "text": "Expressed as a decimal"
+      },
+      {
+        "label": "3. Leading Value:",
+        "text": "Expressed in pts"
+      }
+    ],
+    "formula": {
+      "typeSize": "Type Size",
+      "leading": "Leading",
+      "aria": "Type size times leading ratio equals leading",
+      "note": "Note",
+      "noteText": "Some extra large headlines may require tighter leading. Always begin with a 1.0 ratio and reduce incrementally, if desired."
+    },
+    "table": {
+      "level": "Type Level",
+      "ratio": "Leading Ratio",
+      "rows": [
+        "Extra Large Heading",
+        "Subheads",
+        "Large Body Copy",
+        "Body Copy",
+        "Small Body Copy"
+      ]
+    }
+  },
+  "capitalization": {
+    "heading": "Capitalization",
+    "p1": "Headlines and subheads in external communications are set using sentence case capitalization. This keeps our content colloquial, casual, and consistent. Punctuation may be included where necessary for tone and grammar.",
+    "p2": "Please note that this differs from our rule for internal documents (like PowerPoint presentations or Word documents) which use title case capitalization for presentation titles, page headers, or section names.",
+    "sentenceNote": "Use sentence case capitalization when speaking externally to customers.",
+    "titleNote": "Use title case capitalization for routine internal documents.",
+    "capsNote": "Don’t use all-caps headlines for any document type or audience.",
+    "altSentence": "headlines are set in sentence case",
+    "altTitle": "Internal Headlines Are Set in Title Case",
+    "altCaps": "WE NEVER SET HEADLINES IN ALL-CAPS"
+  },
+  "lineLengths": {
+    "heading": "Line Lengths",
+    "p1": "For best legibility, lines of text shouldn’t be too long or short. Headlines should have between 4 and 15 characters per line, and paragraphs should have between 40 and 70 characters per line.",
+    "p2": "If the line length of a body paragraph becomes too long, divide the text into columns. Remember, spaces and punctuation count as characters.",
+    "tooShort": "Too Short",
+    "ok1": "4-15 Characters Per Line",
+    "tooLong": "Too Long",
+    "ok2": "40-70 Characters Per Line"
+  },
+  "campaign": {
+    "heading": "Campaign Headlines",
+    "text": "In some special cases, headline weight may be modified to suit the tone of a campaign. This may only be done in limited instances with explicit approval from:",
+    "aria": "Campaign headline weights",
+    "next": "Show next example",
+    "show": "Show {weight} example"
+  }
+}

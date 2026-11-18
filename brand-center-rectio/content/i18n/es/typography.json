@@ -1,0 +1,180 @@
+{
+  "title": "Tipografía",
+  "do": "Haz",
+  "dont": "No hagas",
+  "rail": {
+    "introduction": "Introducción",
+    "weights": "Pesos",
+    "typesetting": "Composición tipográfica",
+    "notes": "Notas de composición",
+    "color": "Color estándar",
+    "padding": "Espaciado vertical",
+    "leading": "Interlineado",
+    "capitalization": "Uso de mayúsculas",
+    "lineLengths": "Longitud de línea",
+    "campaign": "Titulares de campaña"
+  },
+  "intro": {
+    "p1": "Geist es nuestra tipografía principal, elegida por su claridad y la serena seguridad que aporta a todo lo que dice Rectio.",
+    "p2": "Incluye una amplia gama de pesos y estilos para maximizar la función y la flexibilidad de nuestro sistema."
+  },
+  "system": {
+    "heading": "Nuestro sistema tipográfico",
+    "p1": "Geist y Space Grotesk son tipografías de código abierto elegidas para Rectio. Utilitarias pero con carácter, juntas equilibran expresión y función en todas las manifestaciones de la marca.",
+    "p2": "Sus formas son elegantes y modernas, sin perder algunas peculiaridades y rasgos únicos:",
+    "families": [
+      {
+        "label": "Familia tipográfica principal",
+        "text": "Geist es una tipografía sans-serif moderna y neutra, diseñada para ofrecer claridad y legibilidad en interfaces digitales. Sus formas limpias, sus proporciones equilibradas y su amplia gama de pesos dan a Rectio un sistema tipográfico preciso, contemporáneo y muy adaptable."
+      },
+      {
+        "label": "Familia tipográfica secundaria",
+        "text": "Space Grotesk es una sans-serif geométrica diseñada para la claridad, con un carácter distintivo. Sus formas abiertas y proporciones equilibradas la hacen ideal para titulares de apoyo, destacados y comunicación expresiva de la marca."
+      }
+    ]
+  },
+  "typesetting": {
+    "heading": "Composición tipográfica",
+    "p1": "La composición tipográfica es el proceso de seleccionar y disponer nuestras tipografías con principios coherentes de tamaño, espaciado y alineación.",
+    "p2": "Esta sección describe nuestra jerarquía tipográfica estándar y muestra casos de uso de cada miembro de nuestra familia tipográfica."
+  },
+  "notes": {
+    "heading": "Notas de composición",
+    "aria": "Notas de composición tipográfica",
+    "tabs": [
+      "Jerarquía",
+      "Escala",
+      "Espaciado entre letras"
+    ],
+    "hierarchy": [
+      {
+        "title": "Titular extragrande",
+        "text": [
+          "Los titulares extragrandes no aparecen en todos los documentos estándar; se usan en lugares como portadas de presentaciones, diapositivas separadoras o rotulación física.",
+          "Los titulares extragrandes se componen en Space Grotesk Light."
+        ]
+      },
+      {
+        "title": "Titular",
+        "text": [
+          "Space Grotesk Medium se usa para todos los titulares de cara al exterior, en formato de título para documentos cotidianos o en formato de frase para comunicaciones."
+        ]
+      },
+      {
+        "title": "Subtítulo",
+        "text": [
+          "Space Grotesk Medium se usa para todos los subtítulos estándar, en formato de título para documentos cotidianos o en formato de frase para comunicaciones."
+        ]
+      },
+      {
+        "title": "Texto de cuerpo",
+        "text": [
+          "Usa Geist Regular para el texto de cuerpo, los pies de foto y otra información detallada."
+        ]
+      }
+    ],
+    "scale": {
+      "title": "Escala tipográfica",
+      "text": "Cada nivel de nuestra jerarquía corresponde a un tamaño y una altura de línea fijos. Elige el nivel más cercano en lugar de definir un tamaño personalizado, para que las composiciones sean coherentes entre documentos y pantallas."
+    },
+    "tracking": {
+      "title": "Espaciado entre letras",
+      "text": "Todos nuestros estilos de texto se componen con espaciado 0. Geist y Space Grotesk están espaciadas tanto para tamaños de titular como de texto, así que deja el espaciado entre letras en su valor por defecto."
+    }
+  },
+  "color": {
+    "heading": "Color estándar",
+    "p1": "Al aplicar color al texto, mantén la sencillez y la funcionalidad. Nuestro enfoque estándar es usar negro o blanco en todos los niveles. Limítate a un único color de texto por composición.",
+    "p2": "Elige siempre el color del texto que maximice el contraste y la legibilidad. Por ejemplo, no uses texto Pampas sobre un fondo Pampas. Estas son algunas combinaciones aprobadas de texto y fondo:",
+    "approved": [
+      "Blanco sobre Pampas 600",
+      "Blanco sobre gris 600",
+      "Negro sobre blanco",
+      "Blanco sobre negro"
+    ],
+    "roles": [
+      {
+        "label": "Titular",
+        "text": "Sobre fondos claros, compón todo el texto en negro."
+      },
+      {
+        "label": "Subtítulo",
+        "text": "Limítate a un color de texto por composición."
+      },
+      {
+        "label": "Texto de cuerpo",
+        "text": "El uso del color debe coincidir en titular, subtítulos y texto de cuerpo para mantener nuestras composiciones ordenadas y limpias."
+      }
+    ]
+  },
+  "padding": {
+    "heading": "Espaciado vertical",
+    "p1": "A medida que cambian los tamaños de texto entre aplicaciones, el espaciado vertical debe escalar.",
+    "p2": "El espacio mínimo tras cualquier titular debe ser el 75 % de la altura de las mayúsculas del titular. El espacio mínimo tras un subtítulo o un párrafo de texto es igual al 100 % de la altura de las mayúsculas del texto del subtítulo.",
+    "note": "Nota",
+    "noteText": "Esta es una buena regla general para la mayoría de las aplicaciones. En composiciones con poco espacio, el espaciado entre textos puede reducirse."
+  },
+  "leading": {
+    "heading": "Interlineado",
+    "text": "Usa esta fórmula para determinar los valores de interlineado según el tamaño del texto. Los ratios de interlineado (L) están predeterminados para cada nivel de la jerarquía tipográfica según la tabla de aquí. Por ejemplo, si el tamaño de tu subtítulo es de 100 pt, tu interlineado es 100 x 1,2, es decir, 120 pt.",
+    "items": [
+      {
+        "label": "1. Tamaño del texto:",
+        "text": "Expresado en pt"
+      },
+      {
+        "label": "2. Ratio de interlineado:",
+        "text": "Expresado como decimal"
+      },
+      {
+        "label": "3. Valor de interlineado:",
+        "text": "Expresado en pt"
+      }
+    ],
+    "formula": {
+      "typeSize": "Tamaño",
+      "leading": "Interlineado",
+      "aria": "El tamaño del texto por el ratio de interlineado es igual al interlineado",
+      "note": "Nota",
+      "noteText": "Algunos titulares extragrandes pueden requerir un interlineado más ajustado. Empieza siempre con un ratio de 1,0 y redúcelo gradualmente, si lo deseas."
+    },
+    "table": {
+      "level": "Nivel de texto",
+      "ratio": "Ratio de interlineado",
+      "rows": [
+        "Titular extragrande",
+        "Subtítulos",
+        "Texto de cuerpo grande",
+        "Texto de cuerpo",
+        "Texto de cuerpo pequeño"
+      ]
+    }
+  },
+  "capitalization": {
+    "heading": "Uso de mayúsculas",
+    "p1": "Los titulares y subtítulos de las comunicaciones externas se componen con formato de frase: solo la primera palabra y los nombres propios llevan mayúscula inicial. Así nuestro contenido resulta coloquial, cercano y coherente. Pueden incluirse signos de puntuación cuando sea necesario por el tono y la gramática.",
+    "p2": "Ten en cuenta que esto difiere de nuestra norma para documentos internos (como presentaciones de PowerPoint o documentos de Word), que usan formato de título para los títulos de presentaciones, los encabezados de página o los nombres de sección.",
+    "sentenceNote": "Usa el formato de frase al dirigirte a los clientes externamente.",
+    "titleNote": "Usa el formato de título en los documentos internos habituales.",
+    "capsNote": "No uses titulares en mayúsculas sostenidas en ningún tipo de documento ni para ningún público.",
+    "altSentence": "los titulares se componen en formato de frase",
+    "altTitle": "Los titulares internos se componen en formato de título",
+    "altCaps": "NUNCA COMPONEMOS TITULARES EN MAYÚSCULAS SOSTENIDAS"
+  },
+  "lineLengths": {
+    "heading": "Longitud de línea",
+    "p1": "Para una legibilidad óptima, las líneas de texto no deben ser demasiado largas ni demasiado cortas. Los titulares deben tener entre 4 y 15 caracteres por línea y los párrafos, entre 40 y 70 caracteres por línea.",
+    "p2": "Si la longitud de línea de un párrafo de texto resulta demasiado larga, divide el texto en columnas. Recuerda que los espacios y los signos de puntuación cuentan como caracteres.",
+    "tooShort": "Demasiado corta",
+    "ok1": "De 4 a 15 caracteres por línea",
+    "tooLong": "Demasiado larga",
+    "ok2": "De 40 a 70 caracteres por línea"
+  },
+  "campaign": {
+    "heading": "Titulares de campaña",
+    "text": "En algunos casos especiales, el peso del titular puede modificarse para adaptarse al tono de una campaña. Esto solo puede hacerse en casos limitados y con la aprobación expresa de:",
+    "aria": "Pesos de titulares de campaña",
+    "next": "Mostrar el siguiente ejemplo",
+    "show": "Mostrar el ejemplo {weight}"
+  }
+}
